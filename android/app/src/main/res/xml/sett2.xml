@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Informacje">
+        <PreferenceScreen
+            android:summary="Zmiany przepisów uwzględnione w opcji 'Notka przy starcie'"
+            android:title="Kalendarz">
+            <Preference
+                android:summary="Znaki D-51a i D-51b"
+                android:title="13.08.2019" />
+            <Preference
+                android:summary="Znaki D-54 i D-55 i drobne poprawki innych znaków"
+                android:title="29.08.2018" />
+            <Preference
+                android:summary="Zmiany dotyczące znaków rowerowych (wycofanie znaków R-2 i R-2a)"
+                android:title="06.08.2018" />
+            <Preference
+                android:summary="Znak P-24 na powierzchni niebieskiej (inne zmiany w trakcie opracowywania)"
+                android:title="30.6.2017" />
+            <Preference
+                android:summary="Nowy znak E-15h"
+                android:title="24.5.2016" />
+            <Preference
+                android:summary="Część ustawy o kierujących pojazdami i zmiany na podst. Ustawy z dnia 23 października 2013 r. o zmianie ustawy – Prawo o ruchu drogowym oraz niektórych innych ustaw"
+                android:title="04.01.2016" />
+            <Preference
+                android:summary="Nowe znaki E-15f, E-15g, P-26, P-27, S01a, S03a i zmiany przy innych znakach"
+                android:title="07.10.2015" />
+            <Preference
+                android:summary="Przepisy Ustawy z dnia 20 marca 2015 (zatrzymywanie prawa jazdy na 3 miesiące, itp.)"
+                android:title="18.05.2015" />
+            <Preference
+                android:summary="Przepisy Ustawy z dnia 9 kwietnia 2015 (m.in. foteliki samochodowe)"
+                android:title="15.05.2015" />
+            <Preference
+                android:summary="Zmiany wysokości niektórych grzywien"
+                android:title="11.04.2015" />
+            <Preference
+                android:summary="Zmiany wynikające z Ustawy z 26 czerwca 2014"
+                android:title="01.01.2015" />
+            <Preference
+                android:summary="Zmiany wynikające z Ustawy z 26 czerwca 2014"
+                android:title="24.10.2014" />
+            <Preference
+                android:summary="Nowe przepisy dotyczące noszenia elementów odblaskowych przez pieszych"
+                android:title="30.08.2014" />
+            <Preference
+                android:summary="Zmiany wynikające z Ustawy z 26 czerwca 2014 (m.in. kierowanie niektórymi motocyklami z kat. B)"
+                android:title="23.08.2014" />
+            <Preference
+                android:summary="Zmiany na podst. Ustawy z dnia 23 października 2013 r. o zmianie ustawy – Prawo o ruchu drogowym oraz niektórych innych ustaw"
+                android:title="01.07.2014" />
+            <Preference
+                android:summary="Tracą legalność stacjonarne urządzenia rejestrujące bez obudów spełniających obecne warunki techniczne (np. 'nieoklejone na żółto')"
+                android:title="29.06.2014" />
+            <Preference
+                android:summary="M.in. dodanie obowiązku zapisu przebiegu w systemach (Ustawa z 4 kwietnia 2014)"
+                android:title="09.05.2014" />
+            <Preference
+                android:summary="M.in. utworzenie Krajowego Punktu Kontaktowego (Ustawa z 14 marca 2014)"
+                android:title="29.04.2014" />
+            <Preference
+                android:summary="Zmiany nazw znaków D-44 i D-45 (dot. płatnego parkowania)"
+                android:title="14.02.2014" />
+            <Preference
+                android:summary="Art. 110 ustawy o kierujących pojazdami"
+                android:title="19.01.2014" />
+            <Preference
+                android:summary="Zmiany na podst. Ustawy z dnia 8 listopada 2013 r. o zmianie ustawy – Prawo o ruchu drogowym oraz ustawy o dozorze technicznym"
+                android:title="01.01.2014" />
+            <Preference
+                android:summary="Zmiany dotyczące znaków rowerowych"
+                android:title="13.08.2013" />
+            <Preference
+                android:summary="Dodanie ust. 4a w art. 51 ustawy o kierujących pojazdami"
+                android:title="07.07.2013" />
+            <Preference
+                android:summary="Zmiany na podstawie Ustawy z dnia 10 października 2012 r. o zmianie ustawy – Prawo o ruchu drogowym oraz niektórych innych ustaw"
+                android:title="21.06.2013" />
+            <Preference
+                android:summary="Zmiany na podstawie Ustawy z dnia 24 maja 2013 r. o zmianie ustawy o kierujących pojazdami oraz niektórych innych ustaw"
+                android:title="20.06.2013" />
+            <Preference
+                android:summary="Część ustawy o kierujących pojazdami (wchodzi w życie oraz zmienia Kodeks Drogowy)"
+                android:title="19.01.2013" />
+            <Preference
+                android:summary="Zmiana art. 140d pkt 4 Kodeksu Drogowego"
+                android:title="01.01.2013" />
+            <Preference
+                android:summary="Część ustawy z dnia 18.08.2011 o zmianie ustawy — Prawo o ruchu drogowym oraz niektórych innych ustaw"
+                android:title="19.10.2012" />
+            <Preference
+                android:summary="ROZPORZĄDZENIE z dnia 25 kwietnia 2012 w sprawie postępowania z kierowcami naruszającymi przepisy ruchu drogowego (nowy taryfikator punktów)"
+                android:title="09.06.2012" />
+            <Preference
+                android:summary="Część ustawy z dnia 13 kwietnia 2012 r. o zmianie ustawy o drogach publicznych oraz niektórych innych ustaw (zmienia Kodeks Drogowy)"
+                android:title="31.05.2012" />
+            <Preference
+                android:summary="Art. 125 pkt 9 ustawy o kierujących pojazdami (zmienia Kodeks Drogowy)"
+                android:title="25.02.2012" />
+            <Preference
+                android:summary="Część ustawy o zmianie ustawy o ubezpieczeniach obowiązkowych oraz Ustawy z dnia 13.01.2012 r. o zmianie ustawy o kierujących pojazdami oraz ustawy – Prawo o ruchu drogowym... (zmieniają Kodeks Drogowy)"
+                android:title="11.02.2012" />
+            <Preference
+                android:summary="Część Ustawy z dnia 13.01.2012 r. o zmianie ustawy o kierujących pojazdami oraz ustawy – Prawo o ruchu drogowym"
+                android:title="10.02.2012" />
+            <Preference
+                android:summary="Część ustawy z dnia 18.08.2011 o zmianie ustawy — Prawo o ruchu drogowym oraz niektórych innych ustaw"
+                android:title="19.01.2012" />
+            <Preference
+                android:summary="Ustawa o zmianie ustawy o transporcie drogowym, ustawa o bezpieczeństwie osób przebywających na obszarach wodnych, ustawa o przewozie towarów niebezpiecznych (zmieniają Kodeks Drogowy)"
+                android:title="01.01.2012" />
+        </PreferenceScreen>
+        <Preference
+            android:key="Czyszczenie"
+            android:summary="Kliknij aby otworzyć stronę WWW z adresami PayPal/Bitcoin i kontaktem."
+            android:title="Wesprzyj autora" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Ustawienia">
+        <ListPreference
+            android:defaultValue=""
+            android:key="wyglad"
+            android:summary=""
+            android:title="Wygląd" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="No_Lock"
+            android:summary="Wyłączenie automatycznej blokady"
+            android:title="Brak blokowania ekranu" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="Czarne_tlo_tresc"
+            android:summary="Tryb nocny w zakładce 'Treść'"
+            android:title="Czarne tło i białe litery" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="Notka_Start2"
+            android:summary="Pokazanie informacji o ostatniej zmianie przepisów zgodnie z kalendarzem powyżej..."
+            android:title="Notka przy starcie" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="Obrot"
+            android:summary="Możliwość zmiany orientacji ekranu"
+            android:title="Obrót" />
+        <PreferenceScreen
+            android:key="SecondPrefScreen"
+            android:summary="Możliwość wyboru przeszukiwanych treści..."
+            android:title="Szukanie ogólne">
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:enabled="true"
+                android:key="KodyUN_szukanie"
+                android:title="Kody UN" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:enabled="true"
+                android:key="Znaki_szukanie"
+                android:summary="Nie dotyczy to Taryfikatora..."
+                android:title="Nazwy i opisy znaków" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:enabled="true"
+                android:key="Kodeks_szukanie"
+                android:summary="Kodeks Drogowy"
+                android:title="Prawo o ruchu drogowym" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:enabled="true"
+                android:key="Taryfikator_szukanie"
+                android:summary="Mandaty i punkty razem"
+                android:title="Taryfikator" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:enabled="true"
+                android:key="KierPoj_szukanie"
+                android:title="Ustawa o kier. pojazdami" />
+        </PreferenceScreen>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="Wielkosc"
+            android:summary="Możliwość zmiany wielkości treści"
+            android:title="Zmiana wielkości treści" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="Kontrolki"
+            android:summary="Pokazanie lub ukrycie kontrolek do zmiany wielkości (Android 4.4 i wyższe)"
+            android:title="Kontrolki zmiany wielkości treści" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="Wielkosc2"
+            android:summary="Zapis wielkości treści przy wyjściu (zależy od urządzenia)"
+            android:title="Zapis wielkości treści" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="Zawijanie"
+            android:summary="Inny sposób pokazania treści (zależy od urządzenia)"
+            android:title="Inne pokazanie treści" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="Pokaz_All"
+            android:summary="Pokazanie w zakładce znaków nie tylko z Rozporządzenia z 31.07.2002"
+            android:title="Wszystkie znaki" />
+    </PreferenceCategory>
+</PreferenceScreen>

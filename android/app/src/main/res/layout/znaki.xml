@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:entries="@array/typyznakow" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner4"
+        android:layout_alignParentRight="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner4"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/checkBox4"
+        android:hint="@string/hint1"
+        android:imeOptions="actionSend"
+        android:nextFocusLeft="@+id/text"
+        android:nextFocusUp="@+id/text"
+        android:singleLine="true" />
+
+    <com.mwiacek.przepisy.drogowe.ScrollerWebView
+        android:id="@+id/webView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/autoCompleteTextView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none" />
+
+    <com.mwiacek.przepisy.drogowe.ScrollerView
+        android:id="@+id/view4"
+        android:layout_width="68px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/webView4"
+        android:layout_alignRight="@+id/webView4" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+{
+    "version": "1.22beta2",
+    "name": "P.drogowe",
+    "description": "Aplikacja",
+    "launch_path": "/znaki.html",
+    "icons": {
+        "1024": "/icon.png"
+    },
+    "developer": {
+        "name": "Marcin Wiacek",
+        "url": "http://www.mwiacek.com"
+    },
+    "default_locale": "pl"
+}

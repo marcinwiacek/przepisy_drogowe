@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="target-densitydpi=400" />
+</head>
+<body>
+<script>
+function pokaz(ile) {
+	s='';
+	switch (ile) {
+	case 10: s = 'wykroczenie, do 50 PLN<p>Uwaga: nieuwzględniane przez fotoradary stacjonarne i pomiary odcinkowe Inspekcji Transportu Drogowego oraz fotoradary przenośne Straży Gminnej i Miejskiej'; break;
+	case 11: s = 'wykroczenie, 50-100 PLN; 2 pkt; E05'; break;
+	case 21: s = 'wykroczenie, 100-200 PLN; 4 pkt; E04'; break;
+	case 31: s = 'wykroczenie, 200-300 PLN; 6 pkt; E03'; break;
+	case 41: s = 'wykroczenie, 300-400 PLN; 8 pkt; E02'; break;
+	case 51: s = 'wykroczenie, 400-500 PLN; 10 pkt; E01'; break;
+	}
+	document.getElementById("opis").innerHTML=s;	
+	for(i=0;i<document.forms['forma'].elements['grupa'].length;i++) {
+		if (document.forms['forma'].elements['grupa'][i].value==ile) {
+			document.forms['forma'].elements['grupa'][i].checked=true;
+		}
+	}
+}
+</script>
+Przekroczenie dopuszczalnej prędkości:
+<form name=forma>
+<div onClick=pokaz(10);><input type="radio" name="grupa" value=10 />do 10 km/h</div><br>
+<div onClick=pokaz(11);><input type="radio" name="grupa" value=11 />od 11 do 20 km/h</div><br>
+<div onClick=pokaz(21);><input type="radio" name="grupa" value=21 />od 21 do 30 km/h</div><br>
+<div onClick=pokaz(31);><input type="radio" name="grupa" value=31 />od 31 do 40 km/h</div><br>
+<div onClick=pokaz(41);><input type="radio" name="grupa" value=41 />od 41 do 50 km/h</div><br>
+<div onClick=pokaz(51);><input type="radio" name="grupa" value=51 />od 51 km/h</div>
+</form>
+<hr>
+<div id=opis></div>
+</body>
+</html>

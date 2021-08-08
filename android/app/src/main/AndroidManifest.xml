@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mwiacek.przepisy.drogowe"
+    android:installLocation="auto"
+    android:versionCode="47"
+    android:versionName="1.47">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        <provider
+            android:name=".SearchProvider"
+            android:authorities="com.mwiacek.przepisy.drogowe.SearchProvider"
+            android:syncable="false" />
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".SearchActivity" />
+
+        <activity
+            android:name=".TaryfikatorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoBackground" />
+        <activity
+            android:name=".TrescActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoBackground" />
+        <activity
+            android:name=".InneActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoBackground" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ZnakiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoBackground" />
+        <activity
+            android:name=".PrzepisyDrogoweActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+    </application>
+</manifest>

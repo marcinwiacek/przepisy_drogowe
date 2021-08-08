@@ -1,0 +1,81 @@
+strona 1
+
+art. 38 - bold
+
+art.64d - formatowanie - i wzrou
+
+oddział 6
+
+art 65l - bold
+
+art 67 - bold
+
+art 70h - wciecie z - nie można wykryć
+
+art 71 - bold
+
+art 72 italic
+
+art 74 bold
+
+art 75a bold
+
+art 75ab oświadczam
+
+art 75ah bold
+
+art 75b, ba, 75ca, 75d, 78b, 79b, 79c, 80 bold
+
+art 80b nie mozna wykryc wciecia, 80b - bold, italic
+
+art 80ba - bold
+
+str 97 - brak ciaglosci na dole
+
+art 80bb - bold
+
+art 80bd - bold
+
+art 80bh - bold
+
+art 80ch - wzor
+
+art 80d - bold
+
+rozdział 2d - link bold
+
+art 81 - zle wciecie
+
+art 83a - popraw wciecie
+
+art 83bb - bold
+
+art 100aa - italic
+
+art 100ab - italic
+
+art 100ah - italic
+
+art 100 ap - wzor
+
+art 129g - zle wciecia
+
+art 129h - brak punktow
+
+art 130a - italic i wciecia i linki w 6a
+
+art 132a - bold
+
+art. 134 - bold
+
+art 134a -bold
+
+art 140ma - bold
+
+art 140n - bold
+
+link 1 na dole caly dodac
+
+
+
+

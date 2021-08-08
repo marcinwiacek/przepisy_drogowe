@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" version="20120514" id="http://yourdomain/contact" viewmodes="fullscreen">  
+	<icon src="icon.png"/>  
+	<name>contact</name>  
+	<content src="index.html"/>  
+	<author email="marcin@mwiacek.com" href="http://www.mwiacek.com">Marcin Wiącek</author>
+</widget>

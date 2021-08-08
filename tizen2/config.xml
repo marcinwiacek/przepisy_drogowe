@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" version="1.22.2" viewmodes="maximized">
+    <tizen:application id="ss.drogowe22b2" package="ss" required_version="2.1"/>
+    <content src="znaki.html"/>
+    <icon src="icon.png"/>
+    <name>Przepisy drogowe</name>
+</widget>
