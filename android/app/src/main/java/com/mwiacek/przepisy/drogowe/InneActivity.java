@@ -61,11 +61,11 @@ public class InneActivity extends OneTabActivity {
         db = ((PrzepisyDrogoweActivity) getParent()).db;
 
         fileNames = new String[16];
-        fileNames[0] = "alkohol/alkoinfo.htm";
-        fileNames[1] = "alkohol/alkolicz.htm";
-        fileNames[2] = "kierruch.htm";
-        fileNames[3] = "klima.htm";
-        fileNames[4] = "nr.htm";
+        fileNames[0] = "nr.htm";
+        fileNames[1] = "alkohol/alkoinfo.htm";
+        fileNames[2] = "alkohol/alkolicz.htm";
+        fileNames[3] = "kierruch.htm";
+        fileNames[4] = "klima.htm";
         fileNames[5] = "oleje.htm";
         fileNames[6] = "opony/opony.htm";
         fileNames[7] = "prawko.htm";

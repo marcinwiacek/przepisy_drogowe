@@ -16,6 +16,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -63,7 +64,15 @@ public class PrzepisyDrogoweActivity extends TabActivity {
             return;
         }
         Date D2 = new Date();
-        if (D2.compareTo(new Date(119, 8, 13)) > 0) {
+        if (D2.compareTo(new Date(121, 5, 1)) > 0) {
+            Toast.makeText(MyActivity5, "1.6.2021 - Usunięcie prędkości 60km/h, zmiana pierwszeństwa i obowiązków pieszych", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (D2.compareTo(new Date(121, 2, 13)) > 0) {
+            Toast.makeText(MyActivity5, "13.03.2021 - Zmiana znaku B-19, E-15a - E-15d, usunięcie znaków E-15e - E-15h", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (D2.compareTo(new Date(119, 7, 13)) > 0) {
             Toast.makeText(MyActivity5, "13.08.2019 - Znaki D-51a i D-51b", Toast.LENGTH_LONG).show();
             return;
         }
@@ -327,13 +336,13 @@ public class PrzepisyDrogoweActivity extends TabActivity {
                 ad.setCancelable(false);
                 // ad.setMessage("Aplikacja została uaktualniona, używając jej zgadzasz się na to, że autor nie ponosi żadnej odpowiedzialności z tytułu jej używania przez Ciebie, w razie znalezienia błędów prośba o kontakt (np. przez \"Kontakt email\")\n\nAplikacja nie uwzględnia np. Ustawy o transporcie drogowym, możesz przyspieszyć jej rozwój składając datek.");
                 // ad.setMessage("Na chwilę obecną aplikacja nie uwzględnia np. Ustawy o transporcie drogowym i nie zawiera aktualnych danych, prace nad uaktualnieniem trwają, jeżeli chcesz się dołączyć, prośba o kontakt (np. przez \"Kontakt email\").\n\nUżywając aplikacji zgadzasz się na to, że autor nie ponosi żadnej odpowiedzialności z tytułu jej używania.");
-                ad.setMessage("Aplikacja nie uwzględnia np. Ustawy o transporcie drogowym i nie zawiera aktualnych danych w zakładkach \"Treść\" i \"Inne\" (\"Na drodze\" i \"Taryfikator\" praktycznie w całości są poprawne), prace nad uaktualnieniem trwają, jeżeli chcesz się dołączyć, prośba o kontakt (np. przez \"Kontakt email\").\n\nUżywając aplikacji zgadzasz się na to, że autor nie ponosi żadnej odpowiedzialności z tytułu jej używania.");
+                ad.setMessage("Aplikacja dostępna z kodem na GitHub. Nie uwzględnia np. Ustawy o transporcie drogowym. Jeżeli chcesz się dołączyć, prośba o kontakt (np. przez \"Kontakt email\").\n\nUżywając aplikacji zgadzasz się na to, że autor nie ponosi żadnej odpowiedzialności z tytułu jej używania.");
 
                 ad.setButton(DialogInterface.BUTTON_POSITIVE, "OK (00:07)", (dialog, which) -> dialog.dismiss());
 
                 ad.setButton(DialogInterface.BUTTON_NEGATIVE, "Info o wydaniu", (dialog, which) -> {
                     Intent intent1 = new Intent(Intent.ACTION_VIEW);
-                    intent1.setData(Uri.parse("http://www.mwiacek.com/www/?q=node/365"));
+                    intent1.setData(Uri.parse("https://www.salon24.pl/u/techracja/1175547,przepisy-drogowe-1-48"));
                     MyActivity5.startActivity(intent1);
                 });
 
@@ -420,15 +429,11 @@ public class PrzepisyDrogoweActivity extends TabActivity {
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        if (sp.getBoolean("Kodeks_szukanie", true) ||
+        menu.getItem(1).setEnabled(sp.getBoolean("Kodeks_szukanie", true) ||
                 sp.getBoolean("Taryfikator_szukanie", true) ||
                 sp.getBoolean("Znaki_szukanie", true) ||
                 sp.getBoolean("KodyUN_szukanie", true) ||
-                sp.getBoolean("KierPoj_szukanie", true)) {
-            menu.getItem(1).setEnabled(true);
-        } else {
-            menu.getItem(1).setEnabled(false);
-        }
+                sp.getBoolean("KierPoj_szukanie", true));
         return true;
     }
 
@@ -437,18 +442,25 @@ public class PrzepisyDrogoweActivity extends TabActivity {
 
         sett = db.GetSetting(setting, "true");
         db.SetSetting(setting, "true".equals(sett) ? "false" : "true");
-        sett = db.GetSetting(setting, "true");
 
-        SetControlVisibility("true".equals(sett) ? View.VISIBLE : View.GONE, fields);
+        SetControlVisibility("false".equals(sett) ? View.VISIBLE : View.GONE, fields);
     }
 
     public void SetControlVisibility(int state, int... fields) {
         for (int i : fields) {
-            try {
-                getTabHost().getTabContentView().getChildAt(getTabHost().getCurrentTab())
-                        .findViewById(i).setVisibility(state);
-            } catch (Exception e) {
-                Toast.makeText(MyActivity5, "numer " + i, Toast.LENGTH_LONG).show();
+            boolean found = false;
+            for (int x = 0; x < getTabHost().getTabContentView().getChildCount(); x++) {
+                if (getTabHost().getTabContentView().getChildAt(x)
+                        .findViewById(i) != null) {
+                    getTabHost().getTabContentView().getChildAt(x)
+                            .findViewById(i).setVisibility(state);
+                    found = true;
+                }
+            }
+            if (!found) {
+                Toast.makeText(MyActivity5, "Błąd zmiany statusu kontrolki " +
+                        getBaseContext().getResources().getResourceEntryName(i), Toast.LENGTH_LONG).show();
+
             }
         }
     }
@@ -566,6 +578,13 @@ public class PrzepisyDrogoweActivity extends TabActivity {
 
         dialog.setContentView(R.layout.znaki2);
         dialog.setCancelable(true);
+
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog.getWindow().getAttributes());
+        lp.gravity = Gravity.CENTER;
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        dialog.getWindow().setAttributes(lp);
 
         ScrollerWebView webview = dialog.findViewById(R.id.webView4);
         ScrollerView scroller = dialog.findViewById(R.id.view37);

@@ -1,13 +1,16 @@
 package com.mwiacek.przepisy.drogowe;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.view.GestureDetector;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MotionEvent;
+import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -28,12 +31,12 @@ import java.util.List;
 public class JavaScriptInterface {
     private static final List<String[]> mHistoryURL = new ArrayList<>();
     private static boolean mBackPressed = false;
-    private List<String> mURLList;
+    private final List<String> mURLList;
+    private final Activity mContext;
+    private final PlikiClass p;
     private String mCurrentURL;
     private String mToSearch;
-    private Activity mContext;
     private Dialog dialog;
-    private PlikiClass p;
     private ScrollerWebView webView;
     private ScrollerView scroller;
 
@@ -187,6 +190,7 @@ public class JavaScriptInterface {
         lines.append("<script>function closeIt(url){Android.q(url,window.pageYOffset);}</script>");
     }
 
+    @SuppressLint({"SetJavaScriptEnabled", "AddJavascriptInterface"})
     public void s(String link, String tos, Boolean leftright, Boolean back) {
         mToSearch = tos;
         StringBuilder lines = new StringBuilder();
@@ -228,7 +232,7 @@ public class JavaScriptInterface {
                         return;
                     }
 
-                    mHistoryURL.clear();
+                    //mHistoryURL.clear();
 
                     if (this.isShowing()) {
                         try {
@@ -240,9 +244,15 @@ public class JavaScriptInterface {
             };
 
             ((TextView) dialog.findViewById(android.R.id.title)).setSingleLine(false);
-
             dialog.setContentView(R.layout.znaki2);
             dialog.setCancelable(true);
+
+            WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+            lp.copyFrom(dialog.getWindow().getAttributes());
+            lp.gravity = Gravity.CENTER;
+            lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+            lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+            dialog.getWindow().setAttributes(lp);
 
             webView = dialog.findViewById(R.id.webView4);
             scroller = dialog.findViewById(R.id.view37);
@@ -259,11 +269,8 @@ public class JavaScriptInterface {
                     Method m;
                     m = webView.getSettings().getClass().getMethod("setDisplayZoomControls", boolean.class);
                     m.invoke(webView.getSettings(), PreferenceManager.getDefaultSharedPreferences(mContext).getBoolean("Kontrolki", false));
-                } catch (SecurityException ignore) {
-                } catch (NoSuchMethodException ignore) {
-                } catch (IllegalArgumentException ignore) {
-                } catch (IllegalAccessException ignore) {
-                } catch (InvocationTargetException ignore) {
+                } catch (SecurityException | NoSuchMethodException | IllegalArgumentException |
+                        IllegalAccessException | InvocationTargetException ignore) {
                 }
             }
 
@@ -332,7 +339,7 @@ public class JavaScriptInterface {
         }
     }
 
-    class JavaScriptInterface3 {
+    static class JavaScriptInterface3 {
         JavaScriptInterface3() {
         }
 

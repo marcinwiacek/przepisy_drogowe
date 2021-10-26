@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TaryfikatorActivity extends OneTabActivity {
-    boolean blockselect = false;
     ArrayList<CharSequence> al2 = new ArrayList<>();
 
     @Override
@@ -50,66 +49,25 @@ public class TaryfikatorActivity extends OneTabActivity {
     }
 
     @Override
-    public void onSelected(int i) {
-        if (blockselect) {
-            blockselect = false;
-            return;
-        }
+    public void onSelected(int i, int position) {
         if (spinner.getCount() > 5 &&
                 spinner.getSelectedItemPosition() < spinner.getCount() - 4) {
-            webView.loadUrl("javascript:window.scrollTo(0, document.getElementById('sekcja" + spinner.getSelectedItemPosition() + "').offsetTop);");
-        } else {
-            DisplayIt();
-        }
-    }
-
-    @Override
-    public void scrollTo() {
-        if (spinner.getCount() > 4 &&
-                spinner.getSelectedItemPosition() == spinner.getCount() - 4) {
-            if (spinner.getSelectedItemPosition() != 1) {
-                blockselect = true;
-                spinner.setSelection(1);
-            }
-        } else if (spinner.getCount() > 4 &&
-                spinner.getSelectedItemPosition() == spinner.getCount() - 3) {
-            if (spinner.getSelectedItemPosition() != 2) {
-                blockselect = true;
-                spinner.setSelection(2);
-            }
-        } else if (spinner.getCount() > 4 &&
-                spinner.getSelectedItemPosition() == spinner.getCount() - 2) {
-            if (spinner.getSelectedItemPosition() != 3) {
-                blockselect = true;
-                spinner.setSelection(3);
-            }
-        } else if (spinner.getCount() > 4 &&
-                spinner.getSelectedItemPosition() == spinner.getCount() - 1) {
-            if (spinner.getSelectedItemPosition() != 4) {
-                blockselect = true;
-                spinner.setSelection(4);
+            String scroll = "window.scrollTo(0, " +
+                    (position == -1 ? " document.getElementById('sekcja" + spinner.getSelectedItemPosition() + "').offsetTop" : position) +
+                    ");";
+            if (!webView.getTitle().equals("wlasny")) {
+                DisplayIt(scroll);
+            } else {
+                webView.loadUrl("javascript:" + scroll);
             }
         } else {
-            if (spinner.getSelectedItemPosition() != 0) {
-                blockselect = true;
-                spinner.setSelection(0);
-            }
+            DisplayIt(position == -1 ? "" : "window.scrollTo(0, " + position + ");");
         }
-
-        adapter1.clear();
-        adapter1.add("Mandaty i pkt razem - opracowanie własne");
-        for (int i = al2.size() - 1; i >= 0; i--) {
-            adapter1.add(al2.get(i));
-        }
-        adapter1.add("Mandaty i pkt osobno - Rozporządzenia");
-        adapter1.add("Mandaty i pkt osobno (11.04.2015-09.08.2017) - Rozporządzenia");
-        adapter1.add("Mandaty i pkt osobno (09.06.2012-10.04.2015) - Rozporządzenia");
-        adapter1.add("Mandaty i pkt osobno (24.05.2011-08.06.2012) - Rozporządzenia");
-        adapter1.notifyDataSetChanged();
     }
 
     @Override
     protected void GetDisplayBytes() {
+        String title = "";
         StringBuilder DisplayLines = new StringBuilder();
         if (spinner.getSelectedItemPosition() == spinner.getCount() - 4 &&
                 spinner.getCount() != 1) {
@@ -154,10 +112,26 @@ public class TaryfikatorActivity extends OneTabActivity {
         } else {
             ((PrzepisyDrogoweActivity) getParent()).p.ReadMyTaryfikator(DisplayLines,
                     textView.getText().toString(), getAssets(), al2, true);
+            title = "wlasny";
         }
+
+        if (spinner.getCount() == 1) {
+            adapter1.clear();
+            adapter1.add("Mandaty i pkt razem - opracowanie własne");
+            for (int x = al2.size() - 1; x >= 0; x--) {
+                adapter1.add(al2.get(x));
+            }
+            adapter1.add("Mandaty i pkt osobno - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (11.04.2015-09.08.2017) - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (09.06.2012-10.04.2015) - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (24.05.2011-08.06.2012) - Rozporządzenia");
+            adapter1.notifyDataSetChanged();
+        }
+
         if (DisplayLines.length() != 0) {
-            DisplayLines.insert(0, "<html><head><meta name=\"viewport\" content=\"width=device-width, minimum-scale=0.1, initial-scale=1.0\"></head><body><table>");
-            DisplayLines.append("</table><script>function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}</script></body></html>");
+            DisplayLines.insert(0, "<html><head><meta name=\"viewport\" content=\"width=device-width, minimum-scale=0.1, initial-scale=1.0\">"+
+                    "<title>"+title+"</title></head><body><table>");
+            DisplayLines.append("</table></body></html>");
         }
         if ((spinner.getSelectedItemPosition() == spinner.getCount() - 3 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 2 ||

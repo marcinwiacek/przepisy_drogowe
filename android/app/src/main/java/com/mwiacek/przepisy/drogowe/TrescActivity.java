@@ -10,14 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TrescActivity extends OneTabActivity {
-    int oldSpinner = 0;
+
     int iloscWPDR = 40;
     int iloscwUKP = 20;
 
@@ -27,19 +26,19 @@ public class TrescActivity extends OneTabActivity {
             Uri intentData = ((PrzepisyDrogoweActivity) getParent()).in.getData();
             if (intentData != null) {
                 if (intentData.toString().charAt(0) == 'k') {
-                    textView.setText(intentData.toString().substring(2));
+                    textView.setText(intentData.toString().substring(1));
 
                     ((PrzepisyDrogoweActivity) getParent()).in = null;
 
-                    spinner.setSelection(1, false);//kodeks
+                    spinner.setSelection(0, false);//kodeks
                     return true;
                 }
                 if (intentData.toString().charAt(0) == 'i') {
-                    textView.setText(intentData.toString().substring(2));
+                    textView.setText(intentData.toString().substring(1));
 
                     ((PrzepisyDrogoweActivity) getParent()).in = null;
 
-                    spinner.setSelection(iloscWPDR + 2, false);//ust. o kier. poj.
+                    spinner.setSelection(iloscWPDR + 1, false);//ust. o kier. poj.
                     return true;
                 }
             }
@@ -63,24 +62,24 @@ public class TrescActivity extends OneTabActivity {
             Uri intentData = ((PrzepisyDrogoweActivity) getParent()).in.getData();
             if (intentData != null) {
                 if (intentData.toString().charAt(0) == 'k') {
-                    textView.setText(intentData.toString().substring(2));
+                    textView.setText(intentData.toString().substring(1));
 
                     ((PrzepisyDrogoweActivity) getParent()).in = null;
 
-                    if (spinner.getSelectedItemPosition() != 1) {
-                        spinner.setSelection(1);//kodeks
+                    if (spinner.getSelectedItemPosition() != 0) {
+                        spinner.setSelection(0);//kodeks
                     } else {
                         textView.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN,
                                 KeyEvent.KEYCODE_ENTER));
                     }
                 }
                 if (intentData.toString().charAt(0) == 'i') {
-                    textView.setText(intentData.toString().substring(2));
+                    textView.setText(intentData.toString().substring(1));
 
                     ((PrzepisyDrogoweActivity) getParent()).in = null;
 
-                    if (spinner.getSelectedItemPosition() != iloscWPDR + 2) {
-                        spinner.setSelection(iloscWPDR + 2);//UKP
+                    if (spinner.getSelectedItemPosition() != iloscWPDR + 1) {
+                        spinner.setSelection(iloscWPDR + 1);//UKP
                     } else {
                         textView.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN,
                                 KeyEvent.KEYCODE_ENTER));
@@ -91,86 +90,56 @@ public class TrescActivity extends OneTabActivity {
     }
 
     @Override
-    public void onSelected(int i) {
-        //prd
-        if (i > 0 && i < iloscWPDR + 2) {
-            if (oldSpinner < 1 || oldSpinner > iloscWPDR + 1) {
-                oldSpinner = i;
-                DisplayIt();
-            } else {
-                oldSpinner = i;
-                webView.loadUrl("javascript:window.scrollTo(0, " +
-                        "document.getElementById('bok" + (i - 1) + "').offsetTop);");
+    public void onSelected(int i, int position) {
+         //prd
+        if (i >= 0 && i < iloscWPDR + 1) {
+            String scroll = "window.scrollTo(0, " +
+                    (position == -1 ? " document.getElementById('bok" + i + "').offsetTop" : position) +
+                    ");";
+            if (firstLoad || !webView.getTitle().equals("prd")) {
+                DisplayIt(scroll);
+                return;
             }
+            webView.loadUrl("javascript:" + scroll);
             return;
         }
         //ukp
-        if (i > iloscWPDR + 1 && i < iloscWPDR + iloscwUKP + 3) {
-            if (oldSpinner < iloscWPDR + 2 || oldSpinner > iloscWPDR + iloscwUKP + 2) {
-                oldSpinner = i;
-                DisplayIt();
-            } else {
-                oldSpinner = i;
-                webView.loadUrl("javascript:window.scrollTo(0, " +
-                        "document.getElementById('bok" + (i - iloscWPDR - 2) + "').offsetTop);");
+        if (i > iloscWPDR && i < iloscWPDR + iloscwUKP + 2) {
+            String scroll = "window.scrollTo(0, " +
+                    (position == -1 ? " document.getElementById('bok" + (i - iloscWPDR - 1) + "').offsetTop" : position) +
+                    ");";
+            if (!webView.getTitle().equals("ukp")) {
+                DisplayIt(scroll);
+                return;
             }
+            webView.loadUrl("javascript:" + scroll);
             return;
         }
-        oldSpinner = i;
-        DisplayIt();
+        String scroll = (position == -1) ? "" : "window.scrollTo(0, " + position + ");";
+        DisplayIt(scroll);
     }
 
     @Override
     public void setBlack() {
-        if (((PrzepisyDrogoweActivity) getParent()).sp.getBoolean("Czarne_tlo_tresc", false)) {
-            webView.setBackgroundColor(android.graphics.Color.BLACK);
-        } else {
-            webView.setBackgroundColor(android.graphics.Color.WHITE);
-        }
-    }
-
-    @Override
-    public void scrollTo() {
-        if (((PrzepisyDrogoweActivity) getParent()).sp.getBoolean("Czarne_tlo_tresc", false)) {
-            webView.setBackgroundColor(android.graphics.Color.BLACK);
-            webView.loadUrl("javascript:lustro();");
-        }
-
-        //prd
-        if (spinner.getSelectedItemPosition() > 1
-                && spinner.getSelectedItemPosition() < iloscWPDR + 2) {
-            webView.loadUrl("javascript:window.scrollTo(0, " +
-                    "document.getElementById('bok" + (spinner.getSelectedItemPosition() - 1) + "').offsetTop);");
-        }
-        //ukp
-        if (spinner.getSelectedItemPosition() > iloscWPDR + 2
-                && spinner.getSelectedItemPosition() < iloscWPDR + iloscwUKP + 3) {
-            webView.loadUrl("javascript:window.scrollTo(0, " +
-                    "document.getElementById('bok" + (spinner.getSelectedItemPosition() - iloscWPDR - 2) + "').offsetTop);");
-        }
+        webView.setBackgroundColor(
+                ((PrzepisyDrogoweActivity) getParent()).sp.getBoolean("Czarne_tlo_tresc", false) ?
+                        android.graphics.Color.BLACK :
+                        android.graphics.Color.WHITE);
     }
 
     @Override
     protected void GetDisplayBytes() {
-        try {
-            InputStream stream;
-            if (spinner.getSelectedItemPosition() == 0) {
-                stream = getAssets().open("tekst/rozp2012.htm");
-            } else if (spinner.getSelectedItemPosition() > 0
-                    && spinner.getSelectedItemPosition() < iloscWPDR + 2) {
-                stream = getAssets().open("tekst/kodeks.htm");
-            } else if (spinner.getSelectedItemPosition() > iloscWPDR + 1
-                    && spinner.getSelectedItemPosition() < iloscWPDR + iloscwUKP + 3) {
-                stream = getAssets().open("tekst/kierpoj.htm");
-            } else {
-                stream = getAssets().open("tekst/rozp2002.htm");
-            }
-            byte[] DisplayTotal0 = new byte[stream.available()];
-            stream.read(DisplayTotal0, 0, DisplayTotal0.length);
-            stream.close();
-            DisplayTotal = new String(DisplayTotal0, 0, DisplayTotal0.length);
-        } catch (IOException ignore) {
-            DisplayTotal = "";
+        DisplayTotal = "";
+        if (spinner.getSelectedItemPosition() >= 0
+                && spinner.getSelectedItemPosition() <= iloscWPDR) {
+            readFile("tekst/kodeks.htm");
+        } else if (spinner.getSelectedItemPosition() > iloscWPDR
+                && spinner.getSelectedItemPosition() < iloscWPDR + iloscwUKP + 2) {
+            readFile("tekst/kierpoj.htm");
+        } else if (spinner.getSelectedItemPosition() == iloscWPDR + iloscwUKP + 2) {
+            readFile("tekst/rozp2012.htm");
+        } else {
+            readFile("tekst/rozp2002.htm");
         }
     }
 
@@ -189,6 +158,8 @@ public class TrescActivity extends OneTabActivity {
 
         Db_Number_Of_Selection = "";
         Db_Size_Name = PrzepisyDrogoweActivity.DB_TRESC_SIZE;
+
+        Sp_Black_Name = "Czarne_tlo_tresc";
 
         sp = ((PrzepisyDrogoweActivity) getParent()).sp;
         db = ((PrzepisyDrogoweActivity) getParent()).db;

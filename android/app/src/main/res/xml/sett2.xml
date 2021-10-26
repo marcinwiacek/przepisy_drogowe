@@ -5,6 +5,12 @@
             android:summary="Zmiany przepisów uwzględnione w opcji 'Notka przy starcie'"
             android:title="Kalendarz">
             <Preference
+                android:summary="Usunięcie prędkości 60km/h, zmiana pierwszeństwa i obowiązków pieszych"
+                android:title="1.06.2021" />
+            <Preference
+                android:summary="Zmiana znaku B-19, E-15a - E-15d, usunięcie znaków E-15e - E-15h"
+                android:title="13.03.2021" />
+            <Preference
                 android:summary="Znaki D-51a i D-51b"
                 android:title="13.08.2019" />
             <Preference
@@ -112,8 +118,8 @@
         </PreferenceScreen>
         <Preference
             android:key="Czyszczenie"
-            android:summary="Kliknij aby otworzyć stronę WWW z adresami PayPal/Bitcoin i kontaktem."
-            android:title="Wesprzyj autora" />
+            android:summary="Sprawdź nowości i dołącz się do projektu (dostępny kod źródłowy)"
+            android:title="Informacje o projekcie" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Ustawienia">
         <ListPreference
@@ -137,7 +143,7 @@
             android:defaultValue="false"
             android:enabled="true"
             android:key="Notka_Start2"
-            android:summary="Pokazanie informacji o ostatniej zmianie przepisów zgodnie z kalendarzem powyżej..."
+            android:summary="Pokazanie informacji o ostatniej zmianie przepisów zgodnie z kalendarzem powyżej"
             android:title="Notka przy starcie" />
         <CheckBoxPreference
             android:defaultValue="false"
@@ -147,7 +153,7 @@
             android:title="Obrót" />
         <PreferenceScreen
             android:key="SecondPrefScreen"
-            android:summary="Możliwość wyboru przeszukiwanych treści..."
+            android:summary="Możliwość wyboru przeszukiwanych treści"
             android:title="Szukanie ogólne">
             <CheckBoxPreference
                 android:defaultValue="false"

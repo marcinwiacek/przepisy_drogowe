@@ -32,7 +32,7 @@ public class SearchProvider extends ContentProvider {
     private static final int SEARCH_SUGGEST = 1;
     private static final int SHORTCUT_REFRESH = 0;
 
-    private static UriMatcher uriMatcher = buildUriMatcher();
+    private static final UriMatcher uriMatcher = buildUriMatcher();
 
     private static UriMatcher buildUriMatcher() {
         UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);

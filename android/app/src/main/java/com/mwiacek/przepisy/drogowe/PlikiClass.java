@@ -59,8 +59,8 @@ public class PlikiClass {
                     "e/e08_2", "e/e09", "e/e10", "e/e10_2", "e/e10_3", "e/e11",
                     "e/e11_2", "e/e11_3", "e/e11_4", "e/e12", "e/e12a", "e/e12a_2",
                     "e/e_d18", "e/e_d30", "e/e_przem", "e/e13", "e/e14", "e/e14_2",
-                    "e/e14a", "e/e15a", "e/e15b", "e/e15c", "e/e15d", "e/e15e",
-                    "e/e15f", "e/e15g", "e/e15h", "e/e16", "e/e17a", "e/e18a",
+                    "e/e14a", "e/e15a", "e/e15b", "e/e15c", "e/e15d",
+                    "e/e16", "e/e17a", "e/e18a",
                     "e/e19a", "e/e20", "e/e20_2", "e/e21", "e/e22a", "e/e22b",
                     "e/e22b_2", "e/e22c"},
             {"f/f01", "f/f02", "f/f02a", "f/f03", "f/f04", "f/f05", "f/f06",
@@ -97,7 +97,7 @@ public class PlikiClass {
             {"s/s01", "s/s01a", "s/s02", "s/s03", "s/s03a", "s/s04", "s/s05", "s/s06",
                     "s/s07"},
             {"sb_st/sb", "sb_st/st", "sb_st/stk", "sb_st/stt1", "sb_st/stt2"},
-            {"inne/suwak"},
+            {"inne/e15e", "inne/e15f", "inne/e15g", "inne/e15h", "inne/suwak"},
             {""},
             {"u/u01a", "u/u01b", "u/u01c", "u/u01d", "u/u01e", "u/u01f", "u/u02",
                     "u/u03a", "u/u03b", "u/u03c", "u/u03d", "u/u03e", "u/u04a",
@@ -147,7 +147,7 @@ public class PlikiClass {
                     "e/e02e", "e/e02f", "e/e03", "e/e04", "e/e05", "e/e06", "e/e06a",
                     "e/e06b", "e/e06c", "e/e07", "e/e08", "e/e09", "e/e10", "e/e11",
                     "e/e12", "e/e12a", "e/e13", "e/e14", "e/e14a", "e/e15a", "e/e15b",
-                    "e/e15c", "e/e15d", "e/e15e", "e/e15f", "e/e15g", "e/e15h", "e/e16",
+                    "e/e15c", "e/e15d", "e/e16",
                     "e/e17a", "e/e18a", "e/e19a", "e/e20", "e/e21", "e/e22a", "e/e22b",
                     "e/e22c"},
             {"f/f01", "f/f02", "f/f02a", "f/f03", "f/f04", "f/f05", "f/f06", "f/f07",
@@ -177,7 +177,7 @@ public class PlikiClass {
             {"s/s01", "s/s01a", "s/s02", "s/s03", "s/s03a", "s/s04", "s/s05",
                     "s/s06", "s/s07"},
             {"sb_st/sb", "sb_st/st", "sb_st/stk", "sb_st/stt1", "sb_st/stt2"},
-            {"inne/suwak"},
+            {"inne/e15e", "inne/e15f", "inne/e15g", "inne/e15h", "inne/suwak"},
             {""},
             {}
     };
@@ -193,13 +193,11 @@ public class PlikiClass {
 
             String s = buffReader.readLine();
 
-            if (Nazwa.equals("d/d39")) {
-                lines.append("<center><img src=" + Nazwa + "_big.png style='max-width:100%'></center>");
-            } else if (Nazwa.equals("d/d39a")) {
-                lines.append("<center><img src=" + Nazwa + "_big.png style='max-width:100%'></center>");
-            } else {
-                lines.append("<center><img src=" + Nazwa + ".png style='max-width:100%'></center>");
+            lines.append("<center><img src=").append(Nazwa);
+            if (Nazwa.equals("d/d39") || Nazwa.equals("d/d39a")) {
+                lines.append("_big");
             }
+            lines.append(".png style='max-width:100%'></center>");
 
             if (OpisTitle != null) {
                 switch (Nazwa.charAt(0)) {
@@ -268,11 +266,11 @@ public class PlikiClass {
                         break;
 
                 }
-                OpisTitle.append(" " + buffReader.readLine());
-                if (s.substring(0, 1).equals("\"")) {
-                    OpisTitle.append(" " + s);
+                OpisTitle.append(" ").append(buffReader.readLine());
+                if (s.charAt(0) == '"') {
+                    OpisTitle.append(" ").append(s);
                 } else {
-                    OpisTitle.append(" \"" + s + "\"");
+                    OpisTitle.append(" \"").append(s).append("\"");
                 }
             } else {
                 buffReader.readLine();
@@ -283,7 +281,7 @@ public class PlikiClass {
 
             String line;
             while ((line = buffReader.readLine()) != null) {
-                lines.append(line + " ");
+                lines.append(line).append(" ");
             }
 
             stream.close();

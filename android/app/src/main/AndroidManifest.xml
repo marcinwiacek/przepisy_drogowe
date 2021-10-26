@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.mwiacek.przepisy.drogowe"
     android:installLocation="auto"
-    android:versionCode="47"
-    android:versionName="1.47">
+    android:versionCode="48"
+    android:versionName="1.48">
 
     <application
-        android:allowBackup="true"
         android:icon="@drawable/icon"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        tools:ignore="AllowBackup">
         <provider
             android:name=".SearchProvider"
             android:authorities="com.mwiacek.przepisy.drogowe.SearchProvider"
-            android:syncable="false" />
+            android:syncable="false"
+            android:exported="false" />
         <meta-data
             android:name="android.app.default_searchable"
             android:value=".SearchActivity" />
-
         <activity
             android:name=".TaryfikatorActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -43,7 +45,8 @@
         <activity
             android:name=".PrzepisyDrogoweActivity"
             android:label="@string/app_name"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
@@ -51,7 +54,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
-
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />

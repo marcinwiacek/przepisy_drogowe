@@ -20,7 +20,7 @@
     <item
         android:id="@+id/szukanie"
         android:icon="@drawable/d34"
-        android:title="Szukanie (eksperyment)" />
+        android:title="Pokaż szukanie (eksperyment)" />
 
     <item
         android:id="@+id/full"

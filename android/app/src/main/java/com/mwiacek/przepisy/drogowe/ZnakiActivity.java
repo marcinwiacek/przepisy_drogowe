@@ -201,7 +201,7 @@ public class ZnakiActivity extends OneTabActivity {
         scroller = findViewById(R.id.view4);
 
         checkbox = findViewById(R.id.checkBox4);
-        checkbox.setOnCheckedChangeListener((buttonView, isChecked) -> DisplayIt());
+        checkbox.setOnCheckedChangeListener((buttonView, isChecked) -> DisplayIt(""));
 
         onCreateTab();
     }

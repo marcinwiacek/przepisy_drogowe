@@ -77,14 +77,14 @@ public class PreferencesActivity extends PreferenceActivity {
         listItems2.add("pusty");
         listItems.add("Android 2.x (czarny)");
         listItems2.add("pusty2");
-        listItems.add("Lekki");
+        listItems.add("Lekki (przestarzały)");
         listItems2.add("light");
         listItems.add("translucent");
         listItems2.add("translucent");
         if (android.os.Build.VERSION.SDK_INT > 10) {
-            listItems.add("Holo");
+            listItems.add("Holo (przestarzały)");
             listItems2.add("holo");
-            listItems.add("Holo (jasny)");
+            listItems.add("Holo jasny (przestarzały)");
             listItems2.add("holo2");
         }
         if (android.os.Build.VERSION.SDK_INT > 13) {
@@ -94,9 +94,9 @@ public class PreferencesActivity extends PreferenceActivity {
             listItems2.add("domyslnyurzadzenie2");
         }
         if (android.os.Build.VERSION.SDK_INT > 20) {
-            listItems.add("material");
+            listItems.add("material (przestarzały)");
             listItems2.add("material");
-            listItems.add("material_light");
+            listItems.add("material_light (przestarzały)");
             listItems2.add("material_light");
         }
 
@@ -148,7 +148,7 @@ public class PreferencesActivity extends PreferenceActivity {
 
         findPreference("Czyszczenie").setOnPreferenceClickListener(preference -> {
                     Intent intent2 = new Intent(Intent.ACTION_VIEW);
-                    intent2.setData(Uri.parse("http://mwiacek.com/www/?q=node/121"));
+                    intent2.setData(Uri.parse("https://github.com/marcinwiacek/przepisy_drogowe"));
                     MyActivity5.startActivity(intent2);
 
                     return true;

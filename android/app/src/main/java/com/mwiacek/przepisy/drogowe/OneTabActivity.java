@@ -1,5 +1,6 @@
 package com.mwiacek.przepisy.drogowe;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -35,6 +36,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 //Shared between Straz and Przepisy
 //1.0
@@ -42,6 +44,7 @@ public abstract class OneTabActivity extends Activity {
     private static final String[] Tips = new String[]{
             "zakręt", "ostrzegawcze", "zakaz"
     };
+    List<String[]> mHistory = new ArrayList<>();
     ArrayAdapter<String> adapter;
     ArrayAdapter<CharSequence> adapter1;
     Activity MyActivity;
@@ -50,7 +53,7 @@ public abstract class OneTabActivity extends Activity {
     Button b1, b2;
     Spinner spinner;
     ScrollerView scroller;
-    ProgressDialog progressDialog;
+    ProgressDialog progressDialog = null;
     boolean firstLoad = true;
     boolean Kontrolki, Zawijanie;
     boolean internalSearch = true;
@@ -59,30 +62,51 @@ public abstract class OneTabActivity extends Activity {
     int mSpinnerListaId;
     int SearchCurr, SearchNum;
     int LayoutId;
+    int oldSpinner = 0;
+    boolean backPressed = false;
 
     DBClass db;
     String Db_Number_Of_Selection;
     String Db_Size_Name;
+
     SharedPreferences sp;
+    String Sp_Black_Name = "";
 
     protected boolean LoadFromIntent() {
         return false;
     }
 
-    protected void GetDisplayBytes() {
-        if (spinner.getSelectedItemPosition() < fileNames.length) {
-            try {
-                InputStream stream = getAssets().open(fileNames[spinner.getSelectedItemPosition()]);
-                byte[] DisplayTotal0 = new byte[stream.available()];
-                stream.read(DisplayTotal0, 0, DisplayTotal0.length);
-                stream.close();
-                DisplayTotal = new String(DisplayTotal0, 0, DisplayTotal0.length);
-            } catch (IOException ignore) {
-                DisplayTotal = "";
-            }
-        } else {
+    protected void readFile(String name) {
+        try {
+            InputStream stream = getAssets().open(name);
+            byte[] DisplayTotal0 = new byte[stream.available()];
+            stream.read(DisplayTotal0, 0, DisplayTotal0.length);
+            stream.close();
+            DisplayTotal = new String(DisplayTotal0, 0, DisplayTotal0.length);
+        } catch (IOException ignore) {
             DisplayTotal = "";
         }
+
+    }
+
+    protected void GetDisplayBytes() {
+        DisplayTotal = "";
+        if (spinner.getSelectedItemPosition() < fileNames.length) {
+            readFile(fileNames[spinner.getSelectedItemPosition()]);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mHistory.size() > 0) {
+            backPressed = true;
+            spinner.setSelection(Integer.parseInt(mHistory.get(0)[1]));
+            onSelected(Integer.parseInt(mHistory.get(0)[1]),
+                    Integer.parseInt(mHistory.get(0)[0]));
+            mHistory.remove(0);
+            return;
+        }
+        super.onBackPressed();
     }
 
     @Override
@@ -92,10 +116,11 @@ public abstract class OneTabActivity extends Activity {
         super.onDestroy();
     }
 
-    public void DisplayIt() {
+    public void DisplayIt(String scroll) {
         if (progressDialog != null) return;
-
         progressDialog = ProgressDialog.show(this, "", "Odświeżanie", true, false);
+
+        GetDisplayBytes();
 
         if (!firstLoad) {
             MyActivity.runOnUiThread(() -> {
@@ -117,26 +142,23 @@ public abstract class OneTabActivity extends Activity {
             });
         }
 
-        new Thread(() -> {
-            GetDisplayBytes();
 
+        new Thread(() -> {
             scroller.Showed = false;
 
             MyActivity.runOnUiThread(new Runnable() {
                 public void run() {
+                    //Toast.makeText(MyActivity, "laduje od nowa " + spinner.getSelectedItemPosition(), Toast.LENGTH_SHORT).show();
+
                     int scale = (int) (100 * webView.getScale());
 
                     if (android.os.Build.VERSION.SDK_INT >= 19) {
                         Kontrolki = sp.getBoolean("Kontrolki", false);
                         try {
-                            Method m;
-                            m = webView.getSettings().getClass().getMethod("setDisplayZoomControls", boolean.class);
+                            Method m = webView.getSettings().getClass().getMethod("setDisplayZoomControls", boolean.class);
                             m.invoke(webView.getSettings(), Kontrolki);
-                        } catch (SecurityException ignore) {
-                        } catch (NoSuchMethodException ignore) {
-                        } catch (IllegalArgumentException ignore) {
-                        } catch (IllegalAccessException ignore) {
-                        } catch (InvocationTargetException ignore) {
+                        } catch (SecurityException | NoSuchMethodException | IllegalArgumentException |
+                                IllegalAccessException | InvocationTargetException ignore) {
                         }
                     }
 
@@ -158,10 +180,29 @@ public abstract class OneTabActivity extends Activity {
                                         + "\\E))",
                                 "<ins style='background-color:yellow'>$1</ins>");
                     }
+                    String black = "";
+                    if (!Sp_Black_Name.isEmpty()) {
+                        if (sp.getBoolean(Sp_Black_Name, false)) {
+                            webView.setBackgroundColor(android.graphics.Color.BLACK);
+                            black = "lustro();";
+                        } else {
+                            webView.setBackgroundColor(android.graphics.Color.WHITE);
+                            black = "normalnie();";
+                        }
+                    }
+
                     webView.loadDataWithBaseURL("file:///android_asset/",
                             DisplayTotal.replace("</body>",
-                                    "<script>function lustro() {document.body.style.background='black';document.body.style.color='white';} function normalnie() {document.body.style.background='white';document.body.style.color='black';}" +
-                                            "function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}</script></body>"),
+                                    "<script>function lustro() {document.body.style.background='black';document.body.style.color='white'; for (var i = 0; i < document.links.length; ++i) {document.links[i].style.color='#00FFFF';}}" +
+                                            "function normalnie() {document.body.style.background='white';document.body.style.color='black'; ; for (var i = 0; i < document.links.length; ++i) {document.links[i].style.color='blue';}}" +
+                                            "function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}" +
+                                            "function closeIt(oldspinner){Android.q(oldspinner,window.pageYOffset);}" +
+                                            "links = document.getElementsByTagName(\"a\"); for (i = 0; i < links.length; i++){" +
+                                            "href = links[i].getAttribute(\"href\");" +
+                                            "if (href!=null && href.indexOf(\"#\") >= 0) {" +
+                                            "links[i].addEventListener(\"click\", function() {" +
+                                            "closeIt(-1);});}};     " +
+                                            scroll + " " + black + "</script></body>"),
                             "text/html", null, null);
 
                     DisplayTotal = null;
@@ -192,23 +233,21 @@ public abstract class OneTabActivity extends Activity {
                 }
             }
             progressDialog = null;
-            if (Db_Number_Of_Selection != "") {
+            if (!Db_Number_Of_Selection.isEmpty()) {
                 db.SetSetting(Db_Number_Of_Selection,
                         Integer.toString(spinner.getSelectedItemPosition()));
             }
         }
     }
 
-    public void scrollTo() {
-    }
-
     public void setBlack() {
     }
 
-    public void onSelected(int i) {
-        DisplayIt();
+    public void onSelected(int i, int position) {
+        DisplayIt("");
     }
 
+    @SuppressLint({"SetJavaScriptEnabled", "AddJavascriptInterface"})
     public void onCreateTab() {
         ViewGroup.LayoutParams params = scroller.getLayoutParams();
         params.width = scroller.myBitmap.getWidth();
@@ -232,8 +271,6 @@ public abstract class OneTabActivity extends Activity {
 
                         firstLoad = false;
 
-                        scrollTo();
-
                         if (b1 != null) b1.setEnabled(false);
                         if (textView.length() != 0) {
                             webView.loadUrl(
@@ -246,6 +283,7 @@ public abstract class OneTabActivity extends Activity {
 
                     @Override
                     public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                        //Toast.makeText(MyActivity, "URL", Toast.LENGTH_SHORT).show();
                         if (webView.ev.getX() != 0.0 ||
                                 webView.ev.getY() != 0.0 ||
                                 webView.ev.getDownTime() != webView.ev.getEventTime()) {
@@ -261,14 +299,10 @@ public abstract class OneTabActivity extends Activity {
 
         if (android.os.Build.VERSION.SDK_INT > 10) {
             webView.setOnLongClickListener(v -> {
-                PopupMenu popup = new PopupMenu(this, v);
-                MenuInflater inflater = popup.getMenuInflater();
-                inflater.inflate(R.menu.menu, popup.getMenu());
-                getParent().onPrepareOptionsMenu(popup.getMenu());
-                popup.show();
-                popup.setOnMenuItemClickListener(item ->
-                        getParent().onOptionsItemSelected(item)
-                );
+                if (getParent().findViewById(android.R.id.tabs).getVisibility() == View.GONE) {
+                    spinner.performLongClick();
+                    return true;
+                }
                 return false;
             });
         }
@@ -276,15 +310,25 @@ public abstract class OneTabActivity extends Activity {
         adapter1 = getMyAdapter();
         adapter1.setDropDownViewResource(R.layout.sspinner);
         spinner.setAdapter(adapter1);
+
+
+        // onSelected(0);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                onSelected(i);
+                if (backPressed) {
+                    backPressed = false;
+                } else {
+                    webView.loadUrl("javascript:closeIt(" + oldSpinner + ");");
+                    oldSpinner = i;
+                    onSelected(i, -1);
+                }
             }
 
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        if (!LoadFromIntent() && Db_Number_Of_Selection != "") {
+
+        if (!LoadFromIntent() && !Db_Number_Of_Selection.isEmpty()) {
             spinner.setSelection(Integer.parseInt(db.GetSetting(
                     Db_Number_Of_Selection, "0")), false);
         }
@@ -307,7 +351,7 @@ public abstract class OneTabActivity extends Activity {
         textView.setImeActionLabel("Szukaj", KeyEvent.KEYCODE_ENTER);
         textView.setOnKeyListener((v, keyCode, event) -> {
             if (event.getAction() == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
-                DisplayIt();
+                DisplayIt("");
                 return true;
             }
             return false;
@@ -348,6 +392,7 @@ public abstract class OneTabActivity extends Activity {
             MyActivity.startActivity(intent);
             return true;
         }
+        webView.loadUrl("javascript:closeIt("+oldSpinner+");");
         return false;
     }
 
@@ -363,11 +408,8 @@ public abstract class OneTabActivity extends Activity {
                 Method m;
                 m = webView.getSettings().getClass().getMethod("setDisplayZoomControls", boolean.class);
                 m.invoke(webView.getSettings(), Kontrolki);
-            } catch (SecurityException ignore) {
-            } catch (NoSuchMethodException ignore) {
-            } catch (IllegalArgumentException ignore) {
-            } catch (IllegalAccessException ignore) {
-            } catch (InvocationTargetException ignore) {
+            } catch (SecurityException | NoSuchMethodException | IllegalArgumentException |
+                    IllegalAccessException | InvocationTargetException ignore) {
             }
         }
 
@@ -393,6 +435,15 @@ public abstract class OneTabActivity extends Activity {
         }
 
         @JavascriptInterface
+        public void q(int old, int y) {
+            String[] myarray = new String[2];
+            myarray[0] = Integer.toString(y);
+            myarray[1] = Integer.toString(old==-1?spinner.getSelectedItemPosition():old);
+            if (old ==-1) oldSpinner = spinner.getSelectedItemPosition();
+            mHistory.add(0, myarray);
+        }
+
+        @JavascriptInterface
         public void ShowToast0() {
             if (progressDialog != null) {
                 if (progressDialog.isShowing()) {
@@ -402,7 +453,7 @@ public abstract class OneTabActivity extends Activity {
                     }
                 }
                 progressDialog = null;
-                if (Db_Number_Of_Selection != "") {
+                if (!Db_Number_Of_Selection.isEmpty()) {
                     db.SetSetting(Db_Number_Of_Selection,
                             Integer.toString(spinner.getSelectedItemPosition()));
                 }

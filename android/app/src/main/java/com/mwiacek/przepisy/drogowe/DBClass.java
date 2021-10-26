@@ -18,10 +18,9 @@ class DBClass {
         this.open();
     }
 
-    DBClass open() throws SQLException {
+    void open() throws SQLException {
         mDbHelper = new DBClassHelper(mCtx);
         mDb = mDbHelper.getWritableDatabase();
-        return this;
     }
 
     void close() {
