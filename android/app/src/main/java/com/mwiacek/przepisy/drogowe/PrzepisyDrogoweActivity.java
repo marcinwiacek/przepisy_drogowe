@@ -346,7 +346,7 @@ public class PrzepisyDrogoweActivity extends TabActivity {
 
                 ad.setButton(DialogInterface.BUTTON_NEGATIVE, "Info o wydaniu", (dialog, which) -> {
                     Intent intent1 = new Intent(Intent.ACTION_VIEW);
-                    intent1.setData(Uri.parse("https://www.salon24.pl/u/techracja/1175547,przepisy-drogowe-1-48"));
+                    intent1.setData(Uri.parse("https://www.salon24.pl/u/techracja/1186407,przepisy-drogowe-1-49"));
                     MyActivity5.startActivity(intent1);
                 });
 
