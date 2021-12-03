@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.mwiacek.przepisy.drogowe.ScrollerWebView
+        android:id="@+id/webView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" />
+
+    <com.mwiacek.przepisy.drogowe.ScrollerView
+        android:id="@+id/view37"
+        android:layout_width="68px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/webView4"
+        android:layout_alignRight="@+id/webView4" />
+
+</RelativeLayout>

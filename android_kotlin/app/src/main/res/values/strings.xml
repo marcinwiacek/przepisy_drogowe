@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Przepisy drogowe</string>
+    <string-array name="taryfikator1">
+        <item>Mandaty i pkt razem - opracowanie własne</item>
+    </string-array>
+    <string-array name="typyznakow">
+        <item>Znaki ostrzegawcze (A)</item>
+        <item>Znaki zakazu (B)</item>
+        <item>Znaki nakazu (C)</item>
+        <item>Znaki informacyjne (D)</item>
+        <item>Znaki kierunku i miejscowości (E)</item>
+        <item>Znaki uzupełniające (F)</item>
+        <item>Tabliczki (T)</item>
+        <item>Dod. znaki przed przejazdami kolejowymi (G)</item>
+        <item>Dod. znaki dla kierujących tramwajami (AT, BT)</item>
+        <item>Dod. znaki szlaków rowerowych (R)</item>
+        <item>Dod. znaki dla kierujących poj. wojskowymi (W)</item>
+        <item>Znaki poziome (P)</item>
+        <item>Sygnały św. dla kierujących i pieszych (S)</item>
+        <item>Sygnały św. dla kier. poj. wyk. odpłatny przewóz na regularnych liniach (SB, ST)</item>
+        <item>Znaki nieobowiązujące</item>
+        <item>Wszystkie znaki</item>
+        <item>Urz. bezpieczeństwa ruchu drogowego (U)</item>
+    </string-array>
+    <string-array name="typyinne">
+        <item>Alarmowe</item>
+        <item>Alkohol - informacje</item>
+        <item>Alkohol - kalkulator</item>
+        <item>Kierowanie ruchem</item>
+        <item>Klimatyzacja - informacje</item>
+        <item>Oleje silnikowe</item>
+        <item>Opony</item>
+        <item>Prawo jazdy - kody ograniczeń</item>
+        <item>Prędkość - informacje</item>
+        <item>Prędkość - kalkulator</item>
+        <item>Prędkość - pomiary</item>
+        <item>Towary niebezp. - kody UN</item>
+        <item>Towary niebezp. - nr zagrożenia</item>
+        <item>Towary niebezp. - oznaczenia</item>
+        <item>Ważne informacje online</item>
+        <item>Wyposażenie rowerów</item>
+    </string-array>
+    <string-array name="typyaktowprawnych">
+        <item>Prawo o ruchu drogowym</item>
+        <item>Przepisy ogólne</item>
+        <item>Zasady ogólne ruchu drogowego</item>
+        <item>Ruch pieszych oraz osób poruszających się przy użyciu urządzenia wspomagającego ruch</item>
+        <item>Zasady ogólne ruchu pojazdów</item>
+        <item>Włączanie się do ruchu</item>
+        <item>Prędkość i hamowanie</item>
+        <item>Zmiana kierunku jazdy lub pasa ruchu</item>
+        <item>Wymijanie, omijanie i cofanie</item>
+        <item>Wyprzedzanie</item>
+        <item>Przecinanie się kierunków ruchu</item>
+        <item>Ostrzeganie oraz jazda w warunkach zmniejszonej przejrzystości powietrza</item>
+        <item>Holowanie</item>
+        <item>Ruch pojazdów w kolumnie</item>
+        <item>Przepisy drogowe o ruchu rowerów, hulajnóg elektrycznych, urządzeń transportu osobistego, motorowerów oraz pojazdów zaprzęgowych</item>
+        <item>Ruch zwierząt</item>
+        <item>Przepisy porządkowe</item>
+        <item>Zatrzymanie i postój</item>
+        <item>Używanie świateł zewnętrznych</item>
+        <item>Warunki używania pojazdów w ruchu drogowym</item>
+        <item>Wykorzystanie dróg w sposób szczególny</item>
+        <item>Wykorzystanie dróg na potrzeby prac badawczych nad pojazdami autonomicznymi</item>
+        <item>Warunki techniczne pojazdów</item>
+        <item>Homologacja</item>
+        <item>Dopuszczenie jednostkowe pojazdu</item>
+        <item>Dopuszczenie indywidualne WE pojazdu</item>
+        <item>Warunki dopuszczenia pojazdów do ruchu</item>
+        <item>Centralna ewidencja pojazdów</item>
+        <item>Krajowy Punkt Kontaktowy</item>
+        <item>Profesjonalna rejestracja pojazdów</item>
+        <item>Badania techniczne pojazdów</item>
+        <item>Centralna ewidencja kierowców</item>
+        <item>Centralna ewidencja posiadaczy kart parkingowych</item>
+        <item>Wojewódzki ośrodek ruchu drogowego</item>
+        <item>Uprawnienia Policji i innych organów</item>
+        <item>Zatrzymywanie i zwracanie dowodów rejestracyjnych</item>
+        <item>Zatrzymywanie praw jazdy i pozwoleń oraz cofanie i przywracanie uprawnień do kierowania pojazdami</item>
+        <item>Kary pieniężne za przejazd pojazdów nienormatywnych bez zezwolenia lub niezgodnie z warunkami określonymi w zezwoleniu</item>
+        <item>Działania na rzecz bezpieczeństwa ruchu drogowego</item>
+        <item>Kary pieniężne</item>
+        <item>Zmiany w przepisach obowiązujących oraz przepisy przejściowe i końcowe</item>
+        <item>Ustawa o kierujących pojazdami</item>
+        <item>Przepisy ogólne</item>
+        <item>Osoby uprawnione do kierowania pojazdami</item>
+        <item>Wydawanie praw jazdy</item>
+        <item>Szkolenie osób ubiegających się o uprawnienie do kierowania pojazdami</item>
+        <item>Ośrodki szkolenia kierowców i inne podmioty prowadzące szkolenie</item>
+        <item>Instruktorzy i wykładowcy</item>
+        <item>Zajęcia dla osób ubiegających się o wydanie karty rowerowej</item>
+        <item>Nadzór nad szkoleniem</item>
+        <item>Sprawdzanie kwalifikacji i przeprowadzanie egzaminów państwowych</item>
+        <item>Egzaminatorzy i inne osoby dokonujące sprawdzenia kwalifikacji</item>
+        <item>Nadzór nad sprawdzaniem kwalifikacji</item>
+        <item>Badanie lekarskie</item>
+        <item>Badanie psychologiczne</item>
+        <item>Okres próbny</item>
+        <item>Nadzór nad kierującym</item>
+        <item>Wymagania w stosunku do kierujących pojazdami uprzywilejowanymi lub przewożącymi wartości pieniężne</item>
+        <item>Szkolenie osób posiadających uprawnienia do kierowania pojazdem silnikowym</item>
+        <item>Nadzór nad wykonywaniem zadań z zakresu ustawy</item>
+        <item>Wymiana praw jazdy</item>
+        <item>Zmiany w przepisach obowiązujących, przepisy przejściowe i końcowe</item>
+        <item>Rozp. w sprawie post. z kier. (2012)</item>
+        <item>Stare rozp. w sprawie post. z kier. (2002)</item>
+    </string-array>
+    <string name="hint1">Szukanie - nazwy i opisy</string>
+    <string name="hint2">Szukanie - opisy</string>
+    <string name="search_hint">Szukanie ogólne</string>
+    <string name="opis">Zgodnie z ustawieniami w programie</string>
+    <string name="hint3">Szukanie - treść</string>
+</resources>

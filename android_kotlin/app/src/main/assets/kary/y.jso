@@ -1,0 +1,4370 @@
+﻿{"m":[
+ {"o":"Ruch pieszych",
+  "m":[
+   {"o":"Wchodzenie na jezdnię bezpośrednio pod jadący pojazd na przejściach dla pieszych",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 1"
+     }
+    ]
+   },
+   {"o":"Wchodzenie na jezdnię bezpośrednio pod jadący pojazd w miejscach innych niż przejścia dla pieszych",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 2"
+     }
+    ]
+   },
+   {"o":"Wchodzenie na jezdnię spoza pojazdu lub innej przeszkody ograniczającej widoczność drogi",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 3"
+     }
+    ]
+   },
+   {"o":"Przechodzenie przez jezdnię w miejscu, w którym urządzenia zabezpieczające lub przeszkoda oddzielają drogę dla pieszych albo chodnik od jezdni",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 4"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków drogowych dotyczących ruchu pieszych",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 5"
+     }
+    ]
+   },
+   {"o":"Przechodzenie przez jezdnię w miejscach o ograniczonej widoczności drogi na obszarze zabudowanym",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 6"
+     }
+    ]
+   },
+   {"o":"Przechodzenie przez jezdnię w miejscach o ograniczonej widoczności drogi na obszarze niezabudowanym",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 7"
+     }
+    ]
+   },
+   {"o":"Zwalnianie kroku lub zatrzymywanie się bez uzasadnionej przyczyny podczas przechodzenia przez jezdnię lub torowisko",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 8"
+     }
+    ]
+   },
+   {"o":"Przebieganie przez jezdnię",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 9"
+     }
+    ]
+   },
+   {"o":"Chodzenie po torowisku",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 10"
+     }
+    ]
+   },
+   {"o":"Wchodzenie na torowisko, gdy zapory lub półzapory są opuszczone lub rozpoczęto ich opuszczanie",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 11"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku korzystania przez pieszego z chodnika lub drogi dla pieszych, a w razie ich braku - z pobocza",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 12"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez pieszego idącego po poboczu lub jezdni obowiązku poruszania się po lewej stronie drogi",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 13"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez pieszych obowiązku poruszania się po jezdni jeden za drugim",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 14"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku korzystania z przejść dla pieszych podczas przechodzenia przez jezdnię lub torowisko",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 15"
+     }
+    ]
+   },
+   {"o":"Korzystanie z dróg niedostępnych dla pieszych",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 16"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów dotyczących ruchu pieszych na drogach dla rowerów",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 17"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do obowiązku używania elementów odblaskowych w sposób widoczny dla innych uczestników ruchu drogowego przez pieszego poruszającego się po drodze po zmierzchu poza obszarem zabudowanym, chyba że porusza się po drodze przeznaczonej wyłącznie dla pieszych lub chodniku",
+    "h":[
+     {"m":"20150411",
+      "t":"do 100 PLN",
+      "w":"lp. 17a"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Zachowanie wobec pieszych",
+  "m":[
+   {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa pieszym znajdującym się na przejściu",
+    "h":[
+     {"m":"20120609",
+      "t":"350 PLN; 10 pkt; B03",
+      "w":"B03"
+     },
+     {"m":"20110524",
+      "t":"350 PLN; 8 pkt; B03",
+      "w":"lp. 67"
+     },
+     {"m":"20101231",
+      "t":"8 pkt; B03",
+      "w":"B03"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa na skrzyżowaniu pieszym przy skręcaniu w drogę poprzeczną",
+    "h":[
+     {"m":"20120609",
+      "t":"350 PLN; 10 pkt; B04",
+      "w":"B04"
+     },
+     {"m":"20110524",
+      "t":"350 PLN; 8 pkt; B04",
+      "w":"lp. 68"
+     },
+     {"m":"20101231",
+      "t":"8 pkt; B04",
+      "w":"B04"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa pieszym przy przejeżdżaniu przez chodnik lub drogę dla pieszych albo podczas jazdy po placu, na którym ruch pieszych i pojazdów odbywa się po tej samej powierzchni",
+    "h":[
+     {"m":"20110524",
+      "t":"350 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 69"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Niezatrzymanie pojazdu w celu umożliwienia przejścia przez jezdnię osobie niepełnosprawnej, używającej specjalnego znaku lub osobie o widocznej ograniczonej sprawności ruchowej",
+    "h":[
+     {"m":"20120609",
+      "t":"350 PLN; 10 pkt; B05",
+      "w":"B05"
+     },
+     {"m":"20110524",
+      "t":"350 PLN; 8 pkt; B05",
+      "w":"lp. 72"
+     },
+     {"m":"20101231",
+      "t":"8 pkt; B05",
+      "w":"B05"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku zatrzymania pojazdu w takim miejscu i na taki czas, aby umożliwić pieszym swobodny dostęp do pojazdów komunikacji publicznej - w przypadku braku wysepki dla pasażerów na przystanku",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K05",
+      "w":"K05"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I08",
+      "w":"lp. 74"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I08",
+      "w":"I08"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie pierwszeństwa pieszemu podczas cofania",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 6 pkt; B06",
+      "w":"B06"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; B06",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; B06",
+      "w":"B06"
+     }
+    ]
+   },
+   {"o":"Jazda wzdłuż po chodniku lub przejściu dla pieszych pojazdem silnikowym",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 0 pkt; K04",
+      "w":"K04"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 0 pkt; I12",
+      "w":"lp. 77"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I12",
+      "w":"I12"
+     }
+    ]
+   },
+   {"o":"Jazda wzdłuż po chodniku lub przejściu dla pieszych innym pojazdem niż pojazd silnikowy",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K04",
+      "w":"K04"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I12",
+      "w":"lp. 78"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I12",
+      "w":"I12"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego zakazu rozdzielania kolumn pieszych",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 5 pkt; B07",
+      "w":"B07"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I14",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I14",
+      "w":"I14"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Używanie pojazdów",
+  "m":[
+   {"o":"Używanie pojazdu w sposób zagrażający bezpieczeństwu osoby znajdującej się w pojeździe lub poza nim",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 0 pkt; K16",
+      "w":"K16"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I20",
+      "w":"lp. 156"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I20",
+      "w":"I20"
+     }
+    ]
+   },
+   {"o":"Zakrywanie świateł oraz urządzeń sygnalizacyjnych",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 3 pkt; H17",
+      "w":"H17"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I21",
+      "w":"lp. 157"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I21",
+      "w":"I21"
+     }
+    ]
+   },
+   {"o":"Zakrywanie tablic rejestracyjnych lub innych wymaganych tablic albo znaków, które powinny być widoczne",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 3 pkt; H17",
+      "w":"H17"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I21",
+      "w":"lp. 158"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I21",
+      "w":"I21"
+     }
+    ]
+   },
+   {"o":"Ozdabianie tablic rejestracyjnych oraz umieszczanie z przodu lub z tyłu pojazdu znaków, napisów lub przedmiotów ograniczających czytelność tych tablic",
+    "h":[
+     {"m":"20120609",
+      "t":"50 PLN; 1 pkt; H18",
+      "w":"H18"
+     },
+     {"m":"20110524",
+      "t":"50 PLN; 0 pkt; I35",
+      "w":"lp. 170"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I35",
+      "w":"I35"
+     }
+    ]
+   },
+   {"o":"Nieoznaczenie pojazdu zarejestrowanego za granicą znakiem określającym państwo rejestracji",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 172"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Umieszczenie na pojeździe znaku określającego inne państwo niż to, w którym pojazd został zarejestrowany",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K17",
+      "w":"K17"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I37",
+      "w":"lp. 173"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I37",
+      "w":"I37"
+     }
+    ]
+   },
+   {"o":"Używanie opon z umieszczonymi w nich na trwałe elementami przeciwślizgowymi",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K21",
+      "w":"K21"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I24",
+      "w":"lp. 160"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I24",
+      "w":"I24"
+     }
+    ]
+   },
+   {"o":"Używanie łańcuchów przeciwślizgowych na oponach na drodze niepokrytej śniegiem",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K22",
+      "w":"K22"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I25",
+      "w":"lp. 161"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I25",
+      "w":"I25"
+     }
+    ]
+   },
+   {"o":"Używanie pojazdu niszczącego nawierzchnię drogi",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN",
+      "w":"lp. 191"
+     }
+    ]
+   },
+   {"o":"Wyposażenie pojazdu w urządzenie informujące o działaniu sprzętu kontrolno-pomiarowego używanego przez organy kontroli ruchu drogowego lub działanie to zakłócające albo przewożenie w pojeździe takiego urządzenia w stanie wskazującym na gotowość jego użycia",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 3 pkt; H07",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"3 pkt; H07",
+      "w":"H07"
+     }
+    ]
+   },
+   {"o":"Używanie pojazdu na obszarze zabudowanym w sposób powodujący uciążliwości związane z nadmierną emisją spalin do środowiska lub nadmiernym hałasem",
+    "h":[
+     {"m":"20120609",
+      "t":"do 300 PLN; 0 pkt; K19",
+      "w":"K19"
+     },
+     {"m":"20110524",
+      "t":"do 300 PLN; 0 pkt; I36",
+      "w":"lp. 171"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I36",
+      "w":"I36"
+     }
+    ]
+   },
+   {"o":"Oddalenie się kierującego od pojazdu, gdy silnik jest w ruchu",
+    "h":[
+     {"m":"20120609",
+      "t":"50 PLN; 0 pkt; K18",
+      "w":"K18"
+     },
+     {"m":"20110524",
+      "t":"50 PLN; 0 pkt; I22",
+      "w":"lp. 159"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I22",
+      "w":"I22"
+     }
+    ]
+   },
+   {"o":"Pozostawienie pracującego silnika podczas postoju na obszarze zabudowanym",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K20",
+      "w":"K20"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I38",
+      "w":"lp. 174"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I38",
+      "w":"I38"
+     }
+    ]
+   },
+   {"o":"Brak oznaczenia lub niewłaściwe oznaczenie pojazdów do nauki jazdy lub przeprowadzania egzaminu państwowego",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 32"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów w sprawie okresowych ograniczeń oraz zakazu ruchu niektórych rodzajów pojazdów na drogach",
+    "h":[
+     {"m":"20110524",
+      "t":"200-500 PLN",
+      "w":"lp. 200"
+     }
+    ]
+   },
+   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do jazdy na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdu pomimo braku wymaganych dokumentów stwierdzających dopuszczenie pojazdu do ruchu",
+    "h":[
+     {"m":"20150411",
+      "t":"50 PLN",
+      "w":"lp. 194"
+     },
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 194"
+     }
+    ]
+   },
+   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do jazdy na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdu nienależycie zaopatrzonego w wymagane urządzenia lub przyrządy albo pomimo że nie nadają się one do spełnienia swojego przeznaczenia",
+    "h":[
+     {"m":"20150411",
+      "t":"50-200 PLN",
+      "w":"lp. 193"
+     },
+     {"m":"20110524",
+      "t":"50-200 PLN",
+      "w":"lp. 193"
+     }
+    ]
+   },
+   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do prowadzenia pojazdu na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę niemającą wymaganych uprawnień",
+    "h":[
+     {"m":"20150411",
+      "t":"300 PLN",
+      "w":"lp. 192"
+     },
+     {"m":"20110524",
+      "t":"300 PLN",
+      "w":"lp. 192"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Kolumny pojazdów",
+  "m":[
+   {"o":"Wjeżdżanie między jadące w kolumnie rowery jednośladowe albo pojazdy jednostek podporządkowanych ministrowi właściwemu do spraw wewnętrznych",
+    "h":[
+     {"m":"20120609",
+      "t":"nie obowiązuje",
+      "w":"brak"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I26",
+      "w":"I26"
+     }
+    ]
+   },
+   {"o":"Wjeżdżanie między jadące w kolumnie pojazdy uprzywilejowane oraz pojazdy jednostek podporządkowanych Ministrowi Obrony Narodowej",
+    "h":[
+     {"m":"20120609",
+      "t":"2 pkt; H19",
+      "w":"H19"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I26",
+      "w":"I26"
+     }
+    ]
+   },
+   {"o":"Wjeżdżanie między jadące w kolumnie rowery lub wózki rowerowe",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; H19",
+      "w":"H19"
+     },
+     {"m":"20110524",
+      "t":"200 PLN",
+      "w":"lp. 162"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów dotyczących jazdy w zorganizowanych kolumnach, w tym przekroczenie dopuszczalnej liczby pojazdów,",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K08",
+      "w":"K08"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I33",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I33",
+      "w":"I33"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów dotyczących jazdy w zorganizowanych kolumnach, w tym niezachowanie wymaganej odległości między kolumnami lub pojazdami w kolumnie",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K09",
+      "w":"K09"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I33",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I33",
+      "w":"I33"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Pojazdy uprzywilejowane",
+  "m":[
+   {"o":"Bezpodstawne korzystanie z ułatwień w ruchu drogowym przez kierującego pojazdem uprzywilejowanym",
+    "h":[
+     {"m":"20120609",
+      "t":"300 PLN; 0 pkt; K12",
+      "w":"K12"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 0 pkt; I18",
+      "w":"lp. 155"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I18",
+      "w":"I18"
+     }
+    ]
+   },
+   {"o":"Nieuprawnione umieszczanie w pojeździe lub na nim urządzeń stanowiących obowiązkowe wyposażenie pojazdu uprzywilejowanego, wysyłających sygnały świetlne w postaci niebieskich lub czerwonych świateł błyskowych albo sygnał dźwiękowy o zmiennym tonie",
+    "h":[
+     {"m":"20101231",
+      "t":"3 pkt; H06",
+      "w":"H06"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się, przez kierującego pojazdem uprzywilejowanym, do sygnałów dawanych przez osobę kierującą ruchem",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K13",
+      "w":"K13"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I19",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I19",
+      "w":"I19"
+     }
+    ]
+   },
+   {"o":"Nieułatwienie przejazdu pojazdowi uprzywilejowanemu",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; D09",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D09",
+      "w":"D09"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Zasady ogólne ruchu pojazdów",
+  "m":[
+   {"o":"Zajmowanie więcej niż jednego, wyznaczonego na jezdni, pasa ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; 2 pkt; H08",
+      "w":"lp. 18"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; H08",
+      "w":"H08"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku \"jazdy prawostronnej\"",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 2 pkt; H08",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"2 pkt; H08",
+      "w":"H08"
+     }
+    ]
+   },
+   {"o":"Wjeżdżanie na pas między jezdniami",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K10",
+      "w":"K10"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I05",
+      "w":"lp. 29"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I05",
+      "w":"I05"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku poruszania się po poboczu przez kierującego pojazdem zaprzęgowym, rowerem, wózkiem rowerowym, motorowerem, wózkiem ręcznym albo osobę prowadzącą pojazd napędzany silnikiem",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 19"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Ciągnięcie za pojazdem osoby na nartach, sankach, wrotkach lub innym podobnym urządzeniu",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 5 pkt; H20",
+      "w":"H20"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I23",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I23",
+      "w":"I23"
+     }
+    ]
+   },
+   {"o":"Niedopełnienie obowiązków przez uczestników wypadku poprzez nieusunięcie pojazdu z miejsca wypadku, w którym nie było zabitego lub rannego",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 30"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Nieużywanie elementów odblaskowych w sposób widoczny dla innych uczestników ruchu przez osobę wykonującą roboty lub inne czynności na drodze",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 31"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do sygnałów i poleceń podawanych przez osoby uprawnione do kierowania ruchem drogowym",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 6 pkt; C03",
+      "w":"C03"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 6 pkt; C03",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"6 pkt; C03",
+      "w":"C03"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do sygnałów i poleceń dawanych przez osoby uprawnione do kontroli ruchu drogowego",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 6 pkt; C04",
+      "w":"C04"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 6 pkt; C04",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"6 pkt; C04",
+      "w":"C04"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się, w celu uniknięcia kontroli, do sygnału osoby uprawnionej do kontroli ruchu drogowego, nakazującego zatrzymanie pojazdu",
+    "h":[
+     {"m":"20120609",
+      "t":"8 pkt; C01",
+      "w":"C01"
+     },
+     {"m":"20101231",
+      "t":"8 pkt; C01",
+      "w":"C01"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Włączanie się do ruchu",
+  "m":[
+   {"o":"Nieustąpienie pierwszeństwa innemu pojazdowi lub uczestnikowi ruchu podczas włączania się do ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; D07",
+      "w":"lp. 33"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D07",
+      "w":"D07"
+     }
+    ]
+   },
+   {"o":"Uniemożliwienie włączenia się do ruchu autobusowi (trolejbusowi) sygnalizującemu zamiar zmiany pasa ruchu lub wjechania z zatoki na jezdnię z oznaczonego przystanku na obszarze zabudowanym",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 34"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązków przez kierującego pojazdem zbliżającego się do miejsca postoju autobusu szkolnego",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 35"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Prędkość i hamowanie",
+  "m":[
+   {"o":"Przekroczenie dopuszczalnej prędkości o 1 - 5 km/h",
+    "h":[
+     {"m":"20110524",
+      "t":"do 50 PLN",
+      "w":"lp. 36"
+     }
+    ]
+   },
+   {"o":"Przekroczenie dopuszczalnej prędkości o 6 - 10 km/h",
+    "h":[
+     {"m":"20120609",
+      "t":"do 50 PLN",
+      "w":"brak"
+     },
+     {"m":"20110524",
+      "t":"do 50 PLN; 1 pkt; E06",
+      "w":"lp. 36"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; E06",
+      "w":"E06"
+     }
+    ]
+   },
+   {"o":"Przekroczenie dopuszczalnej prędkości o 11 - 20 km/h",
+    "h":[
+     {"m":"20110524",
+      "t":"50-100 PLN; 2 pkt; E05",
+      "w":"lp. 37"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; E05",
+      "w":"E05"
+     }
+    ]
+   },
+   {"o":"Przekroczenie dopuszczalnej prędkości o 21 - 30 km/h",
+    "h":[
+     {"m":"20110524",
+      "t":"100-200 PLN; 4 pkt; E04",
+      "w":"lp. 38"
+     },
+     {"m":"20101231",
+      "t":"4 pkt; E04",
+      "w":"E04"
+     }
+    ]
+   },
+   {"o":"Przekroczenie dopuszczalnej prędkości o 31 - 40 km/h",
+    "h":[
+     {"m":"20110524",
+      "t":"200-300 PLN; 6 pkt; E03",
+      "w":"lp. 39"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; E03",
+      "w":"E03"
+     }
+    ]
+   },
+   {"o":"Przekroczenie dopuszczalnej prędkości o 41 - 50 km/h",
+    "h":[
+     {"m":"20110524",
+      "t":"300-400 PLN; 8 pkt; E02",
+      "w":"lp. 40"
+     },
+     {"m":"20101231",
+      "t":"8 pkt; E02",
+      "w":"E02"
+     }
+    ]
+   },
+   {"o":"Przekroczenie dopuszczalnej prędkości o 51 km/h i więcej",
+    "h":[
+     {"m":"20110524",
+      "t":"400-500 PLN; 10 pkt; E01; na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w terenie zabudowanym zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"lp. 41"
+     },
+     {"m":"20101231",
+      "t":"10 pkt; E01",
+      "w":"E01"
+     }
+    ]
+   },
+   {"o":"Hamowanie w sposób powodujący zagrożenie bezpieczeństwa ruchu lub jego utrudnienie",
+    "h":[
+     {"m":"20110524",
+      "t":"100-300 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 42"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Jazda z prędkością utrudniającą ruch innym kierującym",
+    "h":[
+     {"m":"20110524",
+      "t":"50-200 PLN; 2 pkt; E07",
+      "w":"lp. 43"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; E07",
+      "w":"E07"
+     }
+    ]
+   },
+   {"o":"Niezachowanie przez kierujących pojazdami objętymi indywidualnym ograniczeniem prędkości albo pojazdami lub zespołami pojazdów o długości większej niż 7 metrów niezbędnego odstępu od pojazdów znajdujących się przed nimi",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 44"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Przekroczenie indywidualnie określonej dopuszczalnej prędkości dla danego pojazdu",
+    "h":[
+     {"m":"20110524",
+      "t":"Zgodnie z punktami mandatowymi \"Przekroczenie dopuszczalnej prędkości...\"",
+      "w":"lp. 45"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Zawracanie",
+  "m":[
+   {"o":"Zawracanie w warunkach, w których mogłoby to zagrażać bezpieczeństwu ruchu lub ruch ten utrudnić",
+    "h":[
+     {"m":"20110524",
+      "t":"200-400 PLN; 5 pkt; D10",
+      "w":"lp. 46"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D10",
+      "w":"D10"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu zawracania",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; D10",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D10",
+      "w":"D10"
+     }
+    ]
+   },
+   {"o":"Zawracanie w tunelach, na mostach i wiaduktach oraz na drogach jednokierunkowych",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 5 pkt; D10",
+      "w":"lp. 47"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D10",
+      "w":"D10"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Zmiana kierunku jazdy lub pasa ruchu",
+  "m":[
+   {"o":"Utrudnianie lub tamowanie ruchu poprzez brak lub błędne sygnalizowanie manewru",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; D11",
+      "w":"D11"
+     },
+     {"m":"20110524",
+      "t":"200 PLN",
+      "w":"lp. 48"
+     }
+    ]
+   },
+   {"o":"Nieodpowiednie ustawienie pojazdu na jezdni przed skręceniem",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 49"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie pierwszeństwa przez kierującego pojazdem zmieniającego zajmowany pas ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; D05",
+      "w":"lp. 50"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D05",
+      "w":"D05"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Omijanie",
+  "m":[
+   {"o":"Omijanie pojazdu, który jechał w tym samym kierunku, lecz zatrzymał się w celu ustąpienia pierwszeństwa pieszemu",
+    "h":[
+     {"m":"20110524",
+      "t":"500 PLN; 10 pkt; B01",
+      "w":"lp. 51"
+     },
+     {"m":"20101231",
+      "t":"10 pkt; B01",
+      "w":"B01"
+     }
+    ]
+   },
+   {"o":"Niezachowanie szczególnej ostrożności przez kierującego pojazdem, który omija pojazd przeznaczony do przewozu osób niepełnosprawnych",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; J06",
+      "w":"J06"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I30",
+      "w":"lp. 167"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I30",
+      "w":"I30"
+     }
+    ]
+   },
+   {"o":"Omijanie pojazdu oczekującego na otwarcie ruchu przez przejazd kolejowy w sytuacji, w której wymagało to wjechania na część jezdni przeznaczoną dla przeciwnego kierunku ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 52"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Omijanie pojazdu z niewłaściwej strony",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 2 pkt; H03",
+      "w":"H03"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 2 pkt; H03",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"2 pkt; H03",
+      "w":"H03"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Cofanie",
+  "m":[
+   {"o":"Utrudnianie ruchu podczas cofania",
+    "h":[
+     {"m":"20110524",
+      "t":"50-200 PLN; 4 pkt; D08",
+      "w":"lp. 53"
+     },
+     {"m":"20101231",
+      "t":"4 pkt; D08",
+      "w":"D08"
+     }
+    ]                         
+   },
+   {"o":"Naruszenie zakazów cofania w tunelach, na mostach i wiaduktach",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 2 pkt; H02",
+      "w":"lp. 54"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; H02",
+      "w":"H02"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Wyprzedzanie",
+  "m":[
+   {"o":"Wyprzedzanie na przejściach dla pieszych lub bezpośrednio przed nimi",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 10 pkt; B02",
+      "w":"B02"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 9 pkt; B02",
+      "w":"lp. 55"
+     },
+     {"m":"20101231",
+      "t":"9 pkt; B02",
+      "w":"B02"
+     }
+    ]
+   },
+   {"o":"Wyprzedzanie na przejazdach dla rowerzystów lub bezpośrednio przed nimi",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 10 pkt; F03",
+      "w":"F03"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 8 pkt; F03",
+      "w":"lp. 56"
+     },
+     {"m":"20101231",
+      "t":"8 pkt; F03",
+      "w":"F03"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego obowiązku upewnienia się przed wyprzedzaniem, czy ma odpowiednią widoczność i dostateczne miejsce do wyprzedzania bez utrudnienia komukolwiek ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; F01",
+      "w":"lp. 57"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F01",
+      "w":"F01"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego obowiązku upewnienia się przed wyprzedzaniem, czy kierujący jadący za nim nie rozpoczął manewru wyprzedzania",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; F01",
+      "w":"lp. 58"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F01",
+      "w":"F01"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu wyprzedzania pojazdu silnikowego przy dojeżdżaniu do wierzchołka wzniesienia",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; F04",
+      "w":"lp. 59"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F04",
+      "w":"F04"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu wyprzedzania na zakrętach oznaczonych znakami ostrzegawczymi",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; F05",
+      "w":"lp. 60"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F05",
+      "w":"F05"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu wyprzedzania na skrzyżowaniach",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; F06",
+      "w":"lp. 61"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F06",
+      "w":"F06"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu wyprzedzania na przejazdach kolejowych i bezpośrednio przed nimi",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; F07",
+      "w":"lp. 62"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F07",
+      "w":"F07"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu wyprzedzania na przejazdach tramwajowych i bezpośrednio przed nimi",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; F08",
+      "w":"lp. 62"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F08",
+      "w":"F08"
+     }
+    ]
+   },
+   {"o":"Wyprzedzanie bez zachowania bezpiecznego odstępu od wyprzedzanego pojazdu lub uczestnika ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 63"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Wyprzedzanie z niewłaściwej strony",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 3 pkt; F02",
+      "w":"lp. 63a"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; F02",
+      "w":"F02"
+     }
+    ]
+   },
+   {"o":"Zwiększanie prędkości przez kierującego pojazdem wyprzedzanym",
+    "h":[
+     {"m":"20120609",
+      "t":"350 PLN; 3 pkt; F10",
+      "w":"F10"
+     },
+     {"m":"20110524",
+      "t":"350 PLN; 0 pkt; I06",
+      "w":"lp. 64"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I06",
+      "w":"I06"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się przez kierującego pojazdem wolnobieżnym, ciągnikiem rolniczym lub pojazdem bez silnika do obowiązku zjechania jak najbardziej w prawo w celu ułatwienia wyprzedzenia",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 65"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Wyprzedzanie pojazdu uprzywilejowanego na obszarze zabudowanym",
+    "h":[
+     {"m":"20120609",
+      "t":"300 PLN; 3 pkt; F11",
+      "w":"F11"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 0 pkt; I07",
+      "w":"lp. 66"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I07",
+      "w":"I07"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Zatrzymanie i postój",
+  "m":[
+   {"o":"Nieusunięcie z jezdni pojazdu unieruchomionego z przyczyn technicznych oraz nieostrzeganie innych uczestników ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 1 pkt; H04",
+      "w":"lp. 123"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymanie lub postój pojazdu w warunkach, w których nie jest on z dostatecznej odległości widoczny dla innych kierujących lub powoduje utrudnienie ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"100-300 PLN; 1 pkt; H04",
+      "w":"lp. 125"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Niezachowanie wymaganego odstępu za poprzedzającym pojazdem przez kierującego w tunelu, podczas zatrzymania wynikającego z warunków lub przepisów ruchu drogowego",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 126"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu na przejeździe kolejowym lub tramwajowym, na skrzyżowaniu oraz w odległości mniejszej niż 10 m od przejazdu lub skrzyżowania",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 1 pkt; H04",
+      "w":"lp. 127"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu na przejściu dla pieszych lub na przejeździe dla rowerzystów oraz w odległości mniejszej niż 10 m przed tym przejściem lub przejazdem, a na drodze dwukierunkowej o dwóch pasach ruchu - także za nimi",
+    "h":[
+     {"m":"20110524",
+      "t":"100-300 PLN; 1 pkt; H04",
+      "w":"lp. 128"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu w tunelu, na moście lub na wiadukcie",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 1 pkt; H04",
+      "w":"lp. 129"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu na jezdni wzdłuż linii ciągłej oraz w pobliżu jej punktów krańcowych, jeżeli kierujący pojazdami wielośladowymi są zmuszeni do najeżdżania na tę linię",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 130"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu na jezdni obok linii przerywanej wyznaczającej krawędź jezdni oraz na jezdni lub na poboczu obok linii ciągłej wyznaczającej krawędź jezdni",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 131"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu w odległości mniejszej niż 10 m od przedniej strony znaku lub sygnału drogowego, jeżeli pojazd je zasłania",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 132"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu przy lewej krawędzi jezdni",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 133"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu na pasie między jezdniami",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 134"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu w odległości mniejszej niż 15 m od słupka lub tablicy oznaczającej przystanek, a na przystanku z zatoką - na całej jej długości",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 135"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu w odległości mniejszej niż 15 m od punktów krańcowych wysepki, jeżeli jezdnia z prawej jej strony ma tylko jeden pas ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 136"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Zatrzymywanie pojazdu na drodze dla rowerów, pasie ruchu dla rowerów lub w śluzie rowerowej, z wyjątkiem roweru",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 137"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Brak sygnalizowania lub niewłaściwe sygnalizowanie postoju pojazdu z powodu uszkodzenia lub wypadku",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; 1 pkt; H04",
+      "w":"lp. 138"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków dopuszczalności zatrzymania lub postoju pojazdu na chodniku",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 139"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku zatrzymania pojazdu na jezdni jak najbliżej jej krawędzi i równolegle do niej",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 140"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie obowiązku umieszczania pojazdu (z wyjątkiem pojazdu zaprzęgowego) poza jezdnią w czasie postoju na drodze poza obszarem zabudowanym",
+    "h":[
+     {"m":"20110524",
+      "t":"150-300 PLN; 1 pkt; H04",
+      "w":"lp. 141"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu postoju w miejscach utrudniających wjazd lub wyjazd",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 142"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu postoju w miejscach utrudniających dostęp do innego prawidłowo zaparkowanego pojazdu lub wyjazd tego pojazdu",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 143"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu postoju przed lub za przejazdem kolejowym na odcinku od przejazdu do słupka wskaźnikowego z jedną kreską",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 144"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu postoju w strefie zamieszkania w miejscach innych niż wyznaczone",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; H04",
+      "w":"lp. 145"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu postoju na obszarze zabudowanym pojazdu lub zespołu pojazdów o dopuszczalnej masie całkowitej przekraczającej 16 ton lub o długości przekraczającej 12 m",
+    "h":[
+     {"m":"20110524",
+      "t":"200-300 PLN; 1 pkt; H04",
+      "w":"lp. 146"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów określających warunki oraz zakazy zatrzymywania lub postoju",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 1 pkt; H04",
+      "w":"H04"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 1 pkt; H04",
+      "w":"lp. 145"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Skrzyżowania i przecinanie się kierunków ruchu",
+  "m":[
+   {"o":"Naruszenie przez kierującego zakazu wjeżdżania na skrzyżowanie, jeśli na skrzyżowaniu lub za nim nie ma miejsca do kontynuowania jazdy",
+    "h":[
+     {"m":"20120609",
+      "t":"300 PLN; 2 pkt; H16",
+      "w":"H16"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 0 pkt; I13",
+      "w":"lp. 79"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I13",
+      "w":"I13"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie pierwszeństwa przejazdu na skrzyżowaniu w sytuacji równorzędnej",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 6 pkt; D01",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"6 pkt; D01",
+      "w":"D01"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie pierwszeństwa przejazdu na skrzyżowaniu oznaczonym znakami określającymi pierwszeństwo przejazdu",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 6 pkt; D02",
+      "w":"D02"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 6 pkt; D02",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"6 pkt; D02",
+      "w":"D02"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie pierwszeństwa przejazdu w razie przecinania się poza skrzyżowaniem kierunków ruchu lub torów jazdy pojazdów poruszających się po tej samej drodze",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; D06",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D06",
+      "w":"D06"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie miejsca nadjeżdżającemu pojazdowi szynowemu przez kierującego pojazdem",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; 6 pkt; D03",
+      "w":"lp. 20"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; D03",
+      "w":"D03"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Przejazdy kolejowe i tramwajowe",
+  "m":[
+   {"o":"Naruszenie obowiązku usunięcia pojazdu unieruchomionego na przejeździe kolejowym (tramwajowym) lub ostrzegania kierujących pojazdami szynowymi w sytuacji, w której usunięcie pojazdu nie było możliwe",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 73"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu objeżdżania opuszczonych zapór lub półzapór oraz wjeżdżania na przejazd, jeśli opuszczanie ich zostało rozpoczęte lub podnoszenie ich nie zostało zakończone",
+    "h":[
+     {"m":"20120609",
+      "t":"300 PLN; 4 pkt; H14",
+      "w":"H14"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 0 pkt; I10",
+      "w":"lp. 75"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I10",
+      "w":"I10"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu wjeżdżania na przejazd, jeśli po jego drugiej stronie nie ma miejsca do kontynuowania jazdy",
+    "h":[
+     {"m":"20120609",
+      "t":"300 PLN; 4 pkt; H15",
+      "w":"H15"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 0 pkt; I11",
+      "w":"lp. 76"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I11",
+      "w":"I11"
+     }
+    ]
+   },
+   {"o":"Przejeżdżanie przez przejazd kolejowy pojazdu lub zespołu pojazdów o długości przekraczającej 10 m i niemogących rozwinąć prędkości powyżej 6 km/h bez uprzedniego upewnienia się, że w czasie potrzebnym na przejazd nie nadjedzie pociąg, lub bez uzgodnienia czasu przejazdu z dróżnikiem kolejowym",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K06",
+      "w":"K06"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I09",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I09",
+      "w":"I09"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Autostrady i drogi ekspresowe",
+  "m":[
+   {"o":"Naruszenie zakazu zawracania na autostradzie lub drodze ekspresowej",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 5 pkt; D10",
+      "w":"lp. 119"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; D10",
+      "w":"D10"
+     }
+    ]
+   },
+   {"o":"Cofanie na autostradzie lub drodze ekspresowej",
+    "h":[
+     {"m":"20120609",
+      "t":"300 PLN; 5 pkt; H01",
+      "w":"H01"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 3 pkt; H01",
+      "w":"lp. 120"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; H01",
+      "w":"H01"
+     }
+    ]
+   },
+   {"o":"Naruszenie zakazu holowania na autostradzie",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I15",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I15",
+      "w":"I15"
+     }
+    ]
+   },
+   {"o":"Wjazd na autostradę lub drogę ekspresową pojazdem, dla ruchu którego drogi te nie są przeznaczone",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 121"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Zatrzymanie lub postój pojazdu na autostradzie lub drodze ekspresowej w innych miejscach niż wyznaczone w tym celu",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 1 pkt; H04",
+      "w":"lp. 122"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   },
+   {"o":"Niesygnalizowanie lub niewłaściwe sygnalizowanie postoju pojazdu silnikowego z powodu uszkodzenia lub wypadku na autostradzie lub drodze ekspresowej",
+    "h":[
+     {"m":"20110524",
+      "t":"300 PLN; 1 pkt; H04",
+      "w":"lp. 124"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H04",
+      "w":"H04"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Używanie świateł zewnętrznych",
+  "m":[
+   {"o":"Naruszenie przepisów o obowiązku wysyłania przez pojazdy żółtych sygnałów błyskowych",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 0 pkt; K14",
+      "w":"K14"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I31",
+      "w":"lp. 168"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I31",
+      "w":"I31"
+     }
+    ]
+   },
+   {"o":"Bezpodstawne używanie żółtego sygnału błyskowego",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K15",
+      "w":"K15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I32",
+      "w":"lp. 169"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I32",
+      "w":"I32"
+     }
+    ]
+   },
+   {"o":"Jazda bez wymaganych świateł od zmierzchu do świtu",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 4 pkt; G01",
+      "w":"lp. 147"
+     },
+     {"m":"20101231",
+      "t":"4 pkt; G01",
+      "w":"G01"
+     }
+    ]
+   },
+   {"o":"Jazda bez wymaganych świateł od świtu do zmierzchu",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 2 pkt; G03",
+      "w":"lp. 148"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; G03",
+      "w":"G03"
+     }
+    ]
+   },
+   {"o":"Jazda bez wymaganych świateł pojazdami niewyposażonymi w światła mijania, drogowe lub do jazdy dziennej",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 149"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Jazda bez wymaganych przepisami świateł w tunelu, niezależnie od pory doby",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 4 pkt; G04",
+      "w":"lp. 150"
+     },
+     {"m":"20101231",
+      "t":"4 pkt; G04",
+      "w":"G04"
+     }
+    ]
+   },
+   {"o":"Nieużywanie wymaganego oświetlenia podczas zatrzymania lub postoju w warunkach niedostatecznej widoczności",
+    "h":[
+     {"m":"20110524",
+      "t":"150-300 PLN; 3 pkt; G08",
+      "w":"lp. 151"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; G08",
+      "w":"G08"
+     }
+    ]
+   },
+   {"o":"Korzystanie ze świateł drogowych w sposób niezgodny z przepisami",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 3 pkt; G09",
+      "w":"G09"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I16",
+      "w":"lp. 152"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I16",
+      "w":"I16"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków dopuszczalności używania przednich świateł przeciwmgłowych",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 2 pkt; G06",
+      "w":"lp. 153"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; G06",
+      "w":"G06"
+     }
+    ]
+   },
+   {"o":"Używanie tylnych świateł przeciwmgłowych przy normalnej przejrzystości powietrza",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 2 pkt; G07",
+      "w":"lp. 84"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; G07",
+      "w":"G07"
+     }
+    ]
+   },
+   {"o":"Używanie \"szperacza\" podczas jazdy",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K11",
+      "w":"K11"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I17",
+      "w":"lp. 154"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I17",
+      "w":"I17"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Jazda w warunkach zmniejszonej przejrzystości powietrza",
+  "m":[
+   {"o":"Niewłączenie przez kierującego pojazdem wymaganych świateł w czasie jazdy w warunkach zmniejszonej przejrzystości powietrza",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN; 2 pkt; G02",
+      "w":"lp. 80"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; G02",
+      "w":"G02"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego pojazdem innym niż silnikowy zakazu wyprzedzania innych pojazdów w czasie jazdy w warunkach zmniejszonej przejrzystości powietrza oraz korzystania z pobocza drogi, a jeżeli nie jest to możliwe - jak najbliżej krawędzi jezdni",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 81"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Ostrzeganie",
+  "m":[
+   {"o":"Nadużywanie sygnałów dźwiękowych lub świetlnych",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 82"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Używanie sygnałów dźwiękowych na obszarze zabudowanym",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 83"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Holowanie",
+  "m":[
+   {"o":"Holowanie pojazdu, którego kierujący nie ma wymaganych uprawnień do kierowania tym pojazdem",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 85"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Holowanie pojazdu na połączeniu sztywnym, jeżeli nie jest sprawny co najmniej jeden układ hamulcowy, albo na połączeniu giętkim, jeżeli nie są sprawne dwa układy hamulcowe",
+    "h":[
+     {"m":"20110524",
+      "t":"250 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 86"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Holowanie pojazdu o niesprawnym układzie kierowniczym lub niesprawnych hamulcach",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
+     {"m":"20110524",
+      "t":"250 PLN",
+      "w":"lp. 87"
+     }
+    ]
+   },
+   {"o":"Holowanie pojazdu na połączeniu giętkim, jeżeli w pojeździe tym działanie układu hamulcowego uzależnione jest od pracy silnika, a silnik jest unieruchomiony",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
+     {"m":"20110524",
+      "t":"250 PLN",
+      "w":"lp. 88"
+     }
+    ]
+   },
+   {"o":"Holowanie więcej niż jednego pojazdu, z wyjątkiem pojazdu członowego",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
+     {"m":"20110524",
+      "t":"250 PLN",
+      "w":"lp. 89"
+     }
+    ]
+   },
+   {"o":"Holowanie pojazdem z przyczepą (naczepą)",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
+     {"m":"20110524",
+      "t":"250 PLN",
+      "w":"lp. 90"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego warunków holowania poprzez niewłączenie w pojeździe holującym świateł mijania",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 91"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego warunków holowania poprzez nieprawidłowe połączenie pojazdu holowanego z holującym",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 92"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego warunków holowania poprzez brak lub niewłaściwe oznaczenie pojazdu holowanego",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 93"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego warunków holowania poprzez niezachowanie właściwej odległości między pojazdami holowanym a holującym",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 94"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego warunków holowania poprzez niewłaściwe oznakowanie połączenia między pojazdami (holu) albo brak takiego oznakowania",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 95"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Zachowanie wobec rowerzystów",
+  "m":[
+   {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa rowerowi znajdującemu się na przejeździe dla rowerzystów",
+    "h":[
+     {"m":"20110524",
+      "t":"350 PLN; 6 pkt; D04",
+      "w":"lp. 70"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; D04",
+      "w":"D04"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie przez kierującego pojazdem, który skręca w drogę poprzeczną, pierwszeństwa rowerzyście jadącemu na wprost po jezdni, pasie ruchu dla rowerów, drodze dla rowerów lub innej części drogi, którą zamierza opuścić",
+    "h":[
+     {"m":"20110524",
+      "t":"350 PLN; 6 pkt; D04",
+      "w":"lp. 70a"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; D04",
+      "w":"D04"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa rowerowi przy przejeżdżaniu przez drogę dla rowerów poza jezdnią",
+    "h":[
+     {"m":"20110524",
+      "t":"350 PLN; 6 pkt; D04",
+      "w":"lp. 71"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; D04",
+      "w":"D04"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Ruch rowerów lub motorowerów",
+  "m":[
+   {"o":"Naruszenie przez kierującego rowerem obowiązku przewożenia dziecka do lat 7 na dodatkowym siodełku",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 96"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego rowerem obowiązku korzystania z drogi dla rowerów lub pasa ruchu dla rowerów, jeśli są one wyznaczone dla kierunku, w którym się porusza lub zamierza skręcić",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 96a"
+     }
+    ]
+   },
+   {"o":"Nieustąpienie miejsca pieszym przez kierującego rowerem korzystającego z drogi dla rowerów i pieszych",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 97"
+     }
+    ]
+   },
+   {"o":"Nieopuszczenie przez kierującego rowerem śluzy rowerowej, kiedy zaistnieje możliwość kontynuowania jazdy w zamierzonym kierunku",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 97a"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego rowerem lub motorowerem zakazu jazdy po jezdni obok innego uczestnika ruchu, z zastrzeżeniem wykroczenia \"Utrudnianie poruszania się innym uczestnikom ruchu przez kierującego rowerem jadącego po jezdni obok innego roweru lub motoroweru\"",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 98"
+     }
+    ]
+   },
+   {"o":"Utrudnianie poruszania się innym uczestnikom ruchu przez kierującego rowerem jadącego po jezdni obok innego roweru lub motoroweru",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN",
+      "w":"lp. 98a"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego rowerem lub motorowerem zakazu jazdy bez trzymania co najmniej jednej ręki na kierownicy oraz nóg na pedałach lub podnóżkach",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 99"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego rowerem lub motorowerem zakazu czepiania się pojazdów",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 100"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego rowerem przepisów o korzystaniu z chodnika lub drogi dla pieszych",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 103"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Ruch pojazdów zaprzęgowych",
+  "m":[
+   {"o":"Naruszenie, przez kierującego pojazdem zaprzęgowym, zakazu jazdy obok innego uczestnika ruchu na jezdni",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 104"
+     }
+    ]
+   },
+   {"o":"Naruszenie, przez kierującego pojazdem zaprzęgowym, zakazu pozostawiania pojazdu niezabezpieczonego przed ruszeniem",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 105"
+     }
+    ]
+   },
+   {"o":"Naruszenie, przez kierującego pojazdem zaprzęgowym, zakazu jazdy pojazdami na płozach bez dzwonków lub grzechotek",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 106"
+     }
+    ]
+   },
+   {"o":"Naruszenie nakazu, aby w czasie postoju na drodze poza obszarem zabudowanym pojazd zaprzęgowy znajdował się poza jezdnią",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 116"
+     }
+    ]
+   },
+   {"o":"Pozostawienie pojazdu zaprzęgowego na postoju bez zachowania środków ostrożności niezbędnych do uniknięcia wypadku",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 117"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Pędzenie zwierząt",
+  "m":[
+   {"o":"Naruszenie przez jeźdźca lub poganiacza obowiązku korzystania z określonej drogi lub części drogi",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 107"
+     }
+    ]
+   },
+   {"o":"Pędzenie zwierząt płochliwych, niesprawnych fizycznie lub niedających sobą kierować",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 108"
+     }
+    ]
+   },
+   {"o":"Pędzenie zwierząt bez odpowiedniego nadzoru, a pojedynczych bez uwięzi",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 109"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez poganiacza obowiązku poruszania się po lewej stronie pędzonych zwierząt",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 110"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez poganiacza obowiązku używania, w okresie niedostatecznej widoczności, odpowiedniego oświetlenia",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 111"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez poganiacza zakazu pędzenia zwierząt po określonych drogach",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 112"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez poganiacza zakazu przepędzania zwierząt w poprzek drogi w miejscu niewidocznym na dostateczną odległość",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 113"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez poganiacza zakazu zatrzymywania zwierząt na jezdni",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 114"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez poganiacza zakazu dopuszczania do zajmowania przez zwierzęta więcej niż prawej połowy jezdni albo drogi dla pieszych lub rowerów",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 115"
+     }
+    ]
+   },
+   {"o":"Naruszenie wprowadzonych przez radę powiatu zakazów pędzenia zwierząt",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 118"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Przewóz ładunków i ciągniecie przyczep",
+  "m":[
+   {"o":"Umieszczenie na pojeździe ładunku w sposób zasłaniający światła lub urządzenia sygnalizacyjne",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 0 pkt; K26",
+      "w":"K26"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I44",
+      "w":"lp. 175"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I44",
+      "w":"I44"
+     }
+    ]
+   },
+   {"o":"Umieszczenie na pojeździe ładunku w sposób zasłaniający tablice rejestracyjne lub inne tablice albo znaki, w które pojazd jest wyposażony",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K26",
+      "w":"K26"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I44",
+      "w":"lp. 176"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I44",
+      "w":"I44"
+     }
+    ]
+   },
+   {"o":"Przewożenie ładunku nieoznaczonego lub oznaczonego w niewłaściwy sposób",
+    "h":[
+     {"m":"20120609",
+      "t":"150 PLN; 0 pkt; K31",
+      "w":"K31"
+     },
+     {"m":"20110524",
+      "t":"150 PLN; 0 pkt; I47",
+      "w":"lp. 177"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I47",
+      "w":"I47"
+     }
+    ]
+   },
+   {"o":"Niezabezpieczenie urządzeń służących do mocowania ładunku przed rozluźnieniem się, swobodnym zwisaniem lub spadnięciem podczas jazdy",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 0 pkt; K29",
+      "w":"K29"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I48",
+      "w":"lp. 178"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I48",
+      "w":"I48"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów o przewozie ładunków sypkich",
+    "h":[
+     {"m":"20120609",
+      "t":"150 PLN; 0 pkt; K30",
+      "w":"K30"
+     },
+     {"m":"20110524",
+      "t":"150 PLN; 0 pkt; I49",
+      "w":"lp. 179"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I49",
+      "w":"I49"
+     }
+    ]
+   },
+   {"o":"Ciągnięcie przyczepy o rzeczywistej masie całkowitej większej niż dopuszczalna w odniesieniu do określonego rodzaju pojazdu ciągnącego",
+    "h":[
+     {"m":"20120609",
+      "t":"100-300 PLN; 0 pkt; K34",
+      "w":"K34"
+     },
+     {"m":"20110524",
+      "t":"100-300 PLN; 0 pkt; I50",
+      "w":"lp. 180"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I50",
+      "w":"I50"
+     }
+    ]
+   },
+   {"o":"Umieszczenie na pojeździe ładunku w sposób powodujący przekroczenie dopuszczalnej masy całkowitej lub dopuszczalnej ładowności pojazdu",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K23",
+      "w":"K23"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I41",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I41",
+      "w":"I41"
+     }
+    ]
+   },
+   {"o":"Umieszczenie na pojeździe ładunku w sposób naruszający stateczność pojazdu",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K24",
+      "w":"K24"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I42",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I42",
+      "w":"I42"
+     }
+    ]
+   },
+   {"o":"Umieszczenie na pojeździe ładunku w sposób utrudniający kierowanie pojazdem",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K25",
+      "w":"K25"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I43",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I43",
+      "w":"I43"
+     }
+    ]
+   },
+   {"o":"Niezabezpieczenie ładunku umieszczonego na pojeździe przed zmianą położenia lub wywoływaniem nadmiernego hałasu",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K27",
+      "w":"K27"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I45",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I45",
+      "w":"I45"
+     }
+    ]
+   },
+   {"o":"Przewożenie ładunku o odrażającym wyglądzie lub wydzielającego odrażającą woń - bez odpowiedniego zabezpieczenia",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K28",
+      "w":"K28"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I46",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I46",
+      "w":"I46"
+     }
+    ]
+   },
+   {"o":"Przejazd bez zezwolenia pojazdu z ładunkiem powodującym przekroczenie określonych gabarytów",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K32",
+      "w":"K32"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I39",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I39",
+      "w":"I39"
+     }
+    ]
+   },
+   {"o":"Przejazd bez zezwolenia zespołu pojazdów o większej niż dopuszczalna liczbie pojazdów bądź długości",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 0 pkt; K33",
+      "w":"K33"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 0 pkt; I40",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I40",
+      "w":"I40"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Przewóz osób",
+  "m":[
+   {"o":"Niedopełnienie przez kierującego autobusem szkolnym obowiązku włączenia świateł awaryjnych podczas wsiadania lub wysiadania dzieci",
+    "h":[
+     {"m":"20150411",
+      "t":"200 PLN; 2 pkt; J03",
+      "w":"lp. 165a"
+     },
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; J03",
+      "w":"J03"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I27",
+      "w":"lp. 163"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I27",
+      "w":"I27"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów dotyczących przewozu dzieci lub młodzieży przez kierującego pojazdem przewożącym dzieci lub młodzież",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; J03",
+      "w":"J03"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I27",
+      "w":"lp. 163"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I27",
+      "w":"I27"
+     }
+    ]
+   },
+   {"o":"Niedopełnienie przez kierującego autobusem szkolnym obowiązku zdjęcia, zasłonięcia lub złożenia tablicy z napisem „autobus szkolny” i jeżeli są przewożone inne osoby lub nie przewozi się żadnych osób",
+    "h":[
+     {"m":"20150411",
+      "t":"50 PLN; 2 pkt; J03",
+      "w":"lp. 165b"
+     },
+     {"m":"20120609",
+      "t":"50 PLN; 2 pkt; J03",
+      "w":"J03"
+     },
+     {"m":"20110524",
+      "t":"50 PLN; 0 pkt; I27",
+      "w":"lp. 164"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I27",
+      "w":"I27"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów dotyczących przewozu dzieci lub młodzieży przez kierującego innym pojazdem",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; J04",
+      "w":"J04"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I28",
+      "w":"lp. 165"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I28",
+      "w":"I28"
+     }
+    ]
+   },
+   {"o":"Naruszenie przepisów dotyczących przewozu osób niepełnosprawnych przez kierującego pojazdem przewożącym takie osoby",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; J05",
+      "w":"J05"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I29",
+      "w":"lp. 166"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I29",
+      "w":"I29"
+     }
+    ]
+   },
+   {"o":"Przewożenie w pojeździe kategorii M<sub>1</sub>, N<sub>1</sub>, N<sub>2</sub> i N<sub>3</sub>, o których mowa w załączniku nr 2 do ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, wyposażonym w pasy bezpieczeństwa lub urządzenia przytrzymujące dla dzieci, dziecka mającego mniej niż 150 cm wzrostu poza fotelikiem bezpieczeństwa dla dziecka lub innym urządzeniem przytrzymującym dla dzieci, zgodnym z masą i wzrostem dziecka, oraz właściwymi warunkami technicznymi określonymi w przepisach Unii Europejskiej lub w regulaminach EKG ONZ dotyczących urządzeń przytrzymujących dla dzieci w pojeździe, z wyjątkiem przewożenia:<br>1) na tylnym siedzeniu takiego pojazdu dziecka mającego co najmniej 135 cm wzrostu, przytrzymywanego za pomocą pasów bezpieczeństwa w przypadkach, kiedy ze względu na masę i wzrost dziecka nie jest możliwe zapewnienie fotelika bezpieczeństwa dla dziecka lub innego urządzenia przytrzymującego dla dzieci zgodnego z wymaganymi warunkami;<br>2) w pojeździe kategorii M<sub>1</sub> i N<sub>1</sub> na tylnym siedzeniu pojazdu trzeciego dziecka w wieku co najmniej 3 lat, przytrzymywanego za pomocą pasów bezpieczeństwa, w przypadku gdy dwoje dzieci jest przewożonych w fotelikach bezpieczeństwa dla dziecka lub innych urządzeniach przytrzymujących dla dzieci, zainstalowanych na tylnych siedzeniach pojazdu i nie ma możliwości zainstalowania trzeciego fotelika bezpieczeństwa dla dziecka lub innego urządzenia przytrzymującego dla dzieci",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 22"
+     },
+     {"m":"20120609",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"J01"
+     },
+     {"m":"20110524",
+      "t":"150 PLN; 3 pkt; H10",
+      "w":"lp. 22"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; H10",
+      "w":"H10"
+     }
+    ]
+   },
+   {"o":"Przewożenie w foteliku bezpieczeństwa dla dziecka lub innym urządzeniu przytrzymującym dla dzieci dziecka siedzącego tyłem do kierunku jazdy na przednim siedzeniu pojazdu samochodowego wyposażonego w poduszkę powietrzną dla pasażera, która jest aktywna podczas przewożenia dziecka",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23"
+     },
+     {"m":"20120609",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"J01"
+     },
+     {"m":"20110524",
+      "t":"150 PLN; 3 pkt; H10",
+      "w":"lp. 23"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; H10",
+      "w":"H10"
+     }
+    ]
+   },
+   {"o":"Przewożenie dziecka w wieku poniżej 3 lat w pojeździe kategorii M<sub>1</sub>, N<sub>1</sub>, N<sub>2</sub> i N<sub>3</sub>, o których mowa w załączniku nr 2 do ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, niewyposażonym w pasy bezpieczeństwa i fotelik bezpieczeństwa dla dziecka lub w pasy bezpieczeństwa i inne urządzenie przytrzymujące dla dzieci",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23a"
+     },
+     {"m":"20120609",
+      "t":"6 pkt; J01",
+      "w":"J01"
+     }
+    ]
+   },
+   {"o":"Przewożenie na przednim siedzeniu pojazdu samochodowego, poza fotelikiem bezpieczeństwa dla dziecka lub innym urządzeniem przytrzymującym dla dzieci, dziecka mającego mniej niż 150 cm wzrostu",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23b"
+     },
+     {"m":"20120609",
+      "t":"6 pkt; J01",
+      "w":"J01"
+     }
+    ]
+   },
+   {"o":"Przewożenie dziecka w foteliku bezpieczeństwa dla dziecka lub innym urządzeniu przytrzymującym dla dzieci zainstalowanym niezgodnie z zaleceniami producenta urządzenia, wskazującymi, w jaki sposób urządzenie może być bezpiecznie stosowane",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23c"
+     },
+     {"m":"20120609",
+      "t":"6 pkt; J01",
+      "w":"J01"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem przewożącym pasażerów niekorzystających z pasów bezpieczeństwa",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 4 pkt; J02",
+      "w":"J02"
+     },
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 24"
+     }
+    ]
+   },
+   {"o":"Kierowanie motocyklem, czterokołowcem lub motorowerem przewożącym pasażera nieużywającego kasku ochronnego odpowiadającego właściwym warunkom technicznym",
+    "h":[
+     {"m":"20150411",
+      "t":"100 PLN; 4 pkt; J02",
+      "w":"lp. 26"
+     },
+     {"m":"20120609",
+      "t":"100 PLN; 4 pkt; J02",
+      "w":"J02"
+     },
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 26"
+     }
+    ]
+   },
+   {"o":"Przewożenie osoby w stanie nietrzeźwości, stanie po użyciu alkoholu lub środka działającego podobnie do alkoholu na rowerze lub motorowerze albo motocyklu poza bocznym wózkiem",
+    "h":[
+     {"m":"20110524",
+      "t":"150 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 27"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków dopuszczalności przewozu osób samochodem ciężarowym poza kabiną kierowcy, z wyłączeniem naruszenia \"Przekroczenie dopuszczalnej prędkości\"",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 2 pkt; J20",
+      "w":"J20"
+     },
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 184"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków dopuszczalności przewozu osób samochodem ciężarowym poza kabiną kierowcy",
+    "h":[
+     {"m":"20120609",
+      "t":"nie obowiązuje",
+      "w":"brak"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I54",
+      "w":"I54"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków przewozu osób w przyczepie, z wyłączeniem naruszenia określonego kodem E01–E05, C07–C16, C17 i C18 (E01 - E05 to przekroczenie dopuszczalnej prędkości, C07 to niezastosowanie się do znaków: <table><tr><td><a href=b/b21><img src=b/b21.png align=left width=50>B-21 \"zakaz skręcania w lewo\"</a></td></tr><tr><td><a href=b/b22><img src=b/b22.png align=left width=50>B-22 \"zakaz skręcania w prawo\"</a></td></tr></table>C08 to niezastosowanie się do znaków C-1 do C-12: <table><tr><td><a href=c/c01><img src=c/c01.png align=left width=50>C-1 \"nakaz jazdy w prawo przed znakiem\"</a></td></tr><tr><td><a href=c/c02><img src=c/c02.png align=left width=50>C-2 \"nakaz jazdy w prawo za znakiem\"</a></td></tr><tr><td><a href=c/c03><img src=c/c03.png align=left width=50>C-3 \"nakaz jazdy w lewo przed znakiem\"</a></td></tr><tr><td><a href=c/c04><img src=c/c04.png align=left width=50>C-4 \"nakaz jazdy w lewo za znakiem\"</a></td></tr><tr><td><a href=c/c05><img src=c/c05.png align=left width=50>C-5 \"nakaz jazdy prosto\"</a></td></tr><tr><td><a href=c/c06><img src=c/c06.png align=left width=50>C-6 \"nakaz jazdy prosto lub w prawo\"</a></td></tr><tr><td><a href=c/c07><img src=c/c07.png align=left width=50>C-7 \"nakaz jazdy prosto lub w lewo\"</a></td></tr><tr><td><a href=c/c08><img src=c/c08.png align=left width=50>C-8 \"nakaz jazdy w prawo lub w lewo\"</a></td></tr><tr><td><a href=c/c09><img src=c/c09.png align=left width=50>C-9 \"nakaz jazdy z prawej strony znaku\"</a></td></tr><tr><td><a href=c/c10><img src=c/c10.png align=left width=50>C-10 \"nakaz jazdy z lewej strony znaku\"</a></td></tr><tr><td><a href=c/c11><img src=c/c11.png align=left width=50>C-11 \"nakaz jazdy z prawej lub z lewej strony znaku\"</a></td></tr><tr><td><a href=c/c12><img src=c/c12.png align=left width=50>C-12 \"ruch okrężny\"</a></td></tr></table>C09 to niezastosowanie się do znaków F-10, F-11, F-15 do F-19, kierunki na pasach ruchu określające dozwolony kierunek jazdy z poszczególnych pasów ruchu lub sposób ich wykorzystania: <table><tr><td><a href=f/f10><img src=f/f10.png align=left width=50>F-10 \"Kierunki na pasach ruchu\"</a></td></tr><tr><td><a href=f/f11><img src=f/f11.png align=left width=50>F-11 \"Kierunki na pasie ruchu\"</a></td></tr><tr><td><a href=f/f15><img src=f/f15.png align=left width=50>F-15 \"niesymetryczny podział jezdni dla przeciwnych kierunków ruchu\"</a></td></tr><tr><td><a href=f/f16><img src=f/f16.png align=left width=50>F-16 \"Koniec pasa ruchu na jezdni dwukierunkowej\"</a></td></tr><tr><td><a href=f/f17><img src=f/f17.png align=left width=50>F-17 \"koniec pasa ruchu na jezdni jednokierunkowej\"</a></td></tr><tr><td><a href=f/f18><img src=f/f18.png align=left width=50>F-18 \"przeciwny kierunek dla określonych pojazdów\"</a></td></tr><tr><td><a href=f/f19><img src=f/f19.png align=left width=50>F-19 \"pas ruchu dla określonych pojazdów\"</a></td></tr></table>C10 to niezastosowanie się do znaków P-8a do P-8c: <table><tr><td><a href=p/p08a><img src=p/p08a.png align=left height=100>P-8a \"strzałka kierunkowa na wprost\"</a></td></tr><tr><td><a href=p/p08b><img src=p/p08b.png align=left height=100>P-8b \"strzałka kierunkowa do skręcania\"</a></td></tr><tr><td><a href=p/p08c><img src=p/p08c.png align=left height=100>P-8c \"strzałka kierunkowa do zawracania\"</a></td></tr></table>C11 to niezastosowanie się do znaku: <table><tr><td><a href=p/p04><img src=p/p04.png align=left height=100>P-4 \"Linia podwójna ciągła\"</a></td></tr></table>C12 to niezastosowanie się do znaku <table><tr><td><a href=b/b31><img src=b/b31.png align=left width=50>B-31 \"Pierwszeństwo dla nadjeżdżających z przeciwka\"</a></td></tr></table>C13 to niezastosowanie się do znaków B-3 do B-7: <table><tr><td><a href=b/b03><img src=b/b03.png align=left width=50>B-3 \"Zakaz wjazdu pojazdów silnikowych, z wyjątkiem motocykli jednośladowych\"</a></td></tr><tr><td><a href=b/b03a><img src=b/b03a.png align=left width=50>B-3a \"Zakaz wjazdu autobusów\"</a></td></tr><tr><td><a href=b/b04><img src=b/b04.png align=left width=50>B-4 \"zakaz wjazdu motocykli\"</a></td></tr><tr><td><a href=b/b05><img src=b/b05.png align=left width=50>B-5 \"zakaz wjazdu samochodów ciężarowych\"</a></td></tr><tr><td><a href=b/b06><img src=b/b06.png align=left width=50>B-6 \"zakaz wjazdu ciągników rolniczych\"</a></td></tr><tr><td><a href=b/b07><img src=b/b07.png align=left width=50>B-7 \"zakaz wjazdu pojazdów silnikowych z przyczepą\"</a></td></tr></table>C14 to niezastosowanie się do znaków B-13 do B-19: <table><tr><td><a href=b/b13><img src=b/b13.png align=left width=50>B-13 \"zakaz wjazdu pojazdów z towarami wybuchowymi lub łatwo zapalnymi\"</a></td></tr><tr><td><a href=b/b13a><img src=b/b13a.png align=left width=50>B-13a \"Zakaz wjazdu pojazdów z towarami niebezpiecznymi\"</a></td></tr><tr><td><a href=b/b14><img src=b/b14.png align=left width=50>B-14 \"zakaz wjazdu pojazdów z towarami, które mogą skazić wodę\"</a></td></tr><tr><td><a href=b/b15><img src=b/b15.png align=left width=50>B-15 \"zakaz wjazdu pojazdów o szerokości ponad ......m\"</a></td></tr><tr><td><a href=b/b16><img src=b/b16.png align=left width=50>B-16 \"zakaz wjazdu pojazdów o wysokości ponad ......m\"</a></td></tr><tr><td><a href=b/b17><img src=b/b17.png align=left width=50>B-17 \"zakaz wjazdu pojazdów o długości ponad ......m\"</a></td></tr><tr><td><a href=b/b18><img src=b/b18.png align=left width=50>B-18 \"zakaz wjazdu pojazdów o rzeczywistej masie całkowitej ponad ......t\"</a></td></tr><tr><td><a href=b/b19><img src=b/b19.png align=left width=50>B-19 \"zakaz wjazdu pojazdów o nacisku pojedynczej  osi  napędowej  większym niż .....t\"</a></td></tr></table>C15 to niestosowanie się do pozostałych, nie wyszczególnionych w niniejszym katalogu znaków i sygnałów drogowych,<br>C16 to niezatrzymanie pojazdu w związku ze znakiem <table><tr><td><a href=b/b20><img src=b/b20.png align=left height=50>B-20 \"Stop\"</a></td></tr></table>C17 to niestosowanie się do znaków: <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table> z umieszczoną pod znakiem tabliczką <table><tr><td><a href=t/t29><img src=t/t29.png align=left width=50>T-29 \"Tabliczka informująca o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej\"</a></td></tr></table>C18 to niestosowanie się do znaków: <table><tr><td><a href=p/p18><img src=p/p18.png align=left width=50>P-18 \"Stanowisko postojowe\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla pojazdu osoby niepełnosprawnej\"</a></td></tr></table> albo <table><tr><td><a href=p/p20><img src=p/p20.png align=left width=50>P-20 \"Koperta\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla postoju osoby niepełnosprawnej\"</a></td></tr></table> umieszczonego samodzielnie bez znaku pionowego <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"2 pkt; J19",
+      "w":"J19"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków przewozu osób w przyczepach, z zastrzeżeniem że w przypadku naruszenia warunku dopuszczalnej prędkości lub liczby przewożonych osób stosuje się odpowiednio punkty mandatowe \"Przekroczenie dopuszczalnej prędkości...\" lub \"Przewóz osób w liczbie przekraczającej liczbę miejsc określonych w dowodzie rejestracyjnym pojazdu albo wynikających z konstrukcyjnego przeznaczenia pojazdu niepodlegającego rejestracji\"",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 183"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I53",
+      "w":"I53"
+     }
+    ]
+   },
+   {"o":"Przewóz osób pojazdem nieprzeznaczonym lub nieprzystosowanym do tego celu albo w liczbie przekraczającą ilość wynikającą z konstrukcyjnego przeznaczenia pojazdu niepodlegającego rejestracji, jeżeli liczba osób przewożonych w niewłaściwy sposób wynosi 1 lub więcej osób",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; J07 (1 osoba)",
+      "w":"J07"
+     },
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; J08 (2 osoby)",
+      "w":"J08"
+     },
+     {"m":"20120609",
+      "t":"300 PLN; 3 pkt; J09 (3 osoby); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J09"
+     },
+     {"m":"20120609",
+      "t":"400 PLN; 4 pkt; J10 (4 osoby); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J10"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 5 pkt; J11 (5 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J11"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 6 pkt; J12 (6 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J12"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 7 pkt; J13 (7 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J13"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 8 pkt; J14 (8 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J14"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 9 pkt; J15 (9 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J15"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 10 pkt; J16 (10 lub więcej osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J16"
+     },
+     {"m":"20110524",
+      "t":"100 PLN za każdą osobę przewożoną w niewłaściwy sposób, nie więcej niż 500 PLN; 0 pkt; I51",
+      "w":"lp. 181"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I51",
+      "w":"I51"
+     }
+    ]
+   },
+   {"o":"Przewóz osób w liczbie przekraczającej liczbę miejsc określonych w dowodzie rejestracyjnym pojazdu, jeżeli liczba osób przewożonych w niewłaściwy sposób wynosi 1 lub więcej osób",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; J07 (1 osoba)",
+      "w":"J07"
+     },
+     {"m":"20120609",
+      "t":"200 PLN; 2 pkt; J08 (2 osoby)",
+      "w":"J08"
+     },
+     {"m":"20120609",
+      "t":"300 PLN; 3 pkt; J09 (3 osoby); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J09"
+     },
+     {"m":"20120609",
+      "t":"400 PLN; 4 pkt; J10 (4 osoby); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J10"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 5 pkt; J11 (5 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J11"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 6 pkt; J12 (6 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J12"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 7 pkt; J13 (7 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J13"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 8 pkt; J14 (8 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny  zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J14"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 9 pkt; J15 (9 osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny  zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J15"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 10 pkt; J16 (10 lub więcej osób); na podstawie Ustawy o Kierujących Pojazdami od 18.05.2015 w przypadku autobusu, samochodu osobowego, samochodu ciężarowego lub przyczepy ciągniętej przez ciągnik rolniczy lub pojazd wolnobieżny  zatrzymanie prawa jazdy na 3 miesiące",
+      "w":"J16"
+     },
+     {"m":"20110524",
+      "t":"100 PLN za każdą osobę przewożoną w niewłaściwy sposób, nie więcej niż 500 PLN; 0 pkt; I52",
+      "w":"lp. 181"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I52",
+      "w":"I52"
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków przewozu konwojentów, drużyn roboczych lub osób wykonujących czynności ładunkowe, w przyczepie ciągniętej przez ciągnik rolniczy, jeżeli liczba osób przekracza 5",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 3 pkt; J17",
+      "w":"J17"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN",
+      "w":"k.w."
+     }
+    ]
+   },
+   {"o":"Naruszenie warunków przewozu konwojentów, drużyn roboczych lub osób wykonujących czynności ładunkowe, w przyczepie ciągniętej przez ciągnik rolniczy, jeżeli osoby znajdują się pomiędzy ładunkiem a przednią ścianą przyczepy",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 3 pkt; J18",
+      "w":"J18"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN",
+      "w":"k.w."
+     }
+    ]
+   },
+   {"o":"Przewożenie pasażerów niezgodnie z przepisami",
+    "h":[
+     {"m":"20120609",
+      "t":"nie obowiązuje",
+      "w":"brak"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; H11",
+      "w":"H11"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Kierujący",
+  "m":[
+   {"o":"Nieużywanie kasku ochronnego odpowiadającego właściwym warunkom technicznym podczas jazdy motocyklem, czterokołowcem lub motorowerem",
+    "h":[
+     {"m":"20150411",
+      "t":"100 PLN; 2 pkt; H12",
+      "w":"lp. 25"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 2 pkt; H12",
+      "w":"lp. 25"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; H12",
+      "w":"H12"
+     }
+    ]
+   },
+   {"o":"Niekorzystanie z pasów bezpieczeństwa podczas jazdy",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; 2 pkt; H09",
+      "w":"lp. 21"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; H09",
+      "w":"H09"
+     }
+    ]
+   },
+   {"o":"Korzystanie podczas jazdy z telefonu wymagające trzymania słuchawki lub mikrofonu w ręku przez kierującego pojazdem",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 5 pkt; H13",
+      "w":"H13"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 0 pkt; I04",
+      "w":"lp. 28"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I04",
+      "w":"I04"
+     }
+    ]
+   },
+   {"o":"Palenie tytoniu lub spożywanie pokarmów w czasie jazdy przez kierującego przewożącego osobę pojazdem silnikowym",
+    "h":[
+     {"m":"20120609",
+      "t":"50 PLN; 0 pkt; K35",
+      "w":"K35"
+     },
+     {"m":"20110524",
+      "t":"50 PLN; 0 pkt; I55",
+      "w":"lp. 185"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I55",
+      "w":"I55"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem mechanicznym w stanie po spożyciu alkoholu lub środka podobnie działającego do alkoholu",
+    "h":[
+     {"m":"20120609",
+      "t":"10 pkt; A03",
+      "w":"A03"
+     },
+     {"m":"20101231",
+      "t":"10 pkt; A03",
+      "w":"A03"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem mechanicznym w stanie nietrzeźwości lub będąc pod wpływem środka odurzającego",
+    "h":[
+     {"m":"20120609",
+      "t":"10 pkt; A05",
+      "w":"A05"
+     },
+     {"m":"20101231",
+      "t":"10 pkt; A05",
+      "w":"A05"
+     }
+    ]
+   },
+   {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem innym niż mechaniczny przez osobę znajdującą się w stanie nietrzeźwości lub pod wpływem środka działającego podobnie do alkoholu",
+    "h":[
+     {"m":"20150411",
+      "t":"500 PLN",
+      "w":"lp. 189a"
+     }
+    ]
+   },
+   {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem innym niż mechaniczny przez osobę znajdującą się w stanie po użyciu alkoholu lub podobnie działającego środka",
+    "h":[
+     {"m":"20150411",
+      "t":"300-500 PLN",
+      "w":"lp. 189b"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem silnikowym, z wyłączeniem czterokołowca lekkiego, lub tramwajem przez osobę nie mającą uprawnienia do kierowania pojazdami",
+    "h":[
+     {"m":"20150411",
+      "t":"500 PLN; 0 pkt; K02",
+      "w":"lp. 186"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 0 pkt; K02",
+      "w":"K02"
+     },
+     {"m":"20110524",
+      "t":"500 PLN; 0 pkt; I02",
+      "w":"lp. 186"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I02",
+      "w":"I02"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem silnikowym, z wyłączeniem czterokołowca lekkiego, lub tramwajem przez osobę nie mającą uprawnienia wymaganych dla danego rodzaju pojazdu",
+    "h":[
+     {"m":"20150411",
+      "t":"300 PLN; 0 pkt; K02",
+      "w":"lp. 187"
+     },
+     {"m":"20120609",
+      "t":"300 PLN; 0 pkt; K02",
+      "w":"K02"
+     },
+     {"m":"20110524",
+      "t":"300 PLN; 0 pkt; I02",
+      "w":"lp. 187"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I02",
+      "w":"I02"
+     }
+    ]
+   },
+   {"o":"Kierowanie motorowerem lub czterokołowcem lekkim przez osobę niemającą do tego uprawnienia",
+    "h":[
+     {"m":"20150411",
+      "t":"200 PLN; 0 pkt; K02",
+      "w":"lp. 187a"
+     },
+     {"m":"20120609",
+      "t":"0 pkt; K02",
+      "w":"K02"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I02",
+      "w":"I02"
+     }
+    ]
+   },
+   {"o":"Kierowanie bez uprawnienia rowerem, wózkiem rowerowym lub pojazdem zaprzęgowym",
+    "h":[
+     {"m":"20150411",
+      "t":"100 PLN; 0 pkt; K02",
+      "w":"lp. 188"
+     },
+     {"m":"20120609",
+      "t":"100 PLN; 0 pkt; K02",
+      "w":"K02"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 0 pkt; I02",
+      "w":"lp. 188"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I02",
+      "w":"I02"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem pomimo orzeczonego przez sąd zakazu prowadzenia pojazdu",
+    "h":[
+     {"m":"20120609",
+      "t":"0 pkt; K01",
+      "w":"K01"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I01",
+      "w":"I01"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem nie mając przy sobie wymaganych dokumentów",
+    "h":[
+     {"m":"20120609",
+      "t":"50 PLN za brak każdego z wymaganych dokumentów, nie więcej niż 250 PLN; 0 pkt; K03",
+      "w":"K03"
+     },
+     {"m":"20110524",
+      "t":"50 PLN za brak każdego z wymaganych dokumentów, nie więcej niż 250 PLN; 0 pkt; I03",
+      "w":"lp. 189"
+     },
+     {"m":"20101231",
+      "t":"0 pkt; I03",
+      "w":"I03"
+     }
+    ]
+   },
+   {"o":"Kierowanie pojazdem pomimo braku dopuszczenia pojazdu do ruchu",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 1 pkt; H05",
+      "w":"k.w."
+     },
+     {"m":"20120609",
+      "t":"1 pkt; H05",
+      "w":"H05"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Znaki, sygnały drogowe i karta parkingowa",
+  "m":[
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym",
+    "h":[
+     {"m":"20150411",
+      "t":"300 PLN",
+      "w":"lp. 200a"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b01><img src=b/b01.png align=left width=50>B-1 \"zakaz ruchu w obu kierunkach\"</a></td></tr></table>",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; C06",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C06",
+      "w":"C06"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b02><img src=b/b02.png align=left width=50>B-2 \"zakaz wjazdu\"</a></td></tr></table>",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; C05",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C05",
+      "w":"C05"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków B-3 do B-7 (bez B-5): <table><tr><td><a href=b/b03><img src=b/b03.png align=left width=50>B-3 \"Zakaz wjazdu pojazdów silnikowych, z wyjątkiem motocykli jednośladowych\"</a></td></tr><tr><td><a href=b/b03a><img src=b/b03a.png align=left width=50>B-3a \"Zakaz wjazdu autobusów\"</a></td></tr><tr><td><a href=b/b04><img src=b/b04.png align=left width=50>B-4 \"zakaz wjazdu motocykli\"</a></td></tr><tr><td><a href=b/b06><img src=b/b06.png align=left width=50>B-6 \"zakaz wjazdu ciągników rolniczych\"</a></td></tr><tr><td><a href=b/b07><img src=b/b07.png align=left width=50>B-7 \"zakaz wjazdu pojazdów silnikowych z przyczepą\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 3 pkt; C13",
+      "w":"C13"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 3 pkt; C13",
+      "w":"lp. 201"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; C13",
+      "w":"C13"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=b/b03><img src=b/b03.png align=left width=50>B-3 \"Zakaz wjazdu pojazdów silnikowych, z wyjątkiem motocykli jednośladowych\"</a></td></tr><tr><td><a href=b/b03a><img src=b/b03a.png align=left width=50>B-3a \"Zakaz wjazdu autobusów\"</a></td></tr><tr><td><a href=b/b04><img src=b/b04.png align=left width=50>B-4 \"zakaz wjazdu motocykli\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"550 PLN; 3 pkt; C13",
+      "w":"lp. 200b"
+     },
+     {"m":"20120609",
+      "t":"250 PLN; 3 pkt; C13",
+      "w":"C13"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 3 pkt; C13",
+      "w":"lp. 201"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; C13",
+      "w":"C13"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b05><img src=b/b05.png align=left width=50>B-5 \"zakaz wjazdu samochodów ciężarowych\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"500 PLN; 3 pkt; C13",
+      "w":"lp. 204a"
+     },
+     {"m":"20120609",
+      "t":"350 PLN; 3 pkt; C13",
+      "w":"C13"
+     },
+     {"m":"20110524",
+      "t":"350 PLN; 3 pkt; C13",
+      "w":"lp. 204a"
+     },
+     {"m":"20101231",
+      "t":"3 pkt; C13",
+      "w":"C13"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków B-8 do B-12: <table><tr><td><a href=b/b08><img src=b/b08.png align=left width=50>B-8 \"Zakaz wjazdu pojazdów zaprzęgowych\"</a></td></tr><tr><td><a href=b/b09><img src=b/b09.png align=left width=50>B-9 \"Zakaz wjazdu rowerów\"</a></td></tr><tr><td><a href=b/b10><img src=b/b10.png align=left width=50>B-10 \"Zakaz wjazdu motorowerów\"</a></td></tr><tr><td><a href=b/b11><img src=b/b11.png align=left width=50>B-11 \"Zakaz wjazdu wózków rowerowych\"</a></td></tr><tr><td><a href=b/b12><img src=b/b12.png align=left width=50>B-12 \"Zakaz wjazdu wózków ręcznych\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 205"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=b/b10><img src=b/b10.png align=left width=50>B-10 \"Zakaz wjazdu motorowerów\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"400 PLN; 1 pkt; C15",
+      "w":"lp. 200c"
+     },
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 205"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków B-13 do B-14: <table><tr><td><a href=b/b13><img src=b/b13.png align=left width=50>B-13 \"zakaz wjazdu pojazdów z towarami wybuchowymi lub łatwo zapalnymi\"</a></td></tr><tr><td><a href=b/b13a><img src=b/b13a.png align=left width=50>B-13a \"Zakaz wjazdu pojazdów z towarami niebezpiecznymi\"</a></td></tr><tr><td><a href=b/b14><img src=b/b14.png align=left width=50>B-14 \"zakaz wjazdu pojazdów z towarami, które mogą skazić wodę\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 2 pkt; C14",
+      "w":"C14"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 2 pkt; C14",
+      "w":"lp. 202"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; C14",
+      "w":"C14"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków B-15 do B-17: <table><tr><td><a href=b/b15><img src=b/b15.png align=left width=50>B-15 \"Zakaz wjazdu pojazdów o szerokości ponad ......m\"</a></td></tr><tr><td><a href=b/b16><img src=b/b16.png align=left width=50>B-16 \"Zakaz wjazdu pojazdów o wysokości ponad ......m\"</a></td></tr><tr><td><a href=b/b17><img src=b/b17.png align=left width=50>B-17 \"Zakaz wjazdu pojazdów o długości ponad ......m\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"150 PLN; 2 pkt; C14",
+      "w":"C14"
+     },
+     {"m":"20110524",
+      "t":"150 PLN; 2 pkt; C14",
+      "w":"lp. 204"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; C14",
+      "w":"C14"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b18><img src=b/b18.png align=left width=50>B-18 \"Zakaz wjazdu pojazdów o rzeczywistej masie całkowitej ponad ......t\"</a></td></tr><tr><td><a href=b/b19><img src=b/b19.png align=left width=50>B-19 \"Zakaz wjazdu pojazdów o nacisku pojedynczej  osi  napędowej  większym niż .....t\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"500 PLN; 2 pkt; C14",
+      "w":"lp. 204a"
+     },
+     {"m":"20120609",
+      "t":"350 PLN; 2 pkt; C14",
+      "w":"C14"
+     },
+     {"m":"20110524",
+      "t":"350 PLN; 2 pkt; C14",
+      "w":"lp. 204a"
+     },
+     {"m":"20101231",
+      "t":"2 pkt; C14",
+      "w":"C14"
+     }
+    ]
+   },
+   {"o":"Niezatrzymanie pojazdu w związku ze znakiem <table><tr><td><a href=b/b20><img src=b/b20.png align=left width=50>B-20 \"Stop\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 2 pkt; C16",
+      "w":"C16"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 226"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b21><img src=b/b21.png align=left width=50>B-21 \"zakaz skręcania w lewo\"</a></td></tr><tr><td><a href=b/b22><img src=b/b22.png align=left width=50>B-22 \"zakaz skręcania w prawo\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 5 pkt; C07",
+      "w":"C07"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; C07",
+      "w":"lp. 226"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C07",
+      "w":"C07"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b25><img src=b/b25.png align=left width=50>B-25 \"zakaz wyprzedzania\"</a></td></tr><tr><td><a href=b/b26><img src=b/b26.png align=left width=50>B-26 \"zakaz wyprzedzania przez samochody ciężarowe\"</a></td></tr></table>",
+    "h":[
+     {"m":"20110524",
+      "t":"20-500 PLN; 5 pkt; F09",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"5 pkt; F09",
+      "w":"F09"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b29><img src=b/b29.png align=left width=50>B-29 \"Zakaz używania sygnałów dźwiękowych\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 206"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b31><img src=b/b31.png align=left width=50>B-31 \"Pierwszeństwo dla nadjeżdżających z przeciwka\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 4 pkt; C12",
+      "w":"C12"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 4 pkt; C12",
+      "w":"lp. 207"
+     },
+     {"m":"20101231",
+      "t":"4 pkt; C12",
+      "w":"C12"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaku B-32 lub jego odpowiedników: <table><tr><td><a href=b/b32><img src=b/b32.png align=middle width=50>B-32 \"Stój - kontrola celna\"</a></td></tr><tr><td><a href=b/b32a><img src=b/b32a.png align=middle width=50>B-32a \"Stój - kontrola graniczna\"</a></td></tr><tr><td><a href=b/b32b><img src=b/b32b.png align=middle width=50>B-32b \"Stój - rogatka uszkodzona\"</a></td></tr><tr><td><a href=b/b32c><img src=b/b32c.png align=middle width=50>B-32c \"Stój - sygnalizacja uszkodzona\"</a></td></tr><tr><td><a href=b/b32d><img src=b/b32d.png align=middle width=50>B-32d \"Stój - wjazd na prom\"</a></td></tr><tr><td><a href=b/b32e><img src=b/b32e.png align=middle width=50>B-32e \"Stój - kontrola drogowa\"</a></td></tr><tr><td><a href=b/b32f><img src=b/b32f.png align=middle width=50>B-32f \"Stój - pobór opłat\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"lp. 208"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b35><img src=b/b35.png align=left width=50>B-35 \"Zakaz postoju\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 209"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=b/b35><img src=b/b35.png align=left width=50>B-35 \"Zakaz postoju\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"400 PLN; 1 pkt; C15",
+      "w":"lp. 200d"
+     },
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 209"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b36><img src=b/b36.png align=left width=50>B-36 \"Zakaz zatrzymywania się\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 210"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b37><img src=b/b37.png align=left width=50>B-37 \"Zakaz postoju w dni nieparzyste\"</a></td></tr><tr><td><a href=b/b38><img src=b/b38.png align=left width=50>B-38 \"Zakaz postoju w dni parzyste\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 211"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=b/b37><img src=b/b37.png align=left width=50>B-37 \"Zakaz postoju w dni nieparzyste\"</a></td></tr><tr><td><a href=b/b38><img src=b/b38.png align=left width=50>B-38 \"Zakaz postoju w dni parzyste\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"400 PLN; 1 pkt; C15",
+      "w":"lp. 200d"
+     },
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 211"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b39><img src=b/b39.png align=left width=50>B-39 \"strefa ograniczonego postoju\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 212"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=b/b39><img src=b/b39.png align=left width=50>B-39 \"Strefa ograniczonego postoju\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"400 PLN; 1 pkt; C15",
+      "w":"lp. 200e"
+     },
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 212"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków C-1 do C-11: <table><tr><td><a href=c/c01><img src=c/c01.png align=left width=50>C-1 \"nakaz jazdy w prawo przed znakiem\"</a></td></tr><tr><td><a href=c/c02><img src=c/c02.png align=left width=50>C-2 \"nakaz jazdy w prawo za znakiem\"</a></td></tr><tr><td><a href=c/c03><img src=c/c03.png align=left width=50>C-3 \"nakaz jazdy w lewo przed znakiem\"</a></td></tr><tr><td><a href=c/c04><img src=c/c04.png align=left width=50>C-4 \"nakaz jazdy w lewo za znakiem\"</a></td></tr><tr><td><a href=c/c05><img src=c/c05.png align=left width=50>C-5 \"nakaz jazdy prosto\"</a></td></tr><tr><td><a href=c/c06><img src=c/c06.png align=left width=50>C-6 \"nakaz jazdy prosto lub w prawo\"</a></td></tr><tr><td><a href=c/c07><img src=c/c07.png align=left width=50>C-7 \"nakaz jazdy prosto lub w lewo\"</a></td></tr><tr><td><a href=c/c08><img src=c/c08.png align=left width=50>C-8 \"nakaz jazdy w prawo lub w lewo\"</a></td></tr><tr><td><a href=c/c09><img src=c/c09.png align=left width=50>C-9 \"nakaz jazdy z prawej strony znaku\"</a></td></tr><tr><td><a href=c/c10><img src=c/c10.png align=left width=50>C-10 \"nakaz jazdy z lewej strony znaku\"</a></td></tr><tr><td><a href=c/c11><img src=c/c11.png align=left width=50>C-11 \"nakaz jazdy z prawej lub z lewej strony znaku\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 5 pkt; C08",
+      "w":"C08"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; C08",
+      "w":"lp. 213"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C08",
+      "w":"C08"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=c/c12><img src=c/c12.png align=left width=50>C-12 \"ruch okrężny\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 5 pkt; C08",
+      "w":"C08"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; C08",
+      "w":"lp. 203"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C08",
+      "w":"C08"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=c/c13><img src=c/c13.png align=left width=50>C-13 \"Droga dla rowerów\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 214"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=c/c14><img src=c/c14.png align=left width=50>C-14 \"Prędkość minimalna\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 215"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=c/c17><img src=c/c17.png align=left width=50>C-17 \"Nakazany kierunek jazdy dla pojazdów z towarami niebezpiecznymi\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"400 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"400 PLN; 1 pkt; C15",
+      "w":"lp. 216"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=c/c18><img src=c/c18.png align=left width=50>C-18 \"Nakaz używania łańcuchów przeciwpoślizgowych\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"lp. 224"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=d/d11><img src=d/d11.png align=left width=50>D-11 \"Początek pasa ruchu dla autobusów\"</a></td></tr><tr><td><a href=d/d12><img src=d/d12.png align=left width=50>D-12 \"Pas ruchu dla autobusów\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 228"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=d/d13><img src=d/d13.png align=left width=50>D-13 \"początek pasa ruchu powolnego\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 229"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 230"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table> z umieszczoną pod znakiem tabliczką <table><tr><td><a href=t/t29><img src=t/t29.png align=left width=50>T-29 \"Tabliczka informująca o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"500 PLN; 5 pkt; C17",
+      "w":"C17"
+     },
+     {"m":"20110524",
+      "t":"500 PLN; 1 pkt; C15",
+      "w":"lp. 231"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table> z umieszczoną pod znakiem tabliczką <table><tr><td><a href=t/t29><img src=t/t29.png align=left width=50>T-29 \"Tabliczka informująca o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"800 PLN; 5 pkt; C17",
+      "w":"lp. 200f"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 5 pkt; C17",
+      "w":"C17"
+     },
+     {"m":"20110524",
+      "t":"500 PLN; 1 pkt; C15",
+      "w":"lp. 231"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=d/d19><img src=d/d19.png align=left width=50>D-19 \"postój taksówek\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 233"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=f/f10><img src=f/f10.png align=left width=50>F-10 \"Kierunki na pasach ruchu\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 5 pkt; C09",
+      "w":"C09"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; C09",
+      "w":"lp. 234"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C09",
+      "w":"C09"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=f/f11><img src=f/f11.png align=left width=50>F-11 \"kierunki na pasie ruchu\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 5 pkt; C09",
+      "w":"C09"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 1 pkt; C15",
+      "w":"lp. 234"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków F-15 do F-19: <table><tr><td><a href=f/f15><img src=f/f15.png align=left width=50>F-15 \"niesymetryczny podział jezdni dla przeciwnych kierunków ruchu\"</a></td></tr><tr><td><a href=f/f16><img src=f/f16.png align=left width=50>F-16 \"Koniec pasa ruchu na jezdni dwukierunkowej\"</a></td></tr><tr><td><a href=f/f17><img src=f/f17.png align=left width=50>F-17 \"koniec pasa ruchu na jezdni jednokierunkowej\"</a></td></tr><tr><td><a href=f/f18><img src=f/f18.png align=left width=50>F-18 \"przeciwny kierunek dla określonych pojazdów\"</a></td></tr><tr><td><a href=f/f19><img src=f/f19.png align=left width=50>F-19 \"pas ruchu dla określonych pojazdów\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 5 pkt; C09",
+      "w":"C09"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; C09",
+      "w":"lp. 234"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C09",
+      "w":"C09"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=p/p02><img src=p/p02.png align=left height=100>P-2 \"Linia pojedyncza ciągła\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 219"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=p/p03><img src=p/p03.png align=left height=100>P-3 \"Linia jednostronnie przekraczalna\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"lp. 220"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=p/p04><img src=p/p04.png align=left height=100>P-4 \"Linia podwójna ciągła\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 5 pkt; C11",
+      "w":"C11"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 5 pkt; C11",
+      "w":"lp. 221"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C11",
+      "w":"C11"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=p/p07b><img src=p/p07b.png align=left height=100>P-7b \"Linia krawędziowa ciągła\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 222"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków P-8a do P-8c: <table><tr><td><a href=p/p08a><img src=p/p08a.png align=left height=100>P-8a \"strzałka kierunkowa na wprost\"</a></td></tr><tr><td><a href=p/p08b><img src=p/p08b.png align=left height=100>P-8b \"strzałka kierunkowa do skręcania\"</a></td></tr><tr><td><a href=p/p08c><img src=p/p08c.png align=left height=100>P-8c \"strzałka kierunkowa do zawracania\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"250 PLN; 5 pkt; C10",
+      "w":"C10"
+     },
+     {"m":"20110524",
+      "t":"250 PLN; 5 pkt; C10",
+      "w":"lp. 234"
+     },
+     {"m":"20101231",
+      "t":"5 pkt; C10",
+      "w":"C10"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=p/p17><img src=p/p17.png align=left width=50>P-17 \"Linia przystankowa\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 223"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=p/p18><img src=p/p18.png align=left width=50>P-18 \"stanowisko postojowe\"</a></td></tr><tr><td><a href=p/p19><img src=p/p19.png align=left width=50>P-19 \"Linia wyznaczająca pas postojowy\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 236"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=p/p18><img src=p/p18.png align=left width=50>P-18 \"Stanowisko postojowe\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla pojazdu osoby niepełnosprawnej\"</a></td></tr></table> albo <table><tr><td><a href=p/p20><img src=p/p20.png align=left width=50>P-20 \"Koperta\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla postoju osoby niepełnosprawnej\"</a></td></tr></table> umieszczonego samodzielnie bez znaku pionowego <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"500 PLN; 5 pkt; C18",
+      "w":"C18"
+     },
+     {"m":"20110524",
+      "t":"500 PLN; 1 pkt; C15",
+      "w":"lp. 231"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Posługiwanie się przez osobę do tego nieuprawnioną kartą parkingową, o której mowa w art. 8 ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, i jednocześnie niestosowanie się do znaków drogowych <table><tr><td><a href=p/p18><img src=p/p18.png align=left width=50>P-18 \"Stanowisko postojowe\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla pojazdu osoby niepełnosprawnej\"</a></td></tr></table> albo <table><tr><td><a href=p/p20><img src=p/p20.png align=left width=50>P-20 \"Koperta\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla postoju osoby niepełnosprawnej\"</a></td></tr></table> umieszczonego samodzielnie bez znaku pionowego <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table>",
+    "h":[
+     {"m":"20150411",
+      "t":"800 PLN; 5 pkt; C18",
+      "w":"lp. 200g"
+     },
+     {"m":"20120609",
+      "t":"500 PLN; 5 pkt; C18",
+      "w":"C18"
+     },
+     {"m":"20110524",
+      "t":"500 PLN; 1 pkt; C15",
+      "w":"lp. 231"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=p/p20><img src=p/p20.png align=left width=50>P-20 \"koperta\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 237"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=p/p21><img src=p/p21.png align=left width=50>P-21 \"Powierzchnia wyłączona\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 225"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=p/p22><img src=p/p22.png align=left width=50>P-22 \"BUS\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 228"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=at_bt/bt1><img src=at_bt/bt1.png align=left width=50>BT-1 \"Ograniczenie prędkości\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 217"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do znaków: <table><tr><td><a href=at_bt/bt3><img src=at_bt/bt3.png align=left width=50>BT-3 \"blokada zwrotnicy\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"lp. 218"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=at_bt/bt4><img src=at_bt/bt4.png align=left width=50>BT-4 \"stop - zwrotnica eksploatowana jednostronnie\"</a></td></tr></table>",
+    "h":[
+     {"m":"20120609",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"200 PLN; 1 pkt; C15",
+      "w":"lp. 235"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do sygnałów świetlnych przez wejście na przejście dla pieszych, jeżeli <table><tr><td><a href=s/s05><img src=s/s05.png align=left width=50>sygnalizator S-5 \"sygnalizator z sygnałami dla pieszych\"</a></td></tr></table> nadaje sygnał czerwony",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 238"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do sygnałów świetlnych przez kierującego kolumną pieszych, jeźdźca lub poganiacza",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN",
+      "w":"lp. 239"
+     }
+    ]
+   },
+   {"o":"Niezatrzymanie pojazdu we właściwym miejscu w związku z nadawanym sygnałem świetlnym",
+    "h":[
+     {"m":"20120609",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 227"
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do sygnałów świetlnych przez kierującego pojazdem wjeżdżającego za sygnalizator, kiedy jest to zabronione",
+    "h":[
+     {"m":"20120609",
+      "t":"300-500 PLN; 6 pkt; C02",
+      "w":"C02"
+     },
+     {"m":"20110524",
+      "t":"300-500 PLN; 6 pkt; C02",
+      "w":"lp. 240"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; C02",
+      "w":"C02"
+     }
+    ]
+   },
+   {"o":"Niestosowanie się do pozostałych, nie wyszczególnionych w niniejszym katalogu znaków i sygnałów drogowych",
+    "h":[
+     {"m":"20120609",
+      "t":"20-500 PLN; 1 pkt; C15",
+      "w":"C15"
+     },
+     {"m":"20110524",
+      "t":"20-500 PLN; 1 pkt; C15",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"1 pkt; C15",
+      "w":"C15"
+     }
+    ]
+   }
+  ]
+ },
+ {"o":"Inne",
+  "m":[
+   {"o":"Samowolne umieszczanie, usuwanie, włączanie, wyłączanie, zmiana położenia lub zasłanianie znaku, sygnału drogowego oraz urządzenia ostrzegawczo-zabezpieczającego lub kontrolnego",
+    "h":[
+     {"m":"20110524",
+      "t":"400 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 190"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Zaśmiecanie lub zanieczyszczanie drogi publicznej",
+    "h":[
+     {"m":"20110524",
+      "t":"50-200 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 195"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Samowolne umieszczanie na drodze znaków, napisów lub symboli",
+    "h":[
+     {"m":"20110524",
+      "t":"100 PLN; bez wartości punktowej; Z01",
+      "w":"lp. 196"
+     },
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   },
+   {"o":"Wypasanie zwierzęcia gospodarskiego w pasie drogowym",
+    "h":[
+     {"m":"20110524",
+      "t":"50 PLN",
+      "w":"lp. 197"
+     }
+    ]
+   },
+   {"o":"Uchylanie się od obowiązku utrzymania w należytym stanie zjazdów z dróg publicznych do przyległych nieruchomości",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN",
+      "w":"lp. 198"
+     }
+    ]
+   },
+   {"o":"Uchylanie się od obowiązku oczyszczania i usuwania błota, kurzu, śniegu lub lodu z odcinków dróg publicznych o twardej nawierzchni przechodzących przez obszary o zabudowie ciągłej lub skupionej poza miastami lub osiedlami",
+    "h":[
+     {"m":"20110524",
+      "t":"200 PLN",
+      "w":"lp. 199"
+     }
+    ]
+   },
+   {"o":"Popełnienie przestępstwa drogowego",
+    "h":[
+     {"m":"20101231",
+      "t":"10 pkt; A01",
+      "w":"A01"
+     }
+    ]
+   },
+   {"o":"Spowodowanie zagrożenia bezpieczeństwa w ruchu drogowym - kolizja drogowa",
+    "h":[
+     {"m":"20150411",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące znamię zagrożenia powiększona o 200 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A02",
+      "w":"lp. 241"
+     },
+     {"m":"20110524",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące przyczynę zagrożenia powiększona o 200 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A02",
+      "w":"lp. 241"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; A02",
+      "w":"A02"
+     }
+    ]
+   },
+   {"o":"Spowodowanie innego niż kolizja zagrożenia bezpieczeństwa w ruchu drogowym",
+    "h":[
+     {"m":"20150411",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące znamię zagrożenia powiększona o 200 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A06",
+      "w":"lp. 241"
+     },
+     {"m":"20110524",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące przyczynę zagrożenia powiększona o 200 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A06",
+      "w":"lp. 241"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; A06",
+      "w":"A06"
+     }
+    ]
+   },
+   {"o":"Spowodowanie zagrożenia bezpieczeństwa w ruchu drogowym przez osobę znajdującą się w stanie po użyciu alkoholu lub podobnie działającego środka - kolizja drogowa",
+    "h":[
+     {"m":"20150411",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące znamię zagrożenia powiększona o 300 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A02",
+      "w":"lp. 242"
+     },
+     {"m":"20110524",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące przyczynę zagrożenia powiększona o 300 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A02",
+      "w":"lp. 242"
+     },
+     {"m":"20101231",
+      "t":"10 pkt; A02",
+      "w":"A02"
+     }
+    ]
+   },
+   {"o":"Spowodowanie innego niż kolizja zagrożenia bezpieczeństwa w ruchu drogowym przez osobę znajdującą się w stanie po użyciu alkoholu lub podobnie działającego środka",
+    "h":[
+     {"m":"20150411",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące znamię zagrożenia powiększona o 300 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A06",
+      "w":"lp. 242"
+     },
+     {"m":"20110524",
+      "t":"Kwota mandatu karnego przypisana za naruszenie stanowiące przyczynę zagrożenia powiększona o 300 PLN, jednak nie więcej niż 500 PLN; 6 pkt; A06",
+      "w":"lp. 242"
+     },
+     {"m":"20101231",
+      "t":"6 pkt; A06",
+      "w":"A06"
+     }
+    ]
+   },
+   {"o":"Nieudzielenie pomocy ofiarom wypadku",
+    "h":[
+     {"m":"20101231",
+      "t":"10 pkt; A04",
+      "w":"A04"
+     }
+    ]
+   },
+   {"o":"Inne naruszenie przepisów ruchu drogowego",
+    "h":[
+     {"m":"20101231",
+      "t":"Bez wartości punktowej; Z01",
+      "w":"Z01"
+     }
+    ]
+   }
+  ]
+ }
+]}

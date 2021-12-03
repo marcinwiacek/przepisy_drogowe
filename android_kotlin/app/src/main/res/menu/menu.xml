@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sett"
+        android:icon="@drawable/d26"
+        android:title="Opcje" />
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/d25"
+        android:title="Kontakt email" />
+    <item
+        android:id="@+id/szukaj"
+        android:icon="@drawable/d34"
+        android:title="Szukanie ogólne" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/d01"
+        android:title="Wersja" />
+
+    <item
+        android:id="@+id/szukanie"
+        android:icon="@drawable/d34"
+        android:title="Pokaż szukanie (eksperyment)" />
+
+    <item
+        android:id="@+id/full"
+        android:title="Pełen ekran (eksperyment)" />
+
+</menu>

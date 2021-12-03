@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/typyinne" />
+
+    <Button
+        android:id="@+id/button1r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:text="&gt;&gt;" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_toLeftOf="@+id/button1l"
+        android:layout_toRightOf="@+id/spinner1"
+        android:hint="@string/hint3"
+        android:imeOptions="actionSend"
+        android:nextFocusLeft="@+id/text"
+        android:nextFocusUp="@+id/text"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button1l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/autoCompleteTextView1"
+        android:layout_toLeftOf="@+id/button1r"
+        android:enabled="false"
+        android:text="&lt;&lt;" />
+
+    <com.mwiacek.przepisy.drogowe.ScrollerWebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner1"
+        android:scrollbars="none" />
+
+    <com.mwiacek.przepisy.drogowe.ScrollerView
+        android:id="@+id/view1"
+        android:layout_width="68px"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1r"
+        android:layout_alignTop="@+id/webView1" />
+
+</RelativeLayout>

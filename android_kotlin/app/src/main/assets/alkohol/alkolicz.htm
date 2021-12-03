@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=0.1, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<font color=red>Aktualnie trwają prace nad aktualizacją tej części</font>
+
+<b><font color=red>Podane poniżej kary są podane orientacyjnie !</font></b>
+<p>
+<script>
+function pokaz(ile) {
+	s='';
+	nr1=-1;
+	nr2=-1;
+	for(i=0;i<document.forms['forma'].elements['grupa'].length;i++) {
+		if (document.forms['forma'].elements['grupa'][i].checked) {
+			nr1=document.forms['forma'].elements['grupa'][i].value;
+		}
+		if (document.forms['forma'].elements['grupa'][i].value==ile) {
+			document.forms['forma'].elements['grupa'][i].checked=true;
+			nr1=ile;
+		}
+	}
+	for(i=0;i<document.forms['forma'].elements['grupa2'].length;i++) {
+		if (document.forms['forma'].elements['grupa2'][i].checked) {
+			nr2=document.forms['forma'].elements['grupa2'][i].value-4;
+		}
+		if (document.forms['forma'].elements['grupa2'][i].value==ile) {
+			document.forms['forma'].elements['grupa2'][i].checked=true;
+			nr2=ile-4;
+		}
+	}
+
+	if ((nr1==1 || nr1==2) && nr2==1) {
+		s = 'wykroczenie, orientacyjne możliwe kary: <p><ul><li>zakaz prowadzenia pojazdów od 6 miesięcy do 3 lat<li>podanie orzeczenia o ukaraniu do publicznej wiadomości<li>10 pkt<li>grzywna do 5000 PLN lub areszt do 30 dni<li>zatrzymanie pojazdu</ul>';
+	}
+	if (nr1==3 || nr1==4 || nr2!=1) {
+		if (nr2==1) {
+			s = 'przestępstwo, orientacyjne możliwe kary: <p><ul><li>zakaz prowadzenia pojazdów od 3 lat do 15 lat<li>podanie orzeczenia o ukaraniu do publicznej wiadomości<li>10 pkt<li>do 2 lat pozbawienia wolności<li>grzywna od 5000 lub 10000 PLN<li>zatrzymanie pojazdu<li>usunięcie pojazdu na koszt właściciela</ul>';
+		}
+		if (nr2==2) {
+			s = 'przestępstwo, orientacyjne możliwe kary: <p><ul><li>zakaz prowadzenia pojazdów od 3 lat do 15 lat<li>podanie orzeczenia o ukaraniu do publicznej wiadomości<li>2 lata do 15 lat pozbawienia wolności<li>nawiązka 100 000 PLN<li>świadczenie do 60 000 PLN<li>przepadek pojazdu<li>usunięcie pojazdu na koszt właściciela<li>odszkodowanie od ubezpieczycieli osób pokrzywdzonych</ul>';
+		}
+		if (nr2==3) {
+			s = 'przestępstwo, orientacyjne możliwe kary: <p><ul><li>dożywotni zakaz prowadzenia wszelkich pojazdów<li>podanie orzeczenia o ukaraniu do publicznej wiadomości<li>1 rok do 12 lat pozbawienia wolności (3 do 18 lat w przypadku wielu osób)<li>nawiązka 100 000 PLN<li>świadczenie do 60 000 PLN<li>przepadek pojazdu<li>usunięcie pojazdu na koszt właściciela<li>odszkodowanie od ubezpieczycieli osób pokrzywdzonych</ul>';
+		}
+	}
+
+	document.getElementById("opis").innerHTML=s;	
+
+}
+</script>
+<form name=forma>
+Prowadzenie pojazdu mając:
+<div onClick=pokaz(1);><input type="radio" name="grupa" value=1 />stężenie we krwi od 0,2 ‰ do 0,5 ‰ alkoholu</div><br>
+<div onClick=pokaz(3);><input type="radio" name="grupa" value=3 />stężenie we krwi powyżej 0,5 ‰ alkoholu</div><br>
+<div onClick=pokaz(2);><input type="radio" name="grupa" value=2 />w wydychanym powietrzu od 0,1 mg do 0,25 mg alkoholu w 1 dm<sup>3</sup></div><br>
+<div onClick=pokaz(4);><input type="radio" name="grupa" value=4 />w wydychanym powietrzu powyżej 0,25 mg alkoholu w 1 dm<sup>3</sup></div><br>
+Następstwo:
+<div onClick=pokaz(5);><input type="radio" name="grupa2" value=5 checked />brak wypadku</div><br>
+<div onClick=pokaz(6);><input type="radio" name="grupa2" value=6 />spowodowanie wypadku</div><br>
+<div onClick=pokaz(7);><input type="radio" name="grupa2" value=7 />spowodowanie wypadku wraz ze śmiercią innej osoby lub ciężkim uszczerbkiem na jej zdrowiu</div><br>
+
+</form>
+<hr>
+<div id=opis></div>
+</body>
+</html>
