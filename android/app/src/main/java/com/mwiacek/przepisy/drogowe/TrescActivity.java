@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -91,12 +90,12 @@ public class TrescActivity extends OneTabActivity {
 
     @Override
     public void onSelected(int i, int position) {
-         //prd
+        //prd
         if (i >= 0 && i < iloscWPDR + 1) {
             String scroll = "window.scrollTo(0, " +
                     (position == -1 ? " document.getElementById('bok" + i + "').offsetTop" : position) +
                     ");";
-            if (firstLoad || !webView.getTitle().equals("prd")) {
+            if (!webView.getTitle().equals("prd")) {
                 DisplayIt(scroll);
                 return;
             }

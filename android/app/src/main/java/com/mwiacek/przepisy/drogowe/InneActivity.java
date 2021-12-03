@@ -105,6 +105,11 @@ public class InneActivity extends OneTabActivity {
         return true;
     }
 
+    @Override
+    public void onSelected(int i, int position) {
+        DisplayIt("");
+    }
+
     //Potrzebne przy szukaniu
     @Override
     protected void onResume() {

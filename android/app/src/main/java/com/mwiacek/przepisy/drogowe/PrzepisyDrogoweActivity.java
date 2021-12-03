@@ -64,6 +64,10 @@ public class PrzepisyDrogoweActivity extends TabActivity {
             return;
         }
         Date D2 = new Date();
+        if (D2.compareTo(new Date(121, 11, 2)) > 0) {
+            Toast.makeText(MyActivity5, "2.12.2021 - Zmiany znaków (D-18, D-18a, D-18b, D-23, D-23b, D-23c, D-34b, etc.)", Toast.LENGTH_LONG).show();
+            return;
+        }
         if (D2.compareTo(new Date(121, 5, 1)) > 0) {
             Toast.makeText(MyActivity5, "1.6.2021 - Usunięcie prędkości 60km/h, zmiana pierwszeństwa i obowiązków pieszych", Toast.LENGTH_LONG).show();
             return;

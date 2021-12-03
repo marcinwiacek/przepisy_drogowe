@@ -1,6 +1,7 @@
 package com.mwiacek.przepisy.drogowe;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -9,6 +10,7 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.os.SystemClock;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -116,9 +118,14 @@ public abstract class OneTabActivity extends Activity {
         super.onDestroy();
     }
 
-    public void DisplayIt(String scroll) {
-        if (progressDialog != null) return;
+    private synchronized boolean openDialog() {
+        if (progressDialog != null) return false;
         progressDialog = ProgressDialog.show(this, "", "Odświeżanie", true, false);
+        return true;
+    }
+
+    public void DisplayIt(String scroll) {
+        if (!openDialog()) return;
 
         GetDisplayBytes();
 
@@ -142,44 +149,45 @@ public abstract class OneTabActivity extends Activity {
             });
         }
 
+        if (android.os.Build.VERSION.SDK_INT >= 19) {
+            Kontrolki = sp.getBoolean("Kontrolki", false);
+            try {
+                Method m = webView.getSettings().getClass().getMethod("setDisplayZoomControls", boolean.class);
+                m.invoke(webView.getSettings(), Kontrolki);
+            } catch (SecurityException | NoSuchMethodException | IllegalArgumentException |
+                    IllegalAccessException | InvocationTargetException ignore) {
+            }
+        }
+
+        Zawijanie = sp.getBoolean("Zawijanie", false);
+        webView.getSettings().setUseWideViewPort(Zawijanie);
+
+        if (textView.length() != 0 && internalSearch) {
+            DisplayTotal = DisplayTotal.replaceAll("(?![^<]+>)((?i:\\Q"
+                            + textView.getText().toString()
+                            .replace("\\E", "\\E\\\\E\\Q")
+                            .replace("a", "\\E[aąĄ]\\Q")
+                            .replace("c", "\\E[cćĆ]\\Q")
+                            .replace("e", "\\E[eęĘ]\\Q")
+                            .replace("l", "\\E[lłŁ]\\Q")
+                            .replace("n", "\\E[nńŃ]\\Q")
+                            .replace("o", "\\E[oóÓ]\\Q")
+                            .replace("s", "\\E[sśŚ]\\Q")
+                            .replace("z", "\\E[zźżŻŹ]\\Q")
+                            + "\\E))",
+                    "<ins style='background-color:yellow'>$1</ins>");
+        }
+
+        int body = DisplayTotal.lastIndexOf("</body>");
+        //DisplayTotal = ;
 
         new Thread(() -> {
             scroller.Showed = false;
 
             MyActivity.runOnUiThread(new Runnable() {
                 public void run() {
-                    //Toast.makeText(MyActivity, "laduje od nowa " + spinner.getSelectedItemPosition(), Toast.LENGTH_SHORT).show();
+                    int scale = (int) (webView.getScale());
 
-                    int scale = (int) (100 * webView.getScale());
-
-                    if (android.os.Build.VERSION.SDK_INT >= 19) {
-                        Kontrolki = sp.getBoolean("Kontrolki", false);
-                        try {
-                            Method m = webView.getSettings().getClass().getMethod("setDisplayZoomControls", boolean.class);
-                            m.invoke(webView.getSettings(), Kontrolki);
-                        } catch (SecurityException | NoSuchMethodException | IllegalArgumentException |
-                                IllegalAccessException | InvocationTargetException ignore) {
-                        }
-                    }
-
-                    Zawijanie = sp.getBoolean("Zawijanie", false);
-                    webView.getSettings().setUseWideViewPort(Zawijanie);
-
-                    if (textView.length() != 0 && internalSearch) {
-                        DisplayTotal = DisplayTotal.replaceAll("(?![^<]+>)((?i:\\Q"
-                                        + textView.getText().toString()
-                                        .replace("\\E", "\\E\\\\E\\Q")
-                                        .replace("a", "\\E[aąĄ]\\Q")
-                                        .replace("c", "\\E[cćĆ]\\Q")
-                                        .replace("e", "\\E[eęĘ]\\Q")
-                                        .replace("l", "\\E[lłŁ]\\Q")
-                                        .replace("n", "\\E[nńŃ]\\Q")
-                                        .replace("o", "\\E[oóÓ]\\Q")
-                                        .replace("s", "\\E[sśŚ]\\Q")
-                                        .replace("z", "\\E[zźżŻŹ]\\Q")
-                                        + "\\E))",
-                                "<ins style='background-color:yellow'>$1</ins>");
-                    }
                     String black = "";
                     if (!Sp_Black_Name.isEmpty()) {
                         if (sp.getBoolean(Sp_Black_Name, false)) {
@@ -190,32 +198,28 @@ public abstract class OneTabActivity extends Activity {
                             black = "normalnie();";
                         }
                     }
-
                     webView.loadDataWithBaseURL("file:///android_asset/",
-                            DisplayTotal.replace("</body>",
+                            DisplayTotal.substring(0, body) +
                                     "<script>function lustro() {document.body.style.background='black';document.body.style.color='white'; for (var i = 0; i < document.links.length; ++i) {document.links[i].style.color='#00FFFF';}}" +
-                                            "function normalnie() {document.body.style.background='white';document.body.style.color='black'; ; for (var i = 0; i < document.links.length; ++i) {document.links[i].style.color='blue';}}" +
-                                            "function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}" +
-                                            "function closeIt(oldspinner){Android.q(oldspinner,window.pageYOffset);}" +
-                                            "links = document.getElementsByTagName(\"a\"); for (i = 0; i < links.length; i++){" +
-                                            "href = links[i].getAttribute(\"href\");" +
-                                            "if (href!=null && href.indexOf(\"#\") >= 0) {" +
-                                            "links[i].addEventListener(\"click\", function() {" +
-                                            "closeIt(-1);});}};     " +
-                                            scroll + " " + black + "</script></body>"),
+                                    "function normalnie() {document.body.style.background='white';document.body.style.color='black'; ; for (var i = 0; i < document.links.length; ++i) {document.links[i].style.color='blue';}}" +
+                                    "function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}" +
+                                    "function closeIt(oldspinner){Android.q(oldspinner,window.pageYOffset);}" +
+                                    "links = document.getElementsByTagName(\"a\"); for (i = 0; i < links.length; i++){" +
+                                    "href = links[i].getAttribute(\"href\");" +
+                                    "if (href!=null && href.indexOf(\"#\") >= 0) {" +
+                                    "links[i].addEventListener(\"click\", function() {" +
+                                    "closeIt(-1);});}};     " +
+                                    scroll + " " + black + "</script></body></html>",
                             "text/html", null, null);
 
-                    DisplayTotal = null;
+                    //  webView.loadUrl("file:///android_asset/tekst/kodeks.htm#bok5");
 
-                    if (sp.getBoolean("Wielkosc2", true)) {
-                        if (firstLoad) {
-                            if (!db.GetSetting(Db_Size_Name, "").equals("")) {
-                                webView.setInitialScale(Integer.parseInt(db.GetSetting(Db_Size_Name, "")));
-                            }
-                        } else {
-                            webView.setInitialScale(scale);
-                        }
-                    }
+                    webView.setInitialScale(
+                            sp.getBoolean("Wielkosc2", true)
+                                    && firstLoad &&
+                                    !db.GetSetting(Db_Size_Name, "").equals("") ?
+                                    Integer.parseInt(db.GetSetting(Db_Size_Name, "")) :
+                                    scale);
                 }
             });
         }).start();
@@ -233,6 +237,7 @@ public abstract class OneTabActivity extends Activity {
                 }
             }
             progressDialog = null;
+            DisplayTotal = null;
             if (!Db_Number_Of_Selection.isEmpty()) {
                 db.SetSetting(Db_Number_Of_Selection,
                         Integer.toString(spinner.getSelectedItemPosition()));
@@ -244,9 +249,9 @@ public abstract class OneTabActivity extends Activity {
     }
 
     public void onSelected(int i, int position) {
-        DisplayIt("");
     }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     @SuppressLint({"SetJavaScriptEnabled", "AddJavascriptInterface"})
     public void onCreateTab() {
         ViewGroup.LayoutParams params = scroller.getLayoutParams();
@@ -255,11 +260,17 @@ public abstract class OneTabActivity extends Activity {
         scroller.webview = webView;
         webView.sv = scroller;
 
-        webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+        //   webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         webView.getSettings().setAppCacheEnabled(false);
         webView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
         webView.getSettings().setSupportZoom(true);
         webView.getSettings().setBuiltInZoomControls(sp.getBoolean("Wielkosc", true));
+
+        //   WebSettings settings = webView.getSettings();
+//        settings.setUseWideViewPort(true);
+        //      settings.setLoadWithOverviewMode(true);
+
+        webView.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.TEXT_AUTOSIZING);
 
         setBlack();
 
@@ -277,7 +288,20 @@ public abstract class OneTabActivity extends Activity {
                                     "javascript:Android.ShowToast(document.getElementsByTagName('ins').length);");
                         } else {
                             if (b2 != null) b2.setEnabled(false);
-                            webView.loadUrl("javascript:Android.ShowToast0();");
+                            //webView.loadUrl("javascript:Android.ShowToast0();");
+                            if (progressDialog != null) {
+                                if (progressDialog.isShowing()) {
+                                    try {
+                                        progressDialog.cancel();
+                                    } catch (Exception ignore) {
+                                    }
+                                }
+                                progressDialog = null;
+                                if (!Db_Number_Of_Selection.isEmpty()) {
+                                    db.SetSetting(Db_Number_Of_Selection,
+                                            Integer.toString(spinner.getSelectedItemPosition()));
+                                }
+                            }
                         }
                     }
 
@@ -392,7 +416,7 @@ public abstract class OneTabActivity extends Activity {
             MyActivity.startActivity(intent);
             return true;
         }
-        webView.loadUrl("javascript:closeIt("+oldSpinner+");");
+        webView.loadUrl("javascript:closeIt(" + oldSpinner + ");");
         return false;
     }
 
@@ -438,12 +462,12 @@ public abstract class OneTabActivity extends Activity {
         public void q(int old, int y) {
             String[] myarray = new String[2];
             myarray[0] = Integer.toString(y);
-            myarray[1] = Integer.toString(old==-1?spinner.getSelectedItemPosition():old);
-            if (old ==-1) oldSpinner = spinner.getSelectedItemPosition();
+            myarray[1] = Integer.toString(old == -1 ? spinner.getSelectedItemPosition() : old);
+            if (old == -1) oldSpinner = spinner.getSelectedItemPosition();
             mHistory.add(0, myarray);
         }
 
-        @JavascriptInterface
+
         public void ShowToast0() {
             if (progressDialog != null) {
                 if (progressDialog.isShowing()) {
@@ -459,6 +483,7 @@ public abstract class OneTabActivity extends Activity {
                 }
             }
         }
+
 
         @JavascriptInterface
         public void ShowToast(int Numberr) {

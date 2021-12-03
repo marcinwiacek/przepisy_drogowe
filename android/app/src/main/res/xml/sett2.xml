@@ -5,6 +5,9 @@
             android:summary="Zmiany przepisów uwzględnione w opcji 'Notka przy starcie'"
             android:title="Kalendarz">
             <Preference
+                android:summary="Zmiany znaków (D-18, D-18a, D-18b, D-23, D-23b, D-23c, D-34b, etc.)"
+                android:title="2.12.2021" />
+            <Preference
                 android:summary="Usunięcie prędkości 60km/h, zmiana pierwszeństwa i obowiązków pieszych"
                 android:title="1.06.2021" />
             <Preference

@@ -129,8 +129,8 @@ public class TaryfikatorActivity extends OneTabActivity {
         }
 
         if (DisplayLines.length() != 0) {
-            DisplayLines.insert(0, "<html><head><meta name=\"viewport\" content=\"width=device-width, minimum-scale=0.1, initial-scale=1.0\">"+
-                    "<title>"+title+"</title></head><body><table>");
+            DisplayLines.insert(0, "<html><head><meta name=\"viewport\" content=\"width=device-width, minimum-scale=0.1, initial-scale=1.0\">" +
+                    "<title>" + title + "</title></head><body><table>");
             DisplayLines.append("</table></body></html>");
         }
         if ((spinner.getSelectedItemPosition() == spinner.getCount() - 3 ||

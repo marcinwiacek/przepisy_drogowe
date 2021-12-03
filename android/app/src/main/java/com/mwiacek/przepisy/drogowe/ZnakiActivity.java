@@ -105,6 +105,7 @@ public class ZnakiActivity extends OneTabActivity {
                 int l = ((PrzepisyDrogoweActivity) getParent()).p.znaki[z].length;
                 for (int j = 0; j < l; j++) {
                     try {
+                        //FIXME: read
                         stream = getAssets().open(((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + ".htm");
                         inputreader = new InputStreamReader(stream);
                         lines2.delete(0, lines2.length());
@@ -116,7 +117,9 @@ public class ZnakiActivity extends OneTabActivity {
                             if (!lines2.toString().replaceFirst(tosearch, "<mark>").contains("<mark>"))
                                 continue;
                         }
-                        DisplayLines.append("<tr><td width=40%><a href=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + "><img src=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + ".png style='margin:2px;max-width:100%'></a>" +
+                        DisplayLines.append("<tr><td width=40%><a href=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] +
+                                "><img src=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] +
+                                ".png style='margin:2px;max-width:100%'></a>" +
                                 "</td><td><a href=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + ">");
                         mpz = lines2.indexOf("\n");
                         DisplayLines.append("<b>" + lines2.subSequence(mpz + 1, lines2.indexOf("\n", mpz + 1)) + "</b> " +
@@ -139,6 +142,7 @@ public class ZnakiActivity extends OneTabActivity {
                 int l = ((PrzepisyDrogoweActivity) getParent()).p.znaki[z].length;
                 for (int j = 0; j < l; j++) {
                     try {
+                        //FIXME: search
                         if (textView.length() != 0) {
                             stream = getAssets().open(((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + ".htm");
                             inputreader = new InputStreamReader(stream);
@@ -152,7 +156,9 @@ public class ZnakiActivity extends OneTabActivity {
                                     continue;
                             }
                         }
-                        summary2.append("<a href=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + "><img src=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] + ".png style='margin:2px;max-width:100%'></a>");
+                        summary2.append("<a href=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] +
+                                "><img src=" + ((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j] +
+                                ".png style='margin:2px;max-width:100%'></a>");
                         Lista.add(((PrzepisyDrogoweActivity) getParent()).p.znaki[z][j]);
                     } catch (IOException ignore) {
                     }
@@ -163,7 +169,8 @@ public class ZnakiActivity extends OneTabActivity {
             }
         }
 
-        if (firstLoad) {
+        //FIXME: do we still need this?
+       /* if (firstLoad) {
             DisplayLines.append("<br><div style='display:none'>");
             for (int z = 6; z <= 13; z++) {
                 for (int j = 0; j < ((PrzepisyDrogoweActivity) getParent()).p.znaki[z].length; j++) {
@@ -171,11 +178,16 @@ public class ZnakiActivity extends OneTabActivity {
                 }
             }
             DisplayLines.append("</div>");
-        }
+        }*/
 
         DisplayLines.append("</body></html>");
 
         DisplayTotal = DisplayLines.toString();
+    }
+
+    @Override
+    public void onSelected(int i, int position) {
+        DisplayIt("");
     }
 
     @Override
