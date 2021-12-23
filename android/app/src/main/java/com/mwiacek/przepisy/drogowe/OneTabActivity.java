@@ -198,6 +198,7 @@ public abstract class OneTabActivity extends Activity {
                             black = "normalnie();";
                         }
                     }
+
                     webView.loadDataWithBaseURL("file:///android_asset/",
                             DisplayTotal.substring(0, body) +
                                     "<script>function lustro() {document.body.style.background='black';document.body.style.color='white'; for (var i = 0; i < document.links.length; ++i) {document.links[i].style.color='#00FFFF';}}" +
@@ -411,9 +412,16 @@ public abstract class OneTabActivity extends Activity {
 
     boolean loadMyUrl(String url) {
         if (url.contains("http")) {
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            MyActivity.startActivity(intent);
+            if (sp.getBoolean("Share_Link", false)) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, url);
+                intent.setType("text/plain");
+                MyActivity.startActivity(intent);
+            } else {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                MyActivity.startActivity(intent);
+            }
             return true;
         }
         webView.loadUrl("javascript:closeIt(" + oldSpinner + ");");

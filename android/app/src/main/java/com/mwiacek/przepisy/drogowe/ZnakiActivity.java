@@ -220,7 +220,7 @@ public class ZnakiActivity extends OneTabActivity {
 
     @Override
     boolean loadMyUrl(String url) {
-        JavaScriptInterface j = new JavaScriptInterface(MyActivity,
+        JavaScriptInterface j = new JavaScriptInterface(sp, MyActivity,
                 null, Lista, ((PrzepisyDrogoweActivity) getParent()).p);
         if (textView.length() != 0) {
             j.s(url.replace("file:///android_asset/", ""),

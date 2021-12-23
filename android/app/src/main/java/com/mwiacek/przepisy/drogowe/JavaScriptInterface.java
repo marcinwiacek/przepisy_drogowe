@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.view.GestureDetector;
@@ -39,12 +40,14 @@ public class JavaScriptInterface {
     private Dialog dialog;
     private ScrollerWebView webView;
     private ScrollerView scroller;
+    private SharedPreferences sp;
 
-    JavaScriptInterface(Activity c, Dialog d, List<String> l, PlikiClass p2) {
+    JavaScriptInterface(SharedPreferences sp, Activity c, Dialog d, List<String> l, PlikiClass p2) {
         mContext = c;
         dialog = d;
         mURLList = l;
         p = p2;
+        this.sp = sp;
     }
 
     private void linie(String link, StringBuilder lines, StringBuilder OpisTitle, String tosearch2) {
@@ -300,9 +303,16 @@ public class JavaScriptInterface {
                         @Override
                         public boolean shouldOverrideUrlLoading(WebView view, String url) {
                             if (url.contains("http")) {
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setData(Uri.parse(url));
-                                mContext.startActivity(intent);
+                                if (sp.getBoolean("Share_Link", false)) {
+                                    Intent intent = new Intent(Intent.ACTION_SEND);
+                                    intent.putExtra(Intent.EXTRA_TEXT, url);
+                                    intent.setType("text/plain");
+                                    mContext.startActivity(intent);
+                                } else {
+                                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                                    intent.setData(Uri.parse(url));
+                                    mContext.startActivity(intent);
+                                }
                                 return true;
                             }
 

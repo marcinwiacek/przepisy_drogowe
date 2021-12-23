@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mwiacek.przepisy.drogowe"
     android:installLocation="auto"
-    android:versionCode="49"
-    android:versionName="1.49">
+    android:versionCode="50"
+    android:versionName="1.50">
 
     <application
         android:icon="@drawable/icon"

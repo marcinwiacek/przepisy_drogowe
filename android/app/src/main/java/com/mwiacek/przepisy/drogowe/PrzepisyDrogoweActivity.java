@@ -345,9 +345,17 @@ public class PrzepisyDrogoweActivity extends TabActivity {
                 ad.setButton(DialogInterface.BUTTON_POSITIVE, "OK (00:07)", (dialog, which) -> dialog.dismiss());
 
                 ad.setButton(DialogInterface.BUTTON_NEGATIVE, "Info o wydaniu", (dialog, which) -> {
-                    Intent intent1 = new Intent(Intent.ACTION_VIEW);
-                    intent1.setData(Uri.parse("https://www.salon24.pl/u/techracja/1186407,przepisy-drogowe-1-49"));
-                    MyActivity5.startActivity(intent1);
+                    String url = "https://www.salon24.pl/u/techracja/1186407,przepisy-drogowe-1-49";
+                    if (sp.getBoolean("Share_Link", false)) {
+                        Intent intent1 = new Intent(Intent.ACTION_SEND);
+                        intent1.putExtra(Intent.EXTRA_TEXT, url);
+                        intent1.setType("text/plain");
+                        MyActivity5.startActivity(intent1);
+                    } else {
+                        Intent intent1 = new Intent(Intent.ACTION_VIEW);
+                        intent1.setData(Uri.parse(url));
+                        MyActivity5.startActivity(intent1);
+                    }
                 });
 
                 ad.show();

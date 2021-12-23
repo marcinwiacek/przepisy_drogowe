@@ -147,9 +147,17 @@ public class PreferencesActivity extends PreferenceActivity {
         }
 
         findPreference("Czyszczenie").setOnPreferenceClickListener(preference -> {
-                    Intent intent2 = new Intent(Intent.ACTION_VIEW);
-                    intent2.setData(Uri.parse("https://github.com/marcinwiacek/przepisy_drogowe"));
-                    MyActivity5.startActivity(intent2);
+                    String url = "https://github.com/marcinwiacek/przepisy_drogowe";
+                    if (sp.getBoolean("Share_Link", false)) {
+                        Intent intent1 = new Intent(Intent.ACTION_SEND);
+                        intent1.putExtra(Intent.EXTRA_TEXT, url);
+                        intent1.setType("text/plain");
+                        MyActivity5.startActivity(intent1);
+                    } else {
+                        Intent intent1 = new Intent(Intent.ACTION_VIEW);
+                        intent1.setData(Uri.parse(url));
+                        MyActivity5.startActivity(intent1);
+                    }
 
                     return true;
                 }

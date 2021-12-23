@@ -93,11 +93,18 @@ public class InneActivity extends OneTabActivity {
 
     boolean loadMyUrl(String url) {
         if (url.contains("http")) {
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            MyActivity.startActivity(intent);
+            if (sp.getBoolean("Share_Link", false)) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, url);
+                intent.setType("text/plain");
+                MyActivity.startActivity(intent);
+            } else {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                MyActivity.startActivity(intent);
+            }
         } else {
-            JavaScriptInterface j = new JavaScriptInterface(MyActivity, null,
+            JavaScriptInterface j = new JavaScriptInterface(sp, MyActivity, null,
                     null, ((PrzepisyDrogoweActivity) getParent()).p);
             j.s(url.replace("file:///android_asset/", ""), "",
                     false, false);

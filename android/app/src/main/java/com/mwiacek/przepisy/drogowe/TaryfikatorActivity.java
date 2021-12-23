@@ -41,7 +41,7 @@ public class TaryfikatorActivity extends OneTabActivity {
 
     @Override
     boolean loadMyUrl(String url) {
-        JavaScriptInterface j = new JavaScriptInterface(MyActivity, null,
+        JavaScriptInterface j = new JavaScriptInterface(sp, MyActivity, null,
                 null, ((PrzepisyDrogoweActivity) getParent()).p);
         j.s(url.replace("file:///android_asset/", ""), "",
                 false, false);
@@ -128,11 +128,10 @@ public class TaryfikatorActivity extends OneTabActivity {
             adapter1.notifyDataSetChanged();
         }
 
-        if (DisplayLines.length() != 0) {
-            DisplayLines.insert(0, "<html><head><meta name=\"viewport\" content=\"width=device-width, minimum-scale=0.1, initial-scale=1.0\">" +
+        DisplayLines.insert(0, "<html><head><meta name=\"viewport\" content=\"width=device-width, minimum-scale=0.1, initial-scale=1.0\">" +
                     "<title>" + title + "</title></head><body><table>");
-            DisplayLines.append("</table></body></html>");
-        }
+        DisplayLines.append("</table></body></html>");
+
         if ((spinner.getSelectedItemPosition() == spinner.getCount() - 3 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 2 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 1)

@@ -133,6 +133,12 @@
         <CheckBoxPreference
             android:defaultValue="false"
             android:enabled="true"
+            android:key="Share_Link"
+            android:summary="Po kliknięciu na link 'Udostępnij' zamiast 'Otwórz' (pokaże wszystkie przeglądarki poza Chrome)"
+            android:title="'Udostępnij' zamiast 'Otwórz'" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
             android:key="No_Lock"
             android:summary="Wyłączenie automatycznej blokady"
             android:title="Brak blokowania ekranu" />
