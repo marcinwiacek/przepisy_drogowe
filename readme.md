@@ -10,7 +10,7 @@ Release Notes dla wersji 1.48: https://www.salon24.pl/u/techracja/1175547,przepi
 
 Android Kotlin - 1.48
 
-iOS - 1.50
+iOS - 1.50 (kod dla wersji 1.40)
 
 AppStore: https://apps.apple.com/us/app/przepisy-drogowe/id583045779?ls=1
 
