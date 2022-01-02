@@ -51,7 +51,7 @@ public class TaryfikatorActivity extends OneTabActivity {
     @Override
     public void onSelected(int i, int position) {
         if (spinner.getCount() > 5 &&
-                spinner.getSelectedItemPosition() < spinner.getCount() - 4) {
+                spinner.getSelectedItemPosition() < spinner.getCount() - 5) {
             String scroll = "window.scrollTo(0, " +
                     (position == -1 ? " document.getElementById('sekcja" + spinner.getSelectedItemPosition() + "').offsetTop" : position) +
                     ");";
@@ -69,7 +69,17 @@ public class TaryfikatorActivity extends OneTabActivity {
     protected void GetDisplayBytes() {
         String title = "";
         StringBuilder DisplayLines = new StringBuilder();
-        if (spinner.getSelectedItemPosition() == spinner.getCount() - 4 &&
+        if (spinner.getSelectedItemPosition() == spinner.getCount() - 5 &&
+                spinner.getCount() != 1) {
+            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 01.01.2022</b></td></tr>");
+            ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
+                    "kary/20220101.jso", textView.getText().toString(), getAssets(),
+                    al2, true);
+            DisplayLines.append("<tr><td bgcolor=grey><b>Punkty od 09.06.2012</b></td></tr>");
+            ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
+                    "kary/20120609.jso", textView.getText().toString(), getAssets(),
+                    al2, true);
+        } else if (spinner.getSelectedItemPosition() == spinner.getCount() - 4 &&
                 spinner.getCount() != 1) {
             DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 10.08.2017</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
@@ -117,11 +127,12 @@ public class TaryfikatorActivity extends OneTabActivity {
 
         if (spinner.getCount() == 1) {
             adapter1.clear();
-            adapter1.add("Mandaty i pkt razem - opracowanie własne");
+            adapter1.add("(do 31.12.2021) Mandaty i pkt razem - opracowanie własne");
             for (int x = al2.size() - 1; x >= 0; x--) {
                 adapter1.add(al2.get(x));
             }
-            adapter1.add("Mandaty i pkt osobno - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (od 1.1.2022) - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (10.08.2017-31.12.2021) - Rozporządzenia");
             adapter1.add("Mandaty i pkt osobno (11.04.2015-09.08.2017) - Rozporządzenia");
             adapter1.add("Mandaty i pkt osobno (09.06.2012-10.04.2015) - Rozporządzenia");
             adapter1.add("Mandaty i pkt osobno (24.05.2011-08.06.2012) - Rozporządzenia");
@@ -132,7 +143,9 @@ public class TaryfikatorActivity extends OneTabActivity {
                     "<title>" + title + "</title></head><body><table>");
         DisplayLines.append("</table></body></html>");
 
-        if ((spinner.getSelectedItemPosition() == spinner.getCount() - 3 ||
+        if ((spinner.getSelectedItemPosition() == spinner.getCount() - 5 ||
+                spinner.getSelectedItemPosition() == spinner.getCount() - 4 ||
+                spinner.getSelectedItemPosition() == spinner.getCount() - 3 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 2 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 1)
                 && spinner.getCount() != 1) {
@@ -153,6 +166,8 @@ public class TaryfikatorActivity extends OneTabActivity {
                             "ROZPORZĄDZENIA MINISTRÓW INFRASTRUKTURY ORAZ SPRAW WEWNĘTRZNYCH I ADMINISTRACJI z dnia 31 lipca 2002 r. w sprawie znaków i sygnałów drogowych")
                     .replaceAll("\\Qu.t.d.\\E",
                             "USTAWY z dnia 6 września 2001 r. o transporcie drogowym")
+                    .replaceAll("\\Qu.k.p.\\E",
+                            "USTAWY z dnia 5 stycznia 2011 r. o kierujących pojazdami (dostępna w zakładce \"Treść\")")
                     .replaceAll("\\Qh.p.s.\\E",
                             "Rozporządzenia Parlamentu Europejskiego i Rady nr 561/2006 z dnia 15 marca 2006 r. w sprawie harmonizacji niektórych przepisów socjalnych odnoszących się do transportu drogowego oraz zmieniającego rozporządzenie Rady nr 3821/85 i 2135/98, jak również uchylającego rozporządzenie Rady nr 3820/85")
                     .replaceAll("\\Qaetr\\E",
