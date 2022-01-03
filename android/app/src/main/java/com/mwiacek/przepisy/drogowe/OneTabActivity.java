@@ -502,7 +502,7 @@ public abstract class OneTabActivity extends Activity {
 
             if (b2 != null) {
                 MyActivity.runOnUiThread(() -> {
-                    b2.setEnabled(SearchNum > 0);
+                    b2.setEnabled(SearchNum > 1);
                 });
             }
 
