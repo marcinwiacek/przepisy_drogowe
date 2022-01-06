@@ -183,7 +183,7 @@ public class JavaScriptInterface {
                         mContext.getAssets(), null, false);
 
                 if (lines2.length() != 0) {
-                    lines.append("<table width=100%><tr><td bgcolor=grey><b>Taryfikator od 09.06.2012 do 31.12.2021 - wybrane pozycje</b></td></tr>" + lines2 + "</table>");
+                    lines.append("<table width=100%><tr><td bgcolor=grey><b>Taryfikator od 09.06.2012 - wybrane pozycje</b></td></tr>" + lines2 + "</table>");
                 }
             }
         }

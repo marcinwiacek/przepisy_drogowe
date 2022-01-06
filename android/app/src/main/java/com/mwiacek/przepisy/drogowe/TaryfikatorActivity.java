@@ -81,7 +81,7 @@ public class TaryfikatorActivity extends OneTabActivity {
                     al2, true);
         } else if (spinner.getSelectedItemPosition() == spinner.getCount() - 4 &&
                 spinner.getCount() != 1) {
-            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 10.08.2017</b></td></tr>");
+            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 10.08.2017 do 31.12.2021</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
                     "kary/20170810.jso", textView.getText().toString(), getAssets(),
                     al2, true);
@@ -91,7 +91,7 @@ public class TaryfikatorActivity extends OneTabActivity {
                     al2, true);
         } else if (spinner.getSelectedItemPosition() == spinner.getCount() - 3 &&
                 spinner.getCount() != 1) {
-            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 11.04.2015</b></td></tr>");
+            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 11.04.2015 do 09.08.2017</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
                     "kary/20150411.jso", textView.getText().toString(), getAssets(),
                     al2, true);
@@ -101,7 +101,7 @@ public class TaryfikatorActivity extends OneTabActivity {
                     al2, true);
         } else if (spinner.getSelectedItemPosition() == spinner.getCount() - 2 &&
                 spinner.getCount() != 1) {
-            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 24.05.2011</b></td></tr>");
+            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 24.05.2011 do 10.04.2015</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
                     "kary/20110524.jso", textView.getText().toString(), getAssets(),
                     al2, true);
@@ -111,11 +111,11 @@ public class TaryfikatorActivity extends OneTabActivity {
                     al2, true);
         } else if (spinner.getSelectedItemPosition() == spinner.getCount() - 1 &&
                 spinner.getCount() != 1) {
-            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 24.05.2011</b></td></tr>");
+            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 24.05.2011 do 10.04.2015</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
                     "kary/20110524.jso", textView.getText().toString(), getAssets(),
                     al2, true);
-            DisplayLines.append("<tr><td bgcolor=grey><b>Punkty 31.12.2010-08.06.2012</b></td></tr>");
+            DisplayLines.append("<tr><td bgcolor=grey><b>Punkty od 31.12.2010 do 08.06.2012</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
                     "kary/20101231.jso", textView.getText().toString(), getAssets(),
                     al2, true);
@@ -127,7 +127,7 @@ public class TaryfikatorActivity extends OneTabActivity {
 
         if (spinner.getCount() == 1) {
             adapter1.clear();
-            adapter1.add("(do 31.12.2021) Mandaty i pkt razem - opracowanie własne");
+            adapter1.add("Mandaty i pkt razem - opracowanie własne");
             for (int x = al2.size() - 1; x >= 0; x--) {
                 adapter1.add(al2.get(x));
             }
