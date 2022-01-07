@@ -1,6 +1,6 @@
-Android - 1.51
+Android - 1.53
 
-Google Play: https://play.google.com/store/apps/details?id=com.mwiacek.przepisy.drogowe&hl=pl
+Google Play: https://play.google.com/store/apps/details?id=com.mwiacek.przepisy.drogowe&hl=pl&gl=US
 
 Release Notes dla wersji 1.50 i 1.51: https://www.salon24.pl/u/techracja/1194225,przepisy-drogowe-1-50-i-1-51
 
