@@ -345,7 +345,7 @@ public class PrzepisyDrogoweActivity extends TabActivity {
                 ad.setButton(DialogInterface.BUTTON_POSITIVE, "OK (00:07)", (dialog, which) -> dialog.dismiss());
 
                 ad.setButton(DialogInterface.BUTTON_NEGATIVE, "Info o wydaniu", (dialog, which) -> {
-                    String url = "https://www.salon24.pl/u/techracja/1194225,przepisy-drogowe-1-50-i-1-51";
+                    String url = "https://www.salon24.pl/u/techracja/1195742,polski-nie-lad-w-praktyce-i-walka-o-jasnosc-z-przepisami-drogowymi-apka-1-52-i-1-53";
                     if (sp.getBoolean("Share_Link", false)) {
                         Intent intent1 = new Intent(Intent.ACTION_SEND);
                         intent1.putExtra(Intent.EXTRA_TEXT, url);
