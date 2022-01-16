@@ -874,7 +874,7 @@
      }
     ]
    },
-   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do prowadzenia pojazdu na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę niemającą wymaganych uprawnień",
+   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do prowadzenia pojazdu na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę nie mającą wymaganych uprawnień",
     "h":[
      {"m":"20220101",
       "t":"300 PLN",
@@ -4825,7 +4825,7 @@
    {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem mechanicznym w stanie po spożyciu alkoholu lub środka podobnie działającego do alkoholu",
     "h":[
      {"m":"20220101",
-      "t":"2500-5000 PLN; 10 pkt; A03",
+      "t":"Wniosek do Sądu (2500-30000 PLN+zakaz prowadzenia pojazdów); 10 pkt; A03",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -4889,7 +4889,7 @@
    {"o":"Kierowanie pojazdem silnikowym, z wyłączeniem czterokołowca lekkiego, lub tramwajem przez osobę nie mającą uprawnienia do kierowania pojazdami",
     "h":[
      {"m":"20220101",
-      "t":"1500-5000 PLN; 0 pkt; K02",
+      "t":"Wniosek do Sądu (1500-30000 PLN+zakaz prowadzenia pojazdów); 0 pkt; K02",
       "w":"k.w."
      },
      {"m":"20150411",
@@ -4913,7 +4913,7 @@
    {"o":"Kierowanie pojazdem silnikowym, z wyłączeniem czterokołowca lekkiego, lub tramwajem przez osobę nie mającą uprawnienia wymaganych dla danego rodzaju pojazdu",
     "h":[
      {"m":"20220101",
-      "t":"1500-5000 PLN; 0 pkt; K02",
+      "t":"Wniosek do Sądu (1500-30000 PLN+zakaz prowadzenia pojazdów); 0 pkt; K02",
       "w":"k.w."
      },
      {"m":"20150411",
@@ -4934,10 +4934,10 @@
      }
     ]
    },
-   {"o":"Kierowanie motorowerem lub czterokołowcem lekkim przez osobę niemającą do tego uprawnienia",
+   {"o":"Kierowanie motorowerem lub czterokołowcem lekkim przez osobę nie mającą do tego uprawnienia",
     "h":[
      {"m":"20220101",
-      "t":"1500-5000 PLN; 0 pkt; K02",
+      "t":"Wniosek do Sądu (1500-30000 PLN+zakaz prowadzenia pojazdów); 0 pkt; K02",
       "w":"k.w."
      },
      {"m":"20150411",
@@ -4954,7 +4954,7 @@
      }
     ]
    },
-   {"o":"Kierowanie pojazdem innym niż mechaniczny na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę niemającą do tego uprawnienia",
+   {"o":"Kierowanie pojazdem innym niż mechaniczny na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę nie mającą do tego uprawnienia",
     "h":[
      {"m":"20220101",
       "t":"200 PLN; 0 pkt; K02",
@@ -6533,7 +6533,7 @@
    {"o":"Nieudzielenie bezzwłocznej pomocy ofiarom wypadku",
     "h":[
      {"m":"20220101",
-      "t":"20-5000 PLN+zakaz prowadzenia pojazdów; 10 pkt; A04",
+      "t":"wniosek do Sądu (20-30000 PLN+zakaz prowadzenia pojazdów); 10 pkt; A04",
       "w":"k.w."
      },
      {"m":"20101231",

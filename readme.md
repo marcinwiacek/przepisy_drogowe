@@ -1,4 +1,4 @@
-Android - 1.54
+Android - 1.55
 
 Google Play: https://play.google.com/store/apps/details?id=com.mwiacek.przepisy.drogowe&hl=pl&gl=US
 
