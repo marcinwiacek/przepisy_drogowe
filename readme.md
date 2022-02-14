@@ -1,12 +1,12 @@
 1. Release notes
 
-    * Release Notes dla wersji 1.52 - 1.54: https://www.salon24.pl/u/techracja/1195742,polski-nie-lad-w-praktyce-i-walka-o-jasnosc-z-przepisami-drogowymi-apka-1-52-i-1-53
+    * Release Notes dla wersji 1.52 - 1.54: https://mwiacek.com/www/?q=node/513 lub https://www.salon24.pl/u/techracja/1195742,polski-nie-lad-w-praktyce-i-walka-o-jasnosc-z-przepisami-drogowymi-apka-1-52-i-1-53
 
-    * Release Notes dla wersji 1.50 - 1.51: https://www.salon24.pl/u/techracja/1194225,przepisy-drogowe-1-50-i-1-51
+    * Release Notes dla wersji 1.50 - 1.51: https://mwiacek.com/www/?q=node/512 lub https://www.salon24.pl/u/techracja/1194225,przepisy-drogowe-1-50-i-1-51
 
-    * Release Notes dla wersji 1.49: https://www.salon24.pl/u/techracja/1186407,przepisy-drogowe-1-49 https://mwiacek.com/www/?q=node/508
+    * Release Notes dla wersji 1.49: https://mwiacek.com/www/?q=node/508 lub https://www.salon24.pl/u/techracja/1186407,przepisy-drogowe-1-49
 
-    * Release Notes dla wersji 1.48: https://www.salon24.pl/u/techracja/1175547,przepisy-drogowe-1-48 https://mwiacek.com/www/?q=node/490
+    * Release Notes dla wersji 1.48: https://mwiacek.com/www/?q=node/490 lub https://www.salon24.pl/u/techracja/1175547,przepisy-drogowe-1-48
 
 2. Android - 1.56
 
