@@ -346,7 +346,7 @@ decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
     taryfikatorLabel.numberOfLines = 2;
     taryfikatorLabel.textAlignment = NSTextAlignmentCenter;
     taryfikatorLabel.textColor = [UIColor blackColor];
-    taryfikatorLabel.text = @"(do 31.12.2021) Mandaty i punkty razem (opracowanie własne)";
+    taryfikatorLabel.text = @"Mandaty i punkty razem (opracowanie własne)";
     
     self.taryfikatorNavigationBar.topItem.titleView = taryfikatorLabel;
     

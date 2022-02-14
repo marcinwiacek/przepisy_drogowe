@@ -57,7 +57,7 @@
     }
     
     self.menuArray = [[NSArray alloc]
-                      initWithObjects:@"(do 31.12.2021) Mandaty i punkty razem (opracowanie własne)",
+                      initWithObjects:@"Mandaty i punkty razem (opracowanie własne)",
                       @"Mandaty i punkty osobno (od 1.1.2022, Rozp.)",
                       @"Mandaty i punkty osobno (10.08.2017-31.12.2021, Rozp.)",
                 
