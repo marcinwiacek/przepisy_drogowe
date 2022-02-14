@@ -5,7 +5,8 @@
     "h":[
      {"m":"20220101",
       "t":"150 PLN",
-      "w":"lp. 7"},
+      "w":"lp. 7"
+     },
      {"m":"20110524",
       "t":"50 PLN",
       "w":"lp. 1"
@@ -16,7 +17,8 @@
     "h":[
      {"m":"20220101",
       "t":"200 PLN",
-      "w":"lp. 8"},
+      "w":"lp. 8"
+     },
      {"m":"20110524",
       "t":"100 PLN",
       "w":"lp. 2"
@@ -438,6 +440,10 @@
    },
    {"o":"Nieustąpienie pierwszeństwa pieszemu podczas cofania (przez kierującego innym pojazdem niż mechaniczny)",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN",
       "w":"k.w."
@@ -478,6 +484,10 @@
    },
    {"o":"Naruszenie przez kierującego zakazu rozdzielania kolumn pieszych",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 5 pkt; B07",
+      "w":"k.w."
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 5 pkt; B07",
       "w":"B07"
@@ -710,6 +720,10 @@
    },
    {"o":"Wyposażenie pojazdu w urządzenie informujące o działaniu sprzętu kontrolno-pomiarowego używanego przez organy kontroli ruchu drogowego lub działanie to zakłócające albo przewożenie w pojeździe takiego urządzenia w stanie wskazującym na gotowość jego użycia",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 3 pkt; H07",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN; 3 pkt; H07",
       "w":"k.w."
@@ -783,7 +797,7 @@
    {"o":"Pozostawienie pracującego silnika podczas postoju na obszarze zabudowanym (pojazd wykonujący czynności na drodze)",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 0 pkt; K20",
+      "t":"20-3000 PLN; 0 pkt; K20",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -860,7 +874,7 @@
      }
     ]
    },
-   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do prowadzenia pojazdu na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę niemającą wymaganych uprawnień",
+   {"o":"Dopuszczenie przez właściciela, posiadacza, użytkownika lub prowadzącego pojazd do prowadzenia pojazdu na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę nie mającą wymaganych uprawnień",
     "h":[
      {"m":"20220101",
       "t":"300 PLN",
@@ -931,7 +945,7 @@
    {"o":"Naruszenie przepisów dotyczących jazdy w zorganizowanych kolumnach, w tym przekroczenie dopuszczalnej liczby pojazdów,",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 0 pkt; K08",
+      "t":"20-3000 PLN; 0 pkt; K08",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -951,7 +965,7 @@
    {"o":"Naruszenie przepisów dotyczących jazdy w zorganizowanych kolumnach, w tym niezachowanie wymaganej odległości między kolumnami lub pojazdami w kolumnie",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 0 pkt; K09",
+      "t":"20-3000 PLN; 0 pkt; K09",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -994,6 +1008,14 @@
    },
    {"o":"Nieuprawnione umieszczanie w pojeździe lub na nim urządzeń stanowiących obowiązkowe wyposażenie pojazdu uprzywilejowanego, wysyłających sygnały świetlne w postaci niebieskich lub czerwonych świateł błyskowych albo sygnał dźwiękowy o zmiennym tonie",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN + konfiskata; 3 pkt; H06",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"20-500 PLN; 3 pkt; H06",
+      "w":"k.w."
+     },
      {"m":"20101231",
       "t":"3 pkt; H06",
       "w":"H06"
@@ -1002,6 +1024,10 @@
    },
    {"o":"Niestosowanie się, przez kierującego pojazdem uprzywilejowanym, do sygnałów dawanych przez osobę kierującą ruchem",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN; 0 pkt; K13",
+      "w":"k.w."
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K13",
       "w":"K13"
@@ -1018,6 +1044,10 @@
    },
    {"o":"Nieułatwienie przejazdu pojazdowi uprzywilejowanemu",
     "h":[
+     {"m":"20220101",
+      "t":"500-5000 PLN przy kierowaniu pojazdem mechanicznym; 20-500 PLN przy innych; 5 pkt; D09",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN; 5 pkt; D09",
       "w":"k.w."
@@ -1058,6 +1088,10 @@
    },
    {"o":"Naruszenie obowiązku \"jazdy prawostronnej\"",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 2 pkt; H08",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN; 2 pkt; H08",
       "w":"k.w."
@@ -1106,6 +1140,10 @@
    },
    {"o":"Ciągnięcie za pojazdem osoby na nartach, sankach, wrotkach lub innym podobnym urządzeniu",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 5 pkt; H20",
+      "w":"H20"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 5 pkt; H20",
       "w":"H20"
@@ -1154,6 +1192,10 @@
    },
    {"o":"Niestosowanie się do sygnałów i poleceń podawanych przez osoby uprawnione do kierowania ruchem drogowym",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN; 6 pkt; C03",
+      "w":"C03"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 6 pkt; C03",
       "w":"C03"
@@ -1170,6 +1212,10 @@
    },
    {"o":"Niestosowanie się do sygnałów i poleceń dawanych przez osoby uprawnione do kontroli ruchu drogowego",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN; 6 pkt; C04",
+      "w":"C04"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 6 pkt; C04",
       "w":"C04"
@@ -1186,9 +1232,17 @@
    },
    {"o":"Niestosowanie się, w celu uniknięcia kontroli, do sygnału osoby uprawnionej do kontroli ruchu drogowego, nakazującego zatrzymanie pojazdu",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN; 8 pkt; C01",
+      "w":"k.w."
+     },
      {"m":"20120609",
-      "t":"8 pkt; C01",
+      "t":"20-500PLN; 8 pkt; C01",
       "w":"C01"
+     },
+     {"m":"20101231",
+      "t":"20-500 PLN; 8 pkt; C01",
+      "w":"k.w."
      },
      {"m":"20101231",
       "t":"8 pkt; C01",
@@ -1228,10 +1282,10 @@
      }
     ]
    },
-   {"o":"Nieustąpienie pierwszeństwa (pojazdom) podczas włączania się do ruchu",
+   {"o":"Nieustąpienie pierwszeństwa (pojazdom) podczas włączania się do ruchu przez kierującego pojazdem mechanicznym",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 5 pkt; D07",
+      "t":"500-5000 PLN; 5 pkt; D07",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -1244,10 +1298,22 @@
      }
     ]
    },
+   {"o":"Nieustąpienie pierwszeństwa (pojazdom) podczas włączania się do ruchu (przez kierującego pojazdem innym niż mechaniczny)",
+    "h":[
+     {"m":"20220101",
+      "t":"20-500 PLN",
+      "w":"k.w."
+     },
+     {"m":"20110524",
+      "t":"300 PLN",
+      "w":"lp. 33"
+     }
+    ]
+   },
    {"o":"Uniemożliwienie włączenia się do ruchu autobusowi (trolejbusowi) sygnalizującemu zamiar zmiany pasa ruchu lub wjechania z zatoki na jezdnię z oznaczonego przystanku na obszarze zabudowanym",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; Bez wartości punktowej; Z01",
+      "t":"20-3000 PLN; Bez wartości punktowej; Z01",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -1263,7 +1329,7 @@
    {"o":"Naruszenie obowiązków przez kierującego pojazdem zbliżającego się do miejsca postoju autobusu szkolnego",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; Bez wartości punktowej; Z01",
+      "t":"20-3000 PLN; Bez wartości punktowej; Z01",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -1447,7 +1513,7 @@
    {"o":"Tamowanie lub utrudnianie ruchu przez kierującego pojazdem mechanicznym (hamowanie w sposób powodujący zagrożenie bezpieczeństwa ruchu lub jego utrudnienie)",
     "h":[
      {"m":"20220101",
-      "t":"nie niższa niż 500 PLN; bez wartości punktowej; Z01",
+      "t":"nie niższa niż 500 PLN (według k.w. do 5000 PLN); bez wartości punktowej; Z01",
       "w":"lp. 302"
      },
      {"m":"20110524",
@@ -1463,7 +1529,7 @@
    {"o":"Tamowanie lub utrudnianie ruchu przez kierującego pojazdem mechanicznym (Jazda z prędkością utrudniającą ruch innym kierującym)",
     "h":[
      {"m":"20220101",
-      "t":"nie niższa niż 500 PLN; 2 pkt; E07",
+      "t":"nie niższa niż 500 PLN (według k.w. do 5000 PLN); 2 pkt; E07",
       "w":"lp. 302"
      },
      {"m":"20110524",
@@ -1538,6 +1604,10 @@
    },
    {"o":"Naruszenie zakazu zawracania",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN; 5 pkt; D10",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN; 5 pkt; D10",
       "w":"k.w."
@@ -1603,7 +1673,7 @@
    {"o":"Nieustąpienie pierwszeństwa przez kierującego pojazdem zmieniającego zajmowany pas ruchu",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 5 pkt; D05",
+      "t":"20-3000 PLN; 5 pkt; D05",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -1803,7 +1873,7 @@
    {"o":"Wyprzedzanie na przejazdach dla rowerzystów lub bezpośrednio przed nimi",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 10 pkt; F03",
+      "t":"20-3000 PLN; 10 pkt; F03",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -2407,7 +2477,7 @@
    {"o":"Naruszenie przepisów określających warunki oraz zakazy zatrzymywania lub postoju",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN;1 pkt; H04",
+      "t":"20-3000 PLN;1 pkt; H04",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -2450,6 +2520,10 @@
    },
    {"o":"Nieustąpienie pierwszeństwa przejazdu na skrzyżowaniu w sytuacji równorzędnej",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 6 pkt; D01",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN; 6 pkt; D01",
       "w":"k.w."
@@ -2462,6 +2536,10 @@
    },
    {"o":"Nieustąpienie pierwszeństwa przejazdu na skrzyżowaniu oznaczonym znakami określającymi pierwszeństwo przejazdu",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 6 pkt; D02",
+      "w":"k.w."
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 6 pkt; D02",
       "w":"D02"
@@ -2478,6 +2556,10 @@
    },
    {"o":"Nieustąpienie pierwszeństwa przejazdu w razie przecinania się poza skrzyżowaniem kierunków ruchu lub torów jazdy pojazdów poruszających się po tej samej drodze",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 5 pkt; D06",
+      "w":"k.w."
+     },
      {"m":"20110524",
       "t":"20-500 PLN; 5 pkt; D06",
       "w":"k.w."
@@ -2491,7 +2573,7 @@
    {"o":"Nieustąpienie miejsca nadjeżdżającemu pojazdowi szynowemu przez kierującego pojazdem",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 6 pkt; D03",
+      "t":"20-3000 PLN; 6 pkt; D03",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -2594,6 +2676,10 @@
    },
    {"o":"Przejeżdżanie przez przejazd kolejowy pojazdu lub zespołu pojazdów o długości przekraczającej 10 m i niemogących rozwinąć prędkości powyżej 6 km/h bez uprzedniego upewnienia się, że w czasie potrzebnym na przejazd nie nadjedzie pociąg, lub bez uzgodnienia czasu przejazdu z dróżnikiem kolejowym",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K06",
+      "w":"k.w."
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K06",
       "w":"K06"
@@ -2650,6 +2736,10 @@
    },
    {"o":"Naruszenie zakazu holowania na autostradzie",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K07",
+      "w":"K07"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K07",
       "w":"K07"
@@ -3175,7 +3265,7 @@
    {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa rowerowi znajdującemu się na przejeździe dla rowerzystów",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 6 pkt; D04",
+      "t":"20-3000 PLN; 6 pkt; D04",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -3191,7 +3281,7 @@
    {"o":"Nieustąpienie przez kierującego pojazdem, który skręca w drogę poprzeczną, pierwszeństwa rowerzyście jadącemu na wprost po jezdni, pasie ruchu dla rowerów, drodze dla rowerów lub innej części drogi, którą zamierza opuścić",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 6 pkt; D04",
+      "t":"20-3000 PLN; 6 pkt; D04",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -3207,7 +3297,7 @@
    {"o":"Nieustąpienie przez kierującego pojazdem pierwszeństwa rowerowi przy przejeżdżaniu przez drogę dla rowerów poza jezdnią",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 6 pkt; D04",
+      "t":"20-3000 PLN; 6 pkt; D04",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -3692,7 +3782,7 @@
     "h":[
      {"m":"20220101",
       "t":"nie obowiązuje",
-      "w":"-"
+      "w":"brak"
      },
      {"m":"20110524",
       "t":"50 PLN",
@@ -3838,6 +3928,10 @@
    },
    {"o":"Umieszczenie na pojeździe ładunku w sposób powodujący przekroczenie dopuszczalnej masy całkowitej lub dopuszczalnej ładowności pojazdu",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K23",
+      "w":"K23"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K23",
       "w":"K23"
@@ -3854,6 +3948,10 @@
    },
    {"o":"Umieszczenie na pojeździe ładunku w sposób naruszający stateczność pojazdu",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K24",
+      "w":"K24"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K24",
       "w":"K24"
@@ -3870,6 +3968,10 @@
    },
    {"o":"Umieszczenie na pojeździe ładunku w sposób utrudniający kierowanie pojazdem",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K25",
+      "w":"K25"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K25",
       "w":"K25"
@@ -3886,6 +3988,10 @@
    },
    {"o":"Niezabezpieczenie ładunku umieszczonego na pojeździe przed zmianą położenia lub wywoływaniem nadmiernego hałasu",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K27",
+      "w":"K27"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K27",
       "w":"K27"
@@ -3902,6 +4008,10 @@
    },
    {"o":"Przewożenie ładunku o odrażającym wyglądzie lub wydzielającego odrażającą woń - bez odpowiedniego zabezpieczenia",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K28",
+      "w":"K28"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K28",
       "w":"K28"
@@ -3918,6 +4028,10 @@
    },
    {"o":"Przejazd bez zezwolenia pojazdu z ładunkiem powodującym przekroczenie określonych gabarytów",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K32",
+      "w":"K32"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K32",
       "w":"K32"
@@ -3934,6 +4048,10 @@
    },
    {"o":"Przejazd bez zezwolenia zespołu pojazdów o większej niż dopuszczalna liczbie pojazdów bądź długości",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 0 pkt; K33",
+      "w":"K33"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 0 pkt; K33",
       "w":"K33"
@@ -4582,6 +4700,10 @@
    },
    {"o":"Naruszenie warunków przewozu konwojentów, drużyn roboczych lub osób wykonujących czynności ładunkowe, w przyczepie ciągniętej przez ciągnik rolniczy, jeżeli liczba osób przekracza 5",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 3 pkt; J17",
+      "w":"J17"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 3 pkt; J17",
       "w":"J17"
@@ -4594,6 +4716,10 @@
    },
    {"o":"Naruszenie warunków przewozu konwojentów, drużyn roboczych lub osób wykonujących czynności ładunkowe, w przyczepie ciągniętej przez ciągnik rolniczy, jeżeli osoby znajdują się pomiędzy ładunkiem a przednią ścianą przyczepy",
     "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN; 3 pkt; J18",
+      "w":"J18"
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 3 pkt; J18",
       "w":"J18"
@@ -4696,8 +4822,16 @@
      }
     ]
    },
-   {"o":"Kierowanie pojazdem mechanicznym w stanie po spożyciu alkoholu lub środka podobnie działającego do alkoholu",
+   {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem mechanicznym w stanie po spożyciu alkoholu lub środka podobnie działającego do alkoholu",
     "h":[
+     {"m":"20220101",
+      "t":"Wniosek do Sądu (2500-30000 PLN+zakaz prowadzenia pojazdów); 10 pkt; A03",
+      "w":"k.w."
+     },
+     {"m":"20120609",
+      "t":"20-500 PLN; 10 pkt; A03",
+      "w":"A03"
+     },
      {"m":"20120609",
       "t":"10 pkt; A03",
       "w":"A03"
@@ -4708,8 +4842,16 @@
      }
     ]
    },
-   {"o":"Kierowanie pojazdem mechanicznym w stanie nietrzeźwości lub będąc pod wpływem środka odurzającego",
+   {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem mechanicznym w stanie nietrzeźwości lub będąc pod wpływem środka odurzającego",
     "h":[
+     {"m":"20220101",
+      "t":"2500-5000 PLN; 10 pkt; A05",
+      "w":"k.w."
+     },
+     {"m":"20120609",
+      "t":"20-500 PLN; 10 pkt; A05",
+      "w":"k.w."
+     },
      {"m":"20120609",
       "t":"10 pkt; A05",
       "w":"A05"
@@ -4747,7 +4889,7 @@
    {"o":"Kierowanie pojazdem silnikowym, z wyłączeniem czterokołowca lekkiego, lub tramwajem przez osobę nie mającą uprawnienia do kierowania pojazdami",
     "h":[
      {"m":"20220101",
-      "t":"20-500; 0 pkt; K02",
+      "t":"Wniosek do Sądu (1500-30000 PLN+zakaz prowadzenia pojazdów); 0 pkt; K02",
       "w":"k.w."
      },
      {"m":"20150411",
@@ -4771,7 +4913,7 @@
    {"o":"Kierowanie pojazdem silnikowym, z wyłączeniem czterokołowca lekkiego, lub tramwajem przez osobę nie mającą uprawnienia wymaganych dla danego rodzaju pojazdu",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 0 pkt; K02",
+      "t":"Wniosek do Sądu (1500-30000 PLN+zakaz prowadzenia pojazdów); 0 pkt; K02",
       "w":"k.w."
      },
      {"m":"20150411",
@@ -4792,10 +4934,10 @@
      }
     ]
    },
-   {"o":"Kierowanie motorowerem lub czterokołowcem lekkim przez osobę niemającą do tego uprawnienia",
+   {"o":"Kierowanie motorowerem lub czterokołowcem lekkim przez osobę nie mającą do tego uprawnienia",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 0 pkt; K02",
+      "t":"Wniosek do Sądu (1500-30000 PLN+zakaz prowadzenia pojazdów); 0 pkt; K02",
       "w":"k.w."
      },
      {"m":"20150411",
@@ -4812,7 +4954,7 @@
      }
     ]
    },
-   {"o":"Kierowanie pojazdem innym niż mechaniczny na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę niemającą do tego uprawnienia",
+   {"o":"Kierowanie pojazdem innym niż mechaniczny na drodze publicznej, w strefie zamieszkania lub strefie ruchu przez osobę nie mającą do tego uprawnienia",
     "h":[
      {"m":"20220101",
       "t":"200 PLN; 0 pkt; K02",
@@ -4870,8 +5012,8 @@
    },
    {"o":"Kierowanie pojazdem pomimo braku dopuszczenia pojazdu do ruchu",
     "h":[
-     {"m":"20110524",
-      "t":"20-500 PLN; 1 pkt; H05",
+     {"m":"20220101",
+      "t":"(w zależności od interpretacji: 1500-5000 PLN przy pojeździe mechanicznym; 20-1500 PLN przy innym niż mechaniczny); 1 pkt; H05",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -4899,7 +5041,7 @@
    {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b01><img src=b/b01.png align=left width=50>B-1 \"zakaz ruchu w obu kierunkach\"</a></td></tr></table>",
     "h":[
      {"m":"20110524",
-      "t":"20-500 PLN; 5 pkt; C06",
+      "t":"20-5000 PLN; 5 pkt; C06",
       "w":"k.w."
      },
      {"m":"20101231",
@@ -4911,7 +5053,7 @@
    {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b02><img src=b/b02.png align=left width=50>B-2 \"zakaz wjazdu\"</a></td></tr></table>",
     "h":[
      {"m":"20110524",
-      "t":"20-500 PLN; 5 pkt; C05",
+      "t":"20-5000 PLN; 5 pkt; C05",
       "w":"k.w."
      },
      {"m":"20101231",
@@ -5119,7 +5261,7 @@
    {"o":"Niestosowanie się do znaków: <table><tr><td><a href=b/b21><img src=b/b21.png align=left width=50>B-21 \"zakaz skręcania w lewo\"</a></td></tr><tr><td><a href=b/b22><img src=b/b22.png align=left width=50>B-22 \"zakaz skręcania w prawo\"</a></td></tr></table>",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 5 pkt; C07",
+      "t":"20-5000 PLN; 5 pkt; C07",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -5651,7 +5793,7 @@
    {"o":"Niestosowanie się do znaków F-15 do F-19: <table><tr><td><a href=f/f15><img src=f/f15.png align=left width=50>F-15 \"niesymetryczny podział jezdni dla przeciwnych kierunków ruchu\"</a></td></tr><tr><td><a href=f/f16><img src=f/f16.png align=left width=50>F-16 \"Koniec pasa ruchu na jezdni dwukierunkowej\"</a></td></tr><tr><td><a href=f/f17><img src=f/f17.png align=left width=50>F-17 \"koniec pasa ruchu na jezdni jednokierunkowej\"</a></td></tr><tr><td><a href=f/f18><img src=f/f18.png align=left width=50>F-18 \"przeciwny kierunek dla określonych pojazdów\"</a></td></tr><tr><td><a href=f/f19><img src=f/f19.png align=left width=50>F-19 \"pas ruchu dla określonych pojazdów\"</a></td></tr></table>",
     "h":[
      {"m":"20220101",
-      "t":"20-500; 5 pkt; C09",
+      "t":"20-5000; 5 pkt; C09",
       "w":"k.w."
      },
      {"m":"20120609",
@@ -5895,8 +6037,8 @@
    {"o":"Naruszenie postanowień wynikających ze znaków: <table><tr><td><a href=p/p22><img src=p/p22.png align=left width=50>P-22 \"BUS\"</a></td></tr></table>",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 1 pkt; C15",
-      "w":"k.w."
+      "t":"100 PLN; 1 pkt; C15",
+      "w":"lp. 284"
      },
      {"m":"20120609",
       "t":"100 PLN; 1 pkt; C15",
@@ -5969,6 +6111,14 @@
      {"m":"20101231",
       "t":"1 pkt; C15",
       "w":"C15"
+     }
+    ]
+   },
+   {"o":"Nieprzestrzeganie zakazu wjazdu do strefy czystego transportu: <table><tr><td><a href=d/d54><img src=d/d54.png align=left width=50>D-54 \"strefa czystego transportu\"</a></td></tr></table>",
+    "h":[
+     {"m":"20220101",
+      "t":"20-500 PLN",
+      "w":"k.w."
      }
     ]
    },
@@ -6066,6 +6216,10 @@
    },
    {"o":"Niestosowanie się do pozostałych, nie wyszczególnionych w niniejszym katalogu znaków i sygnałów drogowych",
     "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN; 1 pkt; C15",
+      "w":"k.w."
+     },
      {"m":"20120609",
       "t":"20-500 PLN; 1 pkt; C15",
       "w":"C15"
@@ -6165,14 +6319,6 @@
      {"m":"20110524",
       "t":"200 PLN",
       "w":"lp. 199"
-     }
-    ]
-   },
-   {"o":"Popełnienie przestępstwa drogowego",
-    "h":[
-     {"m":"20101231",
-      "t":"10 pkt; A01",
-      "w":"A01"
      }
     ]
    },
@@ -6331,7 +6477,7 @@
    {"o":"Niewskazanie wbrew obowiązkowi, na żądanie uprawnionego organu, komu pojazd został powierzony do kierowania lub używania w oznaczonym czasie w postępowaniu w sprawach o przestępstwo",
     "h":[
      {"m":"20220101",
-      "t":"nie niższa niż 4000 PLN",
+      "t":"nie niższa niż 4000 PLN (według k.w. do 5000 PLN)",
       "w":"lp. 239"
      }
     ]
@@ -6339,7 +6485,7 @@
    {"o":"Niewskazanie wbrew obowiązkowi, na żądanie uprawnionego organu, komu pojazd został powierzony do kierowania lub używania w oznaczonym czasie w postępowaniu w sprawach o spowodowanie zagrożenia bezpieczeństwa w ruchu drogowym",
     "h":[
      {"m":"20220101",
-      "t":"nie niższa niż 2000 PLN",
+      "t":"nie niższa niż 2000 PLN (według k.w. do 5000 PLN)",
       "w":"lp. 240"
      }
     ]
@@ -6347,7 +6493,7 @@
    {"o":"Niewskazanie wbrew obowiązkowi, na żądanie uprawnionego organu, komu pojazd został powierzony do kierowania lub używania w oznaczonym czasie w sprawach dotyczących przekroczenia dopuszczalnej prędkości",
     "h":[
      {"m":"20220101",
-      "t":"dwukrotność wysokości grzywny przewidzianej za dane wykroczenie, nie niższa niż 800 PLN",
+      "t":"dwukrotność wysokości grzywny przewidzianej za dane wykroczenie, nie niższa niż 800 PLN (według k.w. do 5000 PLN)",
       "w":"lp. 241"
      }
     ]
@@ -6355,24 +6501,56 @@
    {"o":"Niewskazanie wbrew obowiązkowi, na żądanie uprawnionego organu, komu pojazd został powierzony do kierowania lub używania w oznaczonym czasie w postępowaniu w sprawach o pozostałe wykroczenia",
     "h":[
      {"m":"20220101",
-      "t":"nie niższa niż 500 PLN",
+      "t":"nie niższa niż 500 PLN (według k.w. do 5000 PLN)",
       "w":"lp. 242"
      }
     ]
    },
-   {"o":"Tamowanie lub utrudnianie ruchu przez kierującego pojazdem mechanicznym",
+   {"o":"Tamowanie lub utrudnianie ruchu przez kierującego pojazdem mechanicznym (na drodze publicznej, w strefie zamieszkania lub strefie ruchu)",
     "h":[
      {"m":"20220101",
-      "t":"nie niższa niż 500 PLN",
+      "t":"nie niższa niż 500 PLN (według k.w. do 5000 PLN)",
       "w":"lp. 302"
      }
     ]
    },
-   {"o":"Nieudzielenie pomocy ofiarom wypadku",
+   {"o":"Tamowanie lub utrudnianie ruchu przez innych niż kierujący pojazdem mechanicznym (na drodze publicznej, w strefie zamieszkania lub strefie ruchu)",
     "h":[
+     {"m":"20220101",
+      "t":"20-500 PLN",
+      "w":"k.w."
+     }
+    ]
+   },
+   {"o":"Popełnienie przestępstwa drogowego",
+    "h":[
+     {"m":"20101231",
+      "t":"10 pkt; A01",
+      "w":"A01"
+     }
+    ]
+   },
+   {"o":"Nieudzielenie bezzwłocznej pomocy ofiarom wypadku",
+    "h":[
+     {"m":"20220101",
+      "t":"wniosek do Sądu (20-30000 PLN+zakaz prowadzenia pojazdów); 10 pkt; A04",
+      "w":"k.w."
+     },
+     {"m":"20101231",
+      "t":"20-500 PLN+zakaz prowadzenia pojazdów; 10 pkt; A04",
+      "w":"k.w."
+     },
      {"m":"20101231",
       "t":"10 pkt; A04",
       "w":"A04"
+     }
+    ]
+   },
+   {"o":"Wykroczenie przeciwko innym przepisom ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym lub przepisom wydanym na jej podstawie (przez uczestnika ruchu lub inną osobę znajdującą się na drodze publicznej, w strefie zamieszkania lub strefie ruchu, a także właściciela lub posiadacza pojazdu)",
+    "h":[
+     {"m":"20220101",
+      "t":"20-3000 PLN",
+      "w":"k.w."
      }
     ]
    },
