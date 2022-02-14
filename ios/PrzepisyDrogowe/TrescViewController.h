@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface TrescViewController : UIViewController {
-    IBOutlet UIWebView *trescWebView;
+@interface TrescViewController : UIViewController<WKNavigationDelegate> {
+    IBOutlet WKWebView *trescWebView;
     IBOutlet UISearchBar *trescSearchBar;
     IBOutlet UINavigationBar *trescNavigationBar;
     long nr_akt, nr_rozdzial,old_akt,searchall,searchcurr,nr_op;
@@ -24,12 +25,15 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)trescSearchBar;
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)trescSearchBar;
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)trescSearchBar;
-- (void)webViewDidFinishLoad:(UIWebView *)trescWebView;
 - (IBAction)trescLeftButtonMenuClicked:(id)sender;
 - (IBAction)trescRightButtonMenuClicked:(id)sender;
+- (void)webView:(WKWebView *)trescWebView
+decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView *)trescWebView didFinishNavigation:(WKNavigation *)navigation;
 
-@property(nonatomic,retain) IBOutlet UIWebView *trescWebView;
-@property (nonatomic, retain) IBOutlet UISearchBar *trescSearchBar;
+@property(nonatomic,retain) IBOutlet WKWebView *trescWebView;
+@property(nonatomic, retain) IBOutlet UISearchBar *trescSearchBar;
 @property(nonatomic,retain) IBOutlet UINavigationBar *trescNavigationBar;
 @property(nonatomic,assign) long nr_akt;
 @property(nonatomic,assign) long nr_rozdzial;

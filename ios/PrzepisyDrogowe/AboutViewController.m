@@ -25,21 +25,28 @@
 }
 
 -(IBAction)AboutEmailClicked:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"mailto:marcin@mwiacek.com?Subject=Przepisy+drogowe+%@+iOS+%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[UIDevice currentDevice] systemVersion]]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"mailto:marcin@mwiacek.com?Subject=Przepisy+drogowe+%@+iOS+%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],[[UIDevice currentDevice] systemVersion]]] options:@{} completionHandler:^(BOOL success) {}];
 }
 
-- (BOOL)webView:(UIWebView*)aboutWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        NSRange x = [[[request URL] absoluteString] rangeOfString:@"http" options:0];
+- (void)webView:(WKWebView *)aboutWebView
+decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+{
+    if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
+        
+        NSRange x = [[[navigationAction.request URL] absoluteString] rangeOfString:@"http" options:0];
         
         if (x.location!=NSNotFound) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[request URL] absoluteString]]];
-            return NO;
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[navigationAction.request URL] absoluteString]] options:@{} completionHandler:^(BOOL success) {}];
+            decisionHandler ( WKNavigationActionPolicyCancel);
+            return;
         }
         
-        return YES;
+        decisionHandler (WKNavigationActionPolicyCancel);
+        return;
     }
-    return YES;
+    
+    decisionHandler (WKNavigationActionPolicyAllow);
 }
 
 - (void)display
@@ -47,13 +54,23 @@
     [spinner startAnimating];
     
     dispatch_queue_t Queue = dispatch_queue_create("aboutqueue", NULL);
-    dispatch_async(Queue, ^{        
-          NSData *htmlData = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/assets/about.htm", [[NSBundle mainBundle] bundlePath]]];
+    dispatch_async(Queue, ^{
+        NSData *htmlData = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/assets/about.htm", [[NSBundle mainBundle] bundlePath]]];
+        
+        NSString* mystr = [[NSString alloc] initWithData:htmlData encoding:NSUTF8StringEncoding];
+        
+        NSRange r = [mystr rangeOfString:@"</head>"];
+        if (r.location!=NSNotFound) {
+            mystr = [NSString  stringWithFormat:@"%@",[mystr stringByReplacingOccurrencesOfString:@"</head>" withString:[NSString stringWithFormat:@"<style>html {-webkit-text-size-adjust: none; } body {width:%@px}</style><meta name = \"viewport\" content = \"minimum-scale=0.1, initial-scale = 1.0, maximum-scale=8.0, shrink-to-fit=YES\"></head>",[self getWidth:false]] options:0 range:r]];
+        }
+        const char *utfString = [mystr UTF8String];
+        
+        
+        htmlData = [NSData dataWithBytes: utfString length: strlen(utfString)];
         
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            
-            [_aboutWebView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath],@"/assets/"] isDirectory:YES]];
+            [self->_aboutWebView loadData:htmlData MIMEType:@"text/html" characterEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath],@"/assets/"] isDirectory:YES]];
         });
     });
 }
@@ -67,19 +84,13 @@
     return self;
 }
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        self.edgesForExtendedLayout=UIRectEdgeNone;
-        [self prefersStatusBarHidden];
-    }
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(OrientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
+
+    [self prefersStatusBarHidden];
     
     CGRect frame = CGRectMake(0, 0, 4000, 44);
     aboutLabel = [[UILabel alloc] initWithFrame:frame];
@@ -88,29 +99,18 @@
     aboutLabel.numberOfLines = 4;
     aboutLabel.textAlignment = NSTextAlignmentCenter;
     aboutLabel.text = [NSString stringWithFormat:@"Przepisy drogowe %@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]];
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        aboutLabel.textColor = [UIColor blackColor];
-    } else {
-        aboutLabel.textColor = [UIColor whiteColor];
-    }
+    
+    aboutLabel.textColor = [UIColor blackColor];
     
     self.aboutNavigationBar.topItem.titleView = aboutLabel;
-
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-         spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    } else {
-        spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    }
     
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-    if(orientation == UIInterfaceOrientationPortrait ||
-       orientation == UIInterfaceOrientationPortraitUpsideDown) {
-        spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2,22);
-    } else  {
-        spinner.center = CGPointMake(CGRectGetHeight([[UIScreen mainScreen] bounds])/2, 22);
-    }
+    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
+    
+   spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2,22);
     spinner.hidesWhenStopped = YES;
     [self.view addSubview:spinner];
+    
+    _aboutWebView.navigationDelegate = self;
     
     [self display];
     
@@ -119,18 +119,34 @@
     }
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration
-{
-    
-    if(interfaceOrientation == UIInterfaceOrientationPortrait ||
-       interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-        spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
-    } else  {
-        spinner.center = CGPointMake(CGRectGetHeight([[UIScreen mainScreen] bounds])/2, 22);
+-(NSString *)getWidth:(bool)or {
+    UIDeviceOrientation orientation=[[UIDevice currentDevice]orientation];
+    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        /*if (or) {
+            return [NSString stringWithFormat:@"%i",(int)(UIScreen.mainScreen.bounds.size.height*0.90) ];
+            
+        }*/
+        return [NSString stringWithFormat:@"%i",(int)(UIScreen.mainScreen.bounds.size.width*0.90) ];
     }
+    
+    float notchFix = 0;
+    if (UIApplication.sharedApplication.windows.firstObject.safeAreaInsets.bottom>0 &&
+        (orientation == UIInterfaceOrientationLandscapeLeft ||
+         orientation == UIInterfaceOrientationLandscapeRight)) {
+        notchFix = 0.09;
+    }
+    
+    return [NSString stringWithFormat:@"%i",(int)(self.view.bounds.size.width*(0.95-notchFix)) ];
 }
 
--(void)webViewDidFinishLoad:(UIWebView *)aboutWebView{
+-(void)OrientationDidChange:(NSNotification*)notification
+{
+   spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
+    [_aboutWebView evaluateJavaScript:[NSString stringWithFormat:@"document.body.style.width='%@px';",[self getWidth:true]] completionHandler:nil];
+}
+
+- (void)webView:(WKWebView *)aboutWebView didFinishNavigation:(WKNavigation *)navigation;
+{
     [spinner stopAnimating];
 }
 

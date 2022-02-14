@@ -49,18 +49,16 @@
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        
-        self.edgesForExtendedLayout=UIRectEdgeNone;
-        [self prefersStatusBarHidden];
-    }
+  //  self.edgesForExtendedLayout=UIRectEdgeNone;
+   //    [self prefersStatusBarHidden];
     
     self.menuArray = [[NSArray alloc]
-      initWithObjects:@"Alkohol (informacje)",
+                      initWithObjects:
+                      @"Alarmowe",
+                      @"Alkohol (informacje)",
                       @"Alkohol (kalkulator)",
                       @"Kierowanie ruchem",
                       @"Klimatyzacja (informacje)",
-                      @"Numery alarmowe",
                       @"Oleje silnikowe",
                       @"Opony",
                       @"Prawo jazdy (kody ograniczeń)",
@@ -75,10 +73,10 @@
     
     AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
     nr = appDelegate.controllerinne.nr;
-
+    
     [self.inneChangeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:nr inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop ];
     [self.inneChangeTableView deselectRowAtIndexPath:[NSIndexPath indexPathForRow:nr inSection:0] animated:NO];
-  
+    
     
     CGRect frame = CGRectMake(0, 0, 4000, 44);
     inneChangeLabel = [[UILabel alloc] initWithFrame:frame];
@@ -86,13 +84,8 @@
     inneChangeLabel.font = [UIFont boldSystemFontOfSize:14.0];
     inneChangeLabel.numberOfLines = 2;
     inneChangeLabel.textAlignment = NSTextAlignmentCenter;
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        inneChangeLabel.textColor = [UIColor blackColor];
-    } else {
-        inneChangeLabel.textColor = [UIColor whiteColor];
-    }    
+    inneChangeLabel.textColor = [UIColor blackColor];
     inneChangeLabel.text = @"Zakładka \"Inne\"";
-    
     
     self.inneChangeNavigationBar.topItem.titleView = inneChangeLabel;
 }
@@ -121,8 +114,8 @@
         
     }
     
-	NSString *cellValue = [self.menuArray objectAtIndex:indexPath.row];
-	cell.textLabel.text = cellValue;
+    NSString *cellValue = [self.menuArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellValue;
     if (nr==indexPath.row) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     } else {
@@ -137,7 +130,7 @@
 
 
 -(void) viewWillAppear:(BOOL)animated{
-  
+    
 }
 
 #pragma mark - Table view delegate

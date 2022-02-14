@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @interface ZnakiChangeViewController : UIViewController {
     NSArray *menuArray, *menuArray2, *menuArrayiPad;

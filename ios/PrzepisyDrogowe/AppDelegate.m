@@ -45,7 +45,7 @@
             }
             silver=false;
             for (NSDictionary *key2 in [key objectForKey:@"m"]) {
-               
+                
                 if (silver) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor=silver>%@", mystr, [key2 objectForKey:@"o"]];
                 } else {
@@ -71,7 +71,7 @@
     } else {
         //Taryfikator znaczy sie
         if (!InsideZnakiInne) {
-
+            
             NSString *reg = [NSString  stringWithFormat:@"(?![^<]+>)((?i:%@))",[[[[[[[[NSRegularExpression escapedPatternForString:toSearch2] stringByReplacingOccurrencesOfString:@"a" withString:@"[a\\u0105]"] stringByReplacingOccurrencesOfString:@"e" withString:@"[e\\u0119]"] stringByReplacingOccurrencesOfString:@"l" withString:@"[l\\u0142]"] stringByReplacingOccurrencesOfString:@"n" withString:@"[n\\u0144]"] stringByReplacingOccurrencesOfString:@"o" withString:@"[o\\u00f3]"] stringByReplacingOccurrencesOfString:@"s" withString:@"[s\\u015b]"] stringByReplacingOccurrencesOfString:@"z" withString:@"[z\\u017c\\u017a]"] ];
             
             NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:reg options:0 error:NULL];
@@ -106,9 +106,9 @@
                     
                     if ([sekcja length]!=0) {
                         mystr = [NSString stringWithFormat:@"%@<tr><td id=bok%i bgcolor=grey><b>%@</b></td></tr>", mystr, (int)[mojTaryfikatorRozdzial count],sekcja];
-                       
+                        
                         [mojTaryfikatorRozdzial addObject:sekcja];
-
+                        
                         sekcja=@"";
                         silver=false;
                     }
@@ -117,7 +117,7 @@
                         mojTaryfikatorSearchNum += ([keystr length] -[temp length])/43;
                     }
                     
-
+                    
                     if (silver) {
                         mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor=silver>%@</td></tr>", mystr, keystr];
                     } else {
@@ -130,11 +130,7 @@
                 }
             }
         } else {
-
             NSString *reg = [NSString  stringWithFormat:@"(?i:\\Q%@\\E)",toSearch2];
-            
-          
-            
             NSString *sekcja=@"";
             NSString *keystr,*temp;
             Boolean silver=true;
@@ -161,17 +157,13 @@
                         temp = [NSString stringWithFormat:@"%@<br><a href=q%i><b>%@</b></a>", temp, i,[key3 objectForKey:@"t"]];
                         keystr=[key3 objectForKey:@"m"];
                     }
-
                     
                     if ([sekcja length]!=0) {
                         mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor=grey><b>%@</b></td></tr>", mystr,sekcja];
                         
-                        
                         sekcja=@"";
                         silver=false;
                     }
-
-                    
                     
                     if (silver) {
                         mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor=silver>%@</td></tr>", mystr, temp];
@@ -179,13 +171,10 @@
                         mystr = [NSString stringWithFormat:@"%@<tr><td>%@</td></tr>", mystr, temp];
                     }
                     
-                    
                     i++;
                     silver=!silver;
                 }
             }
-            
-            
         }
     }
     return mystr;
@@ -203,14 +192,10 @@
     
     jsonObjects = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/assets/kary/y.jso", [[NSBundle mainBundle] bundlePath]]] options:NSJSONReadingMutableContainers error:nil];
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSDictionary *appDefaults = [NSDictionary dictionaryWithObject:[NSArray arrayWithObjects:@"YES",@"NO",nil] forKey:[NSArray arrayWithObjects:@"szczegoly",@"znakiz2003",nil]];
-    [defaults registerDefaults:appDefaults];
-    [defaults synchronize];
-    
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-    }
+    // NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"test"]);
+
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+
     // [self.tabBarController.tabBar setTransluflent:NO];
     //self.window.tintColor = [UIColor whiteColor];
     //self.window.backgroundColor = [UIColor whiteColor];
@@ -218,7 +203,8 @@
     // Override point for customization after application launch.
     return YES;
 }
-							
+
+/*
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -227,7 +213,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -254,5 +240,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+ */
 
 @end

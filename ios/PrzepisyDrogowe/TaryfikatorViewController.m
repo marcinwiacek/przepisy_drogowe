@@ -32,7 +32,7 @@
         searchcurr--;
     }
     
-    [_taryfikatorWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"window.scrollTo(0, GetY (document.getElementsByTagName('ins').item(%li)));",(searchcurr-1)]];
+    [_taryfikatorWebView evaluateJavaScript:[NSString stringWithFormat:@"window.scrollTo(0, GetY (document.getElementsByTagName('ins').item(%li)));",(searchcurr-1)] completionHandler:nil];
     
     if (searchcurr==1) {
         taryfikatorLeftButton.enabled = FALSE;
@@ -45,7 +45,7 @@
         searchcurr++;
     }
     
-    [_taryfikatorWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"window.scrollTo(0, GetY (document.getElementsByTagName('ins').item(%li)));",(searchcurr-1)]];
+    [_taryfikatorWebView evaluateJavaScript:[NSString stringWithFormat:@"window.scrollTo(0, GetY (document.getElementsByTagName('ins').item(%li)));",(searchcurr-1)] completionHandler:nil];
     
     if (searchcurr==searchall) {
         taryfikatorRightButton.enabled = FALSE;
@@ -58,15 +58,15 @@
 -(NSString *)readOldTaryfikator:(NSString *)fname :(NSString *)toSearch2 {
     NSString *mystr = @"";
     
-
+    
     NSData *htmlData = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/assets/kary/%@.jso", [[NSBundle mainBundle] bundlePath],fname]];
     
     id jsonObjects = [NSJSONSerialization JSONObjectWithData:htmlData options:NSJSONReadingMutableContainers error:nil];
- 
+    
     if ([toSearch2 length]==0) {
-
+        
         Boolean silver=false;
-
+        
         for (NSDictionary *key in [jsonObjects objectForKey:@"m"]) {
             if (silver) {
                 mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor=silver>%@<br><b>%@; %@</b></td></tr>", mystr, [key objectForKey:@"o"],[key objectForKey:@"w"],[key objectForKey:@"s"]];
@@ -75,13 +75,15 @@
             }
             silver=!silver;
         }
-
-    } else {
-        NSString *reg = [NSString  stringWithFormat:@"(?![^<]+>)((?i:%@))",[[[[[[[[[NSRegularExpression escapedPatternForString:toSearch2] stringByReplacingOccurrencesOfString:@"a" withString:@"[a\\u0105]"]
-stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByReplacingOccurrencesOfString:@"e" withString:@"[e\\u0119]"] stringByReplacingOccurrencesOfString:@"l" withString:@"[l\\u0142]"] stringByReplacingOccurrencesOfString:@"n" withString:@"[n\\u0144]"] stringByReplacingOccurrencesOfString:@"o" withString:@"[o\\u00f3]"] stringByReplacingOccurrencesOfString:@"s" withString:@"[s\\u015b]"] stringByReplacingOccurrencesOfString:@"z" withString:@"[z\\u017c\\u017a]"] ];
         
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:reg options:NSRegularExpressionSearch error:NULL];
-
+    } else {
+        NSString *reg = [NSString  stringWithFormat:@"(?![^<]+>)((?i:%@))",[[[[[[[[[NSRegularExpression escapedPatternForString:toSearch2]
+                                                                                   stringByReplacingOccurrencesOfString:@"a" withString:@"[a\\u0105]"]
+                                                                                  stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]
+                                                                                 stringByReplacingOccurrencesOfString:@"e" withString:@"[e\\u0119]"] stringByReplacingOccurrencesOfString:@"l" withString:@"[l\\u0142]"] stringByReplacingOccurrencesOfString:@"n" withString:@"[n\\u0144]"] stringByReplacingOccurrencesOfString:@"o" withString:@"[o\\u00f3]"] stringByReplacingOccurrencesOfString:@"s" withString:@"[s\\u015b]"] stringByReplacingOccurrencesOfString:@"z" withString:@"[z\\u017c\\u017a]"] ];
+        
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:reg options:0 error:NULL];
+        
         Boolean silver=false;
         long j;
         NSString *temp;
@@ -111,13 +113,13 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
         
     }
     
-    return [[[[[[[[[[[[mystr stringByReplacingOccurrencesOfString:@"c.p.g." withString:@"USTAWY z dnia 13 września 1996 r. o utrzymaniu czystości i porządku w gminach"]                                                                                                                                                                        stringByReplacingOccurrencesOfString:@"k.k." withString:@"USTAWY z dnia 6 czerwca 1997 Kodeks Karny"]stringByReplacingOccurrencesOfString:@"k.w." withString:@"USTAWY z dnia 20 maja 1971 r. Kodeks Wykroczeń"]stringByReplacingOccurrencesOfString:@"o.o.z.r." withString:@"ROZPORZĄDZENIA MINISTRA TRANSPORTU z dnia 31 lipca 2007 r. w sprawie okresowych ograniczeń oraz zakazu ruchu niektórych rodzajów pojazdów na drogach"]stringByReplacingOccurrencesOfString:@"p.r.d." withString:@"USTAWY z dnia 20 czerwca 1997 r. Prawo o ruchu drogowym (dostępna w zakładce \"Treść\")"] stringByReplacingOccurrencesOfString:@"u.d.p." withString:@"USTAWY z dnia 21 marca 1985 r. o drogach publicznych"]stringByReplacingOccurrencesOfString:@"z.s.d." withString:@"ROZPORZĄDZENIA MINISTRÓW INFRASTRUKTURY ORAZ SPRAW WEWNĘTRZNYCH I ADMINISTRACJI z dnia 31 lipca 2002 r. w sprawie znaków i sygnałów drogowych"] stringByReplacingOccurrencesOfString:@"u.t.d." withString:@"USTAWY z dnia 6 września 2001 r. o transporcie drogowym"]stringByReplacingOccurrencesOfString:@"h.p.s." withString:@"Rozporządzenia Parlamentu Europejskiego i Rady nr 561/2006 z dnia 15 marca 2006 r. w sprawie harmonizacji niektórych przepisów socjalnych odnoszących się do transportu drogowego oraz zmieniającego rozporządzenie Rady nr 3821/85 i 2135/98, jak również uchylającego rozporządzenie Rady nr 3820/85"] stringByReplacingOccurrencesOfString:@"aetr" withString:@"Umowy europejskiej dotyczącej pracy załóg pojazdów wykonujących międzynarodowe przewozy drogowe (AETR), sporządzonej w Genewie dnia 1 lipca 1970 r."] stringByReplacingOccurrencesOfString:@"r.u.j." withString:@"Rozporządzenia Rady nr 3821/1985 z dnia 20 grudnia 1985 r. w sprawie urządzeń rejestrujących stosowanych w transporcie drogowym"] stringByReplacingOccurrencesOfString:@"u.s.t.c" withString:@"USTAWY z dnia 29 lipca 2005 r. o systemie tachografów cyfrowych"];
+    return [[[[[[[[[[[[mystr stringByReplacingOccurrencesOfString:@"c.p.g." withString:@"USTAWY z dnia 13 września 1996 r. o utrzymaniu czystości i porządku w gminach"]  stringByReplacingOccurrencesOfString:@"k.k." withString:@"USTAWY z dnia 6 czerwca 1997 Kodeks Karny"]stringByReplacingOccurrencesOfString:@"k.w." withString:@"USTAWY z dnia 20 maja 1971 r. Kodeks Wykroczeń"]stringByReplacingOccurrencesOfString:@"o.o.z.r." withString:@"ROZPORZĄDZENIA MINISTRA TRANSPORTU z dnia 31 lipca 2007 r. w sprawie okresowych ograniczeń oraz zakazu ruchu niektórych rodzajów pojazdów na drogach"]stringByReplacingOccurrencesOfString:@"p.r.d." withString:@"USTAWY z dnia 20 czerwca 1997 r. Prawo o ruchu drogowym (dostępna w zakładce \"Treść\")"] stringByReplacingOccurrencesOfString:@"u.d.p." withString:@"USTAWY z dnia 21 marca 1985 r. o drogach publicznych"]stringByReplacingOccurrencesOfString:@"z.s.d." withString:@"ROZPORZĄDZENIA MINISTRÓW INFRASTRUKTURY ORAZ SPRAW WEWNĘTRZNYCH I ADMINISTRACJI z dnia 31 lipca 2002 r. w sprawie znaków i sygnałów drogowych"] stringByReplacingOccurrencesOfString:@"u.t.d." withString:@"USTAWY z dnia 6 września 2001 r. o transporcie drogowym"]stringByReplacingOccurrencesOfString:@"h.p.s." withString:@"Rozporządzenia Parlamentu Europejskiego i Rady nr 561/2006 z dnia 15 marca 2006 r. w sprawie harmonizacji niektórych przepisów socjalnych odnoszących się do transportu drogowego oraz zmieniającego rozporządzenie Rady nr 3821/85 i 2135/98, jak również uchylającego rozporządzenie Rady nr 3820/85"] stringByReplacingOccurrencesOfString:@"aetr" withString:@"Umowy europejskiej dotyczącej pracy załóg pojazdów wykonujących międzynarodowe przewozy drogowe (AETR), sporządzonej w Genewie dnia 1 lipca 1970 r."] stringByReplacingOccurrencesOfString:@"r.u.j." withString:@"Rozporządzenia Rady nr 3821/1985 z dnia 20 grudnia 1985 r. w sprawie urządzeń rejestrujących stosowanych w transporcie drogowym"] stringByReplacingOccurrencesOfString:@"u.s.t.c" withString:@"USTAWY z dnia 29 lipca 2005 r. o systemie tachografów cyfrowych"];
 }
 
 - (void)display {
     if (old_akt == nr_akt) {
         if (nr_rozdzial!=-1) {
-            [_taryfikatorWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"window.scrollTo(0, document.getElementById('bok%li').offsetTop);",(nr_rozdzial)]];
+            [_taryfikatorWebView evaluateJavaScript:[NSString stringWithFormat:@"window.scrollTo(0, document.getElementById('bok%li').offsetTop);",(nr_rozdzial)] completionHandler:nil];
         }
         return;
     }
@@ -129,27 +131,30 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
     taryfikatorLeftButton.enabled = FALSE;
     taryfikatorRightButton.enabled = FALSE;
     taryfikatorChangeButton.enabled = FALSE;
-        
+    
     taryfikatorLabel.alpha=0.2;
     [spinner startAnimating];
+    
+    AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
     
     dispatch_queue_t Queue = dispatch_queue_create("taryfikatorqueue", NULL);
     dispatch_async(Queue, ^{
         @autoreleasepool {
-            NSString *mystr = @"<html><head><style>html {-webkit-text-size-adjust: none; }</style><meta name = \"viewport\" content = \"initial-scale = 0.1, user-scalable = yes\"><script type=\"text/javascript\">function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}</script></head><body><table width=100%>";
+            NSString *mystr = [NSString stringWithFormat:@"<html><head><style>html {-webkit-text-size-adjust: none; } body {width:%@px}</style><meta name = \"viewport\" content = \"minimum-scale=0.1, initial-scale = 1.0, maximum-scale=8.0, shrink-to-fit=YES\"><script type=\"text/javascript\">function GetY (object) {if (!object) {return 0;} else {return object.offsetTop+GetY(object.offsetParent);}}</script></head><body><table width=100%%>",[self getWidth:false]];
+            
             const char *utfString ;
-            searchcurr=0;
-            searchall=0;
+            self->searchcurr=0;
+            self->searchall=0;
             
             
-            if (nr_akt==0) {
-                AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            if (self->nr_akt==0) {
                 
                 mystr = [NSString stringWithFormat:@"%@%@",mystr,[appDelegate readNewTaryfikator2:t:FALSE]];
                 
-                searchall =appDelegate.mojTaryfikatorSearchNum;
-            } else if (nr_akt==4) {
-              
+                self->searchall =appDelegate.mojTaryfikatorSearchNum;
+            } else if (self->nr_akt==4) {
+                
                 
                 NSString *mystr2 = [self readOldTaryfikator:@"20110524":t];
                 if ([mystr2 length]!=0) {
@@ -162,8 +167,8 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 31.12.2010 do 08.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
-
-            } else if (nr_akt==3) {
+                
+            } else if (self->nr_akt==3) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20110524":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 24.05.2011 do 10.04.2015</b></td></tr>%@",mystr,
@@ -175,11 +180,11 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
-            
-            } else if (nr_akt==2) {
+                
+            } else if (self->nr_akt==2) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20150411":t];
                 if ([mystr2 length]!=0) {
-                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 11.04.2015 do 09.08.2017</b></td></tr>%@",mystr,
+                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 11.04.2015</b></td></tr>%@",mystr,
                              mystr2];
                 }
                 
@@ -188,8 +193,7 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
-                
-            } else if (nr_akt==1) {
+            } else if (self->nr_akt==1) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20170810":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 10.08.2017</b></td></tr>%@",mystr,
@@ -204,6 +208,7 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
                 
             }
             
+            
             mystr = [NSString stringWithFormat:@"%@</table></body></html>",mystr];
             
             utfString = [mystr UTF8String];
@@ -211,18 +216,18 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
             NSData *htmlData2 = [NSData dataWithBytes: utfString length: strlen(utfString)];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                if (searchall!=0) {
-                    taryfikatorRightButton.enabled = TRUE;
-                    [self.tabBarItem setTitle:[NSString stringWithFormat:@"Taryfikator (%li)",searchall]];
+                if (self->searchall!=0) {
+                    self->taryfikatorRightButton.enabled = TRUE;
+                    [self.tabBarItem setTitle:[NSString stringWithFormat:@"Taryfikator (%li)",self->searchall]];
                 }
-                taryfikatorChangeButton.enabled=TRUE;
+                self->taryfikatorChangeButton.enabled=TRUE;
                 
-                _taryfikatorWebView.alpha=1;
+                self->_taryfikatorWebView.alpha=1;
                 
-                [_taryfikatorWebView loadData:htmlData2 MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath],@"/assets/"] isDirectory:YES]];
+                [self->_taryfikatorWebView loadData:htmlData2 MIMEType:@"text/html" characterEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath],@"/assets/"] isDirectory:YES]];
             });
-        };       
-    });     
+        };
+    });
 }
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)taryfikatorSearchBar {
@@ -242,9 +247,17 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
     return YES;
 }
 
-- (BOOL)webView:(UIWebView*)taryfikatorWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        if ([spinner isAnimating]) return YES;
+
+- (void)webView:(WKWebView *)taryfikatorWebView
+decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+{
+    if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
+        if ([spinner isAnimating]) {
+            decisionHandler ( WKNavigationActionPolicyCancel);
+            return;
+            
+        }
         
         [_taryfikatorWebView stopLoading];
         
@@ -257,16 +270,17 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
             [appDelegate.historiaTopOpisyZnakow removeAllObjects];
         }
         
-        [appDelegate.historiaURLOpisyZnakow addObject:[[[request URL]  relativePath] substringFromIndex:NSMaxRange([[[request URL]  relativePath] rangeOfString:@".app/assets/"])] ];
+        [appDelegate.historiaURLOpisyZnakow addObject:[[[navigationAction.request URL]  relativePath] substringFromIndex:NSMaxRange([[[navigationAction.request URL]  relativePath] rangeOfString:@".app/assets/"])] ];
         
         appDelegate.opisyznakowSearch = @"";
         appDelegate.znakimanypages = NO;
         
         [self performSegueWithIdentifier:@"PokazZnak2Segue" sender:self];
-        
-        return YES;
+        decisionHandler (WKNavigationActionPolicyCancel);
+        return;
     }
-    return YES;
+    
+    decisionHandler (WKNavigationActionPolicyAllow);
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -278,11 +292,12 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
     return self;
 }
 
--(void)webViewDidFinishLoad:(UIWebView *)inneWebView{
+- (void)webView:(WKWebView *)taryfikatorWebView didFinishNavigation:(WKNavigation *)navigation;
+{
     [spinner stopAnimating];
     taryfikatorLabel.alpha=1;
     if (nr_rozdzial!=-1) {
-        [_taryfikatorWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"window.scrollTo(0, document.getElementById('bok%li').offsetTop);",(nr_rozdzial)]];
+        [_taryfikatorWebView evaluateJavaScript:[NSString stringWithFormat:@"window.scrollTo(0, document.getElementById('bok%li').offsetTop);",(nr_rozdzial)] completionHandler:nil];
     }
 }
 
@@ -295,18 +310,19 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        [self.taryfikatorRightButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
-        [self.taryfikatorRightButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-        
-        [self.taryfikatorLeftButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
-        [self.taryfikatorLeftButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-        
-        self.taryfikatorNavigationBar.barTintColor = [UIColor whiteColor];
-        self.taryfikatorSearchBar.barTintColor = [UIColor whiteColor];
-        self.edgesForExtendedLayout=UIRectEdgeNone;
-        [self prefersStatusBarHidden];
-    }
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(OrientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
+    
+    //   [self.taryfikatorRightButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
+    //   [self.taryfikatorRightButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    //   [self.taryfikatorLeftButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
+    //   [self.taryfikatorLeftButton setBackgroundImage:[UIImage imageNamed:@"white.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    self.taryfikatorNavigationBar.barTintColor = [UIColor whiteColor];
+    self.taryfikatorSearchBar.barTintColor = [UIColor whiteColor];
+    
+    // [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+    // [self prefersStatusBarHidden];
     
     CGRect frame = CGRectMake(0, 0, 4000, 44);
     taryfikatorLabel = [[UILabel alloc] initWithFrame:frame];
@@ -314,11 +330,7 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
     taryfikatorLabel.font = [UIFont boldSystemFontOfSize:14.0];
     taryfikatorLabel.numberOfLines = 2;
     taryfikatorLabel.textAlignment = NSTextAlignmentCenter;
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        taryfikatorLabel.textColor = [UIColor blackColor];
-    } else {
-        taryfikatorLabel.textColor = [UIColor whiteColor];
-    }
+    taryfikatorLabel.textColor = [UIColor blackColor];
     taryfikatorLabel.text = @"Mandaty i punkty razem (opracowanie własne)";
     
     self.taryfikatorNavigationBar.topItem.titleView = taryfikatorLabel;
@@ -327,13 +339,13 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
     
     appDelegate.controllertaryfikator=self;
     
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    } else {
-         spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    }
+    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
+    
     spinner.hidesWhenStopped = YES;
+    spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
     [self.view addSubview:spinner];
+    
+    _taryfikatorWebView.navigationDelegate = self;
     
     nr_akt = 0;
     nr_rozdzial = -1;
@@ -341,26 +353,37 @@ stringByReplacingOccurrencesOfString:@"c" withString:@"[c\\u0107]"]stringByRepla
     [self display];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-    if(orientation == UIInterfaceOrientationPortrait ||
-       orientation == UIInterfaceOrientationPortraitUpsideDown) {
-        spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
-    } else  {
-        spinner.center = CGPointMake(CGRectGetHeight([[UIScreen mainScreen] bounds])/2, 22);
+-(NSString *)getWidth:(bool)or {
+    UIDeviceOrientation orientation=[[UIDevice currentDevice]orientation];
+    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        /*if (or) {
+            return [NSString stringWithFormat:@"%i",(int)(UIScreen.mainScreen.bounds.size.height*0.97) ];
+            
+        }*/
+        return [NSString stringWithFormat:@"%i",(int)(UIScreen.mainScreen.bounds.size.width*0.97) ];
     }
+    
+    float notchFix = 0;
+    if (UIApplication.sharedApplication.windows.firstObject.safeAreaInsets.bottom>0 &&
+        (orientation == UIInterfaceOrientationLandscapeLeft ||
+         orientation == UIInterfaceOrientationLandscapeRight)) {
+        notchFix = 0.09;
+    }
+    
+    return [NSString stringWithFormat:@"%i",(int)(self.view.bounds.size.width*(0.95-notchFix)) ];
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration
+-(void)OrientationDidChange:(NSNotification*)notification
 {
+    spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
+    [_taryfikatorWebView evaluateJavaScript:[NSString stringWithFormat:@"document.body.style.width='%@px';",[self getWidth:true]] completionHandler:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
+    [_taryfikatorWebView evaluateJavaScript:[NSString stringWithFormat:@"document.body.style.width='%@px';",[self getWidth:true]] completionHandler:nil];
     
-    if(interfaceOrientation == UIInterfaceOrientationPortrait ||
-       interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-        spinner.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 22);
-    } else  {
-        spinner.center = CGPointMake(CGRectGetHeight([[UIScreen mainScreen] bounds])/2, 22);
-    }
 }
 
 

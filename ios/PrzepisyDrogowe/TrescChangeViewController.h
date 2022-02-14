@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @interface TrescChangeViewController : UIViewController {
     NSArray *menuArray, *menuArray2, *menuArray3, *menuArrayiPad;

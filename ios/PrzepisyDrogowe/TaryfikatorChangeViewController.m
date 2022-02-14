@@ -56,8 +56,10 @@
         [self prefersStatusBarHidden];
     }
     
-    self.menuArray = [[NSArray alloc] initWithObjects:@"Mandaty i punkty razem (opracowanie własne)",@"Mandaty i punkty osobno (od 10.08.2017, Rozporządzenia)",@"Mandaty i punkty osobno (11.04.2015-09.08.2017, Rozp.)",@"Mandaty i punkty osobno (09.06.2012-10.04.2015, Rozp.)",
-        @"Mandaty i punkty osobno (24.05.2011-08.06.2012, Rozp.)",nil];
+    self.menuArray = [[NSArray alloc]
+                      initWithObjects:@"Mandaty i punkty razem (opracowanie własne)",@"Mandaty i punkty osobno (Rozporządzenia)",
+                      @"Mandaty i punkty osobno (11.04.2015-09.08.2017, Rozp.)" ,                     @"Mandaty i punkty osobno (09.06.2012-10.04.2015, Rozp.)",
+                      @"Mandaty i punkty osobno (24.05.2011-08.06.2012, Rozp.)",nil];
     
     AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
     nr_akt = appDelegate.controllertaryfikator.nr_akt;
@@ -78,11 +80,11 @@
     taryfikatorChangeLabel.numberOfLines = 2;
     taryfikatorChangeLabel.textAlignment = NSTextAlignmentCenter;
     if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-         taryfikatorChangeLabel.textColor = [UIColor blackColor];
+        taryfikatorChangeLabel.textColor = [UIColor blackColor];
     } else {
-        taryfikatorChangeLabel.textColor = [UIColor whiteColor]; 
+        taryfikatorChangeLabel.textColor = [UIColor whiteColor];
     }
-   
+    
     taryfikatorChangeLabel.text = @"Zakładka \"Treść\"";
     
     
@@ -121,7 +123,7 @@
         AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
         return [appDelegate.mojTaryfikatorRozdzial count];
     }
- 
+    
     return 0;
 }
 
@@ -144,7 +146,7 @@
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
     } else {
-       
+        
         AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
         NSString *cellValue = [appDelegate.mojTaryfikatorRozdzial objectAtIndex:indexPath.row];
         cell.textLabel.text = cellValue;

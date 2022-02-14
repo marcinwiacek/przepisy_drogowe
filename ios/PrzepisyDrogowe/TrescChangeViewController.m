@@ -30,17 +30,15 @@
 -(IBAction)trescChangeButtonClicked:(id)sender {
     AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
     if (nr_akt!=appDelegate.controllertresc.nr_akt || nr_rozdzial!=appDelegate.controllertresc.nr_rozdzial) {
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
             [appDelegate.controllertresc.trescLabel setText:[self.menuArrayiPad objectAtIndex:nr_akt]];
-            
         } else {
             [appDelegate.controllertresc.trescLabel setText:[self.menuArray objectAtIndex:nr_akt]];
-    
         }
         
         appDelegate.controllertresc.nr_akt = nr_akt;
         appDelegate.controllertresc.nr_rozdzial = nr_rozdzial;
-         
+        
         [self dismissViewControllerAnimated:YES completion: nil];
         
         [appDelegate.controllertresc display];
@@ -62,86 +60,84 @@
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-       
-        self.edgesForExtendedLayout=UIRectEdgeNone;
-        [self prefersStatusBarHidden];
-    }
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    [self prefersStatusBarHidden];
     
+    self.menuArray = [[NSArray alloc] initWithObjects:@"Prawo o ruchu drogowym",
+                      @"Ustawa o kierujących pojazdami",
+                      @"Rozp. w sprawie post. z kier. (2012)", @"Stare rozp. w sprawie post. z kier. (2002)", nil];
     
-    self.menuArray = [[NSArray alloc] initWithObjects:@"Rozp. w sprawie post. z kier. (2012)",@"Prawo o ruchu drogowym",@"Ustawa o kierujących pojazdami", @"Stare rozp. w sprawie post. z kier. (2002)", nil];
-    
-     self.menuArrayiPad = [[NSArray alloc] initWithObjects:@"Rozporządzenie w sprawie postępowania z kierowcami (2012)",@"Prawo o ruchu drogowym",@"Ustawa o kierujących pojazdami", @"Stare rozporządzenie w sprawie postępowania z kierowcami (2002)", nil];
+    self.menuArrayiPad = [[NSArray alloc] initWithObjects:@"Prawo o ruchu drogowym",@"Ustawa o kierujących pojazdami",@"Rozporządzenie w sprawie postępowania z kierowcami (2012)", @"Stare rozporządzenie w sprawie postępowania z kierowcami (2002)", nil];
     
     self.menuArray2 = [[NSArray alloc] initWithObjects:@"Przepisy ogólne",
-        @"Zasady ogólne ruchu drogowego",
-        @"Ruch pieszych",
-        @"Zasady ogólne ruchu pojazdów",
-        @"Włączanie się do ruchu",
-        @"Prędkość i hamowanie",
-        @"Zmiana kierunku jazdy lub pasa ruchu",
-        @"Wymijanie, omijanie i cofanie",
-        @"Wyprzedzanie",
-        @"Przecinanie się kierunków ruchu",
-        @"Ostrzeganie oraz jazda w warunkach zmniejszonej przejrzystości powietrza",
-        @"Holowanie",
-        @"Ruch pojazdów w kolumnie",
-        @"Przepisy dodatkowe o ruchu rowerów, motorowerów oraz pojazdów zaprzęgowych",
-        @"Ruch zwierząt",
-        @"Przepisy porządkowe",
-        @"Zatrzymanie i postój",
-        @"Używanie świateł zewnętrznych",
-        @"Warunki używania pojazdów w ruchu drogowym",
-        @"Wykorzystanie dróg w sposób szczególny",
-        @"Warunki techniczne pojazdów",
-        @"Homologacja",
-        @"Dopuszczenie jednostkowe pojazdu",
-        @"Dopuszczenie indywidualne WE pojazdu",
-        @"Warunki dopuszczenia pojazdów do ruchu",
-        @"Centralna ewidencja pojazdów",
-        @"Krajowy Punkt Kontaktowy",
-        @"Badania techniczne pojazdów",
-        @"Centralna ewidencja kierowców",
-        @"Centralna ewidencja posiadaczy kart parkingowych",
-        @"Szkolenie i egzaminowanie",
-        @"Wojewódzki ośrodek ruchu drogowego",
-        @"Uprawnienia Policji i innych organów",
-        @"Zatrzymywanie i zwracanie dowodów rejestracyjnych",
-        @"Zatrzymywanie praw jazdy i pozwoleń oraz cofanie i przywracanie uprawnień do kierowania pojazdami",
-        @"Kary pieniężne za przejazd pojazdów nienormatywnych bez zezwolenia lub niezgodnie z warunkami określonymi w zazwoleniu",
-        @"Działania na rzecz bezpieczeństwa ruchu drogowego",
-        @"Zmiany w przepisach obowiązujących oraz przepisy przejściowe i końcowe", nil];
+                       @"Zasady ogólne ruchu drogowego",
+                       @"Ruch pieszych oraz osób poruszających się przy użyciu użycia wspomagającego ruch",
+                       @"Zasady ogólne ruchu pojazdów",
+                       @"Włączanie się do ruchu",
+                       @"Prędkość i hamowanie",
+                       @"Zmiana kierunku jazdy lub pasa ruchu",
+                       @"Wymijanie, omijanie i cofanie",
+                       @"Wyprzedzanie",
+                       @"Przecinanie się kierunków ruchu",
+                       @"Ostrzeganie oraz jazda w warunkach zmniejszonej przejrzystości powietrza",
+                       @"Holowanie",
+                       @"Ruch pojazdów w kolumnie",
+                       @"Przepisy dodatkowe o ruchu rowerów, hulajnóg elektrycznych, urządzeń transportu osobistego, motorowerów oraz pojazdów zaprzęgowych",
+                       @"Ruch zwierząt",
+                       @"Przepisy porządkowe",
+                       @"Zatrzymanie i postój",
+                       @"Używanie świateł zewnętrznych",
+                       @"Warunki używania pojazdów w ruchu drogowym",
+                       @"Wykorzystanie dróg w sposób szczególny",
+                       @"Wykorzystanie dróg na potrzeby prac badawczych nad pojazdami autonomicznymi",
+                       @"Warunki techniczne pojazdów",
+                       @"Homologacja",
+                       @"Dopuszczenie jednostkowe pojazdu",
+                       @"Dopuszczenie indywidualne WE pojazdu",
+                       @"Warunki dopuszczenia pojazdów do ruchu",
+                       @"Centralna ewidencja pojazdów",
+                       @"Krajowy Punkt Kontaktowy",
+                       @"Profesjonalna rejestracja pojazdów",
+                       @"Badania techniczne pojazdów",
+                       @"Centralna ewidencja kierowców",
+                       @"Centralna ewidencja posiadaczy kart parkingowych",
+                       @"Wojewódzki ośrodek ruchu drogowego",
+                       @"Uprawnienia Policji i innych organów",
+                       @"Zatrzymywanie i zwracanie dowodów rejestracyjnych",
+                       @"Zatrzymywanie praw jazdy i pozwoleń oraz cofanie i przywracanie uprawnień do kierowania pojazdami",
+                       @"Kary pieniężne za przejazd pojazdów nienormatywnych bez zezwolenia lub niezgodnie z warunkami określonymi w zazwoleniu",
+                       @"Działania na rzecz bezpieczeństwa ruchu drogowego",
+                       @"Kary pieniężne",
+                       @"Zmiany w przepisach obowiązujących oraz przepisy przejściowe i końcowe", nil];
     
-     self.menuArray3 = [[NSArray alloc] initWithObjects:@"Przepisy ogólne",
-        @"Osoby uprawnione do kierowania pojazdami",
-        @"Wydawanie praw jazdy",
-        @"Szkolenie osób ubiegających się o uprawnienie do kierowania pojazdami",
-        @"Ośrodki szkolenia kierowców i inne podmioty prowadzące szkolenie",
-        @"Instruktorzy i wykładowcy",
-        @"Zajęcia dla osób ubiegających się o wydanie karty rowerowej",
-        @"Nadzór nad szkoleniem",
-        @"Sprawdzanie kwalifikacji i przeprowadzanie egzaminów państwowych",
-        @"Egzaminatorzy i inne osoby dokonujące sprawdzenia kwalifikacji",
-        @"Nadzór nad sprawdzaniem kwalifikacji",
-        @"Badanie lekarskie",
-        @"Badanie psychologiczne",
-        @"Okres próbny",
-        @"Nadzór nad kierującym",
-        @"Wymagania w stosunku do kierujących pojazdami uprzywilejowanymi lub przewożącymi wartości pieniężne",
-        @"Szkolenie osób posiadających uprawnienia do kierowania pojazdem silnikowym",
-        @"Nadzór nad wykonywaniem zadań z zakresu ustawy",
-        @"Wymiana praw jazdy",
-        @"Zmiany w przepisach obowiązujących, przepisy przejściowe i końcowe",nil];
-
-    
+    self.menuArray3 = [[NSArray alloc] initWithObjects:@"Przepisy ogólne",
+                       @"Osoby uprawnione do kierowania pojazdami",
+                       @"Wydawanie praw jazdy",
+                       @"Szkolenie osób ubiegających się o uprawnienie do kierowania pojazdami",
+                       @"Ośrodki szkolenia kierowców i inne podmioty prowadzące szkolenie",
+                       @"Instruktorzy i wykładowcy",
+                       @"Zajęcia dla osób ubiegających się o wydanie karty rowerowej",
+                       @"Nadzór nad szkoleniem",
+                       @"Sprawdzanie kwalifikacji i przeprowadzanie egzaminów państwowych",
+                       @"Egzaminatorzy i inne osoby dokonujące sprawdzenia kwalifikacji",
+                       @"Nadzór nad sprawdzaniem kwalifikacji",
+                       @"Badanie lekarskie",
+                       @"Badanie psychologiczne",
+                       @"Okres próbny",
+                       @"Nadzór nad kierującym",
+                       @"Wymagania w stosunku do kierujących pojazdami uprzywilejowanymi lub przewożącymi wartości pieniężne",
+                       @"Szkolenie osób posiadających uprawnienia do kierowania pojazdem silnikowym",
+                       @"Nadzór nad wykonywaniem zadań z zakresu ustawy",
+                       @"Wymiana praw jazdy",
+                       @"Zmiany w przepisach obowiązujących, przepisy przejściowe i końcowe",nil];
     
     AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
     nr_akt = appDelegate.controllertresc.nr_akt;
     nr_rozdzial = appDelegate.controllertresc.nr_rozdzial;
     
-    if ((nr_akt==1 || nr_akt==2) && nr_rozdzial!=-1) {
-        [self.trescChangeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:nr_rozdzial inSection:1] animated:NO scrollPosition:UITableViewScrollPositionTop ];
-        [self.trescChangeTableView deselectRowAtIndexPath:[NSIndexPath indexPathForRow:nr_rozdzial inSection:1] animated:NO];
+    if ((nr_akt==0 || nr_akt==1) && nr_rozdzial!=-1) {
+        [self.trescChangeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:nr_rozdzial inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop ];
+        [self.trescChangeTableView deselectRowAtIndexPath:[NSIndexPath indexPathForRow:nr_rozdzial inSection:0] animated:NO];
     } else {
         [self.trescChangeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:nr_akt inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop ];
         [self.trescChangeTableView deselectRowAtIndexPath:[NSIndexPath indexPathForRow:nr_akt inSection:0] animated:NO];
@@ -153,27 +149,20 @@
     trescChangeLabel.font = [UIFont boldSystemFontOfSize:14.0];
     trescChangeLabel.numberOfLines = 2;
     trescChangeLabel.textAlignment = NSTextAlignmentCenter;
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        trescChangeLabel.textColor = [UIColor blackColor];
-    } else {
-        trescChangeLabel.textColor = [UIColor whiteColor];
-    }
+    trescChangeLabel.textColor = [UIColor blackColor];
     trescChangeLabel.text = @"Zakładka \"Treść\"";
-    
     
     self.trescChangeNavigationBar.topItem.titleView = trescChangeLabel;
 }
 
 -(void) viewWillAppear:(BOOL)animated{
-    
 }
-
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    if (nr_akt==1 || nr_akt==2) {
+    if (nr_akt==0 || nr_akt==1) {
         return 2;
     }
     return 1;
@@ -184,10 +173,11 @@
     if (section==0) {
         return 4;
     }
-    if (nr_akt==1) {
-        return 38;
+    // section 1
+    if (nr_akt==0) {
+        return 40;
     }
-    if (nr_akt==2) {
+    if (nr_akt==1) {
         return 20;
     }
     return 0;
@@ -205,7 +195,7 @@
     
     if (indexPath.section==0) {
         NSString *cellValue;
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
             cellValue = [self.menuArrayiPad objectAtIndex:indexPath.row];
         } else {
             cellValue = [self.menuArray objectAtIndex:indexPath.row];
@@ -218,10 +208,10 @@
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
     } else {
-        if (nr_akt==1) {
+        if (nr_akt==0) {
             NSString *cellValue = [self.menuArray2 objectAtIndex:indexPath.row];
             cell.textLabel.text = cellValue;
-        } else if (nr_akt==2) {
+        } else if (nr_akt==1) {
             NSString *cellValue = [self.menuArray3 objectAtIndex:indexPath.row];
             cell.textLabel.text = cellValue;
         }
@@ -231,7 +221,7 @@
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
     }
-   
+    
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines=0;
     

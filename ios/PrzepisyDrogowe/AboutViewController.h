@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface AboutViewController : UIViewController {
-    IBOutlet UIWebView *aboutWebView;
+@interface AboutViewController : UIViewController<WKNavigationDelegate> {
+    IBOutlet WKWebView *aboutWebView;
     UIActivityIndicatorView *spinner;
     IBOutlet UINavigationBar *aboutNavigationBar;
     IBOutlet UILabel *aboutLabel;
@@ -20,7 +21,7 @@
 -(IBAction)AboutExitClicked:(id)sender;
 -(IBAction)AboutEmailClicked:(id)sender;
 
-@property(nonatomic,retain) IBOutlet UIWebView *aboutWebView;
+@property(nonatomic,retain) IBOutlet WKWebView *aboutWebView;
 @property(nonatomic,retain) IBOutlet UINavigationBar *aboutNavigationBar;
 @property(nonatomic,retain) IBOutlet UILabel *aboutLabel;
 @property(nonatomic,retain) IBOutlet UIBarButtonItem *aboutMailButton;

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface OpisZnakuViewController : UIViewController<UIWebViewDelegate> {
-    IBOutlet UIWebView *opisZnakuWebViewOne;
-    IBOutlet UIWebView *opisZnakuWebViewTwo;
-    IBOutlet UIWebView *opisZnakuWebViewThree;
+@interface OpisZnakuViewController : UIViewController<WKUIDelegate, WKNavigationDelegate> {
+    IBOutlet WKWebView *opisZnakuWebViewOne;
+    IBOutlet WKWebView *opisZnakuWebViewTwo;
+    IBOutlet WKWebView *opisZnakuWebViewThree;
     IBOutlet UINavigationBar *opisZnakuNavigationBar;
     IBOutlet UILabel *opisZnakuLabel;
     UIActivityIndicatorView *spinner;
@@ -23,13 +24,13 @@
 
 -(IBAction)OpisZnakuMenuClicked:(id)sender;
 -(IBAction)OpisZnakuBackClicked:(id)sender;
-- (void)display :(NSString*)tosearch :(UIWebView*)wv :(NSString*)znak :(NSInteger)level0Pos;
-- (BOOL)webView:(UIWebView*)opisZnakuWebViewTwo shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType;
--(void)webViewDidFinishLoad:(UIWebView *)opisZnakuWebView;
+- (void)display :(NSString*)tosearch :(WKWebView*)wv :(NSString*)znak :(NSInteger)level0Pos;
+- (void)webView:(WKWebView *)opisZnakuWebViewTwo decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView *)opisZnakuWebViewTwo didFinishNavigation:(WKNavigation *)navigation;
 
-@property(nonatomic,retain) IBOutlet UIWebView *opisZnakuWebViewOne;
-@property(nonatomic,retain) IBOutlet UIWebView *opisZnakuWebViewTwo;
-@property(nonatomic,retain) IBOutlet UIWebView *opisZnakuWebViewThree;
+@property(nonatomic,retain) IBOutlet WKWebView *opisZnakuWebViewOne;
+@property(nonatomic,retain) IBOutlet WKWebView *opisZnakuWebViewTwo;
+@property(nonatomic,retain) IBOutlet WKWebView *opisZnakuWebViewThree;
 @property(nonatomic,retain) IBOutlet UILabel *opisZnakuLabel;
 @property(nonatomic,retain) IBOutlet UINavigationBar *opisZnakuNavigationBar;
 @property(nonatomic,retain) IBOutlet UIPageControl *opisZnakuPageControl;

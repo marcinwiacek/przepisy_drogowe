@@ -27,28 +27,23 @@
 
 -(IBAction)znakiChangeButtonClicked:(id)sender {
     AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    if (nr!=appDelegate.controllerznaki.nr || ZnakiZ2003 != appDelegate.controllerznaki.ZnakiZ2003 || Szczegoly != appDelegate.controllerznaki.Szczegoly) {
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-             [appDelegate.controllerznaki.znakiLabel setText:[self.menuArrayiPad objectAtIndex:nr]];
+    if (nr!=appDelegate.controllerznaki.nr ||
+        ZnakiZ2003 != [[NSUserDefaults standardUserDefaults] boolForKey:@"znakiz2003"] ||
+        Szczegoly != [[NSUserDefaults standardUserDefaults] boolForKey:@"szczegoly"]) {
+        if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+            [appDelegate.controllerznaki.znakiLabel setText:[self.menuArrayiPad objectAtIndex:nr]];
         } else {
-             [appDelegate.controllerznaki.znakiLabel setText:[self.menuArray objectAtIndex:nr]];
+            [appDelegate.controllerznaki.znakiLabel setText:[self.menuArray objectAtIndex:nr]];
         }
-
-        appDelegate.controllerznaki.nr = nr;
-        appDelegate.controllerznaki.Szczegoly = Szczegoly;
-        appDelegate.controllerznaki.ZnakiZ2003 = ZnakiZ2003;
         
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setBool:appDelegate.controllerznaki.Szczegoly forKey:@"szczegoly"];
-        [defaults setBool:appDelegate.controllerznaki.ZnakiZ2003 forKey:@"znakiz2003"];
-        [defaults synchronize];
-       
+        appDelegate.controllerznaki.nr = nr;
+        
         [self dismissViewControllerAnimated:YES completion: nil];
         
         [appDelegate.controllerznaki display];
     } else {
         [self dismissViewControllerAnimated:YES completion: nil];
-    }   
+    }
 }
 
 -(IBAction)znakiExitButtonClicked:(id)sender {
@@ -64,94 +59,87 @@
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        self.edgesForExtendedLayout=UIRectEdgeNone;
-        [self prefersStatusBarHidden];
-    }
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    [self prefersStatusBarHidden];
     
     self.menuArray = [[NSArray alloc] initWithObjects:@"Znaki ostrzegawcze (A)",
-    @"Znaki zakazu (B)",
-    @"Znaki nakazu (C)",
-    @"Znaki informacyjne (D)",
-    @"Znaki kierunku i miejscowości (E)",
-    @"Znaki uzupełniające (F)",
-    @"Tabliczki (T)",
-    @"Dod. znaki przed przejazdami kolejowymi (G)",
-    @"Dod. znaki dla kierujących tramwajami (AT, BT)",
-    @"Dod. znaki szlaków rowerowych (R)",
-    @"Dod. znaki dla kierujących poj. wojskowymi (W)",
-    @"Znaki poziome (P)",
-    @"Sygnały św. dla kierujących i pieszych (S)",
-    @"Sygnały św. dla kier. poj. wyk. odpłatny przewóz na regularnych liniach (SB, ST)",
-    @"Znaki nieformalne",
-    @"Wszystkie znaki",
-    @"Urz. bezpieczeństwa ruchu drogowego (U)", nil];
-    
-    self.menuArrayiPad = [[NSArray alloc] initWithObjects:@"Znaki ostrzegawcze (A)",
                       @"Znaki zakazu (B)",
                       @"Znaki nakazu (C)",
                       @"Znaki informacyjne (D)",
                       @"Znaki kierunku i miejscowości (E)",
                       @"Znaki uzupełniające (F)",
                       @"Tabliczki (T)",
-                      @"Dodatkowe znaki przed przejazdami kolejowymi (G)",
-                      @"Dodatkowe znaki dla kierujących tramwajami (AT, BT)",
-                      @"Dodatkowe znaki szlaków rowerowych (R)",
-                      @"Dodatkowe znaki dla kierujących pojazdami wojskowymi (W)",
+                      @"Dod. znaki przed przejazdami kolejowymi (G)",
+                      @"Dod. znaki dla kierujących tramwajami (AT, BT)",
+                      @"Dod. znaki szlaków rowerowych (R)",
+                      @"Dod. znaki dla kierujących poj. wojskowymi (W)",
                       @"Znaki poziome (P)",
-                      @"Sygnały świetlne dla kierujących i pieszych (S)",
-                      @"Sygnały świetlne dla kierujących pojazdami wykonującymi odpłatny przewóz na regularnych liniach (SB, ST)",
+                      @"Sygnały św. dla kierujących i pieszych (S)",
+                      @"Sygnały św. dla kier. poj. wyk. odpłatny przewóz na regularnych liniach (SB, ST)",
                       @"Znaki nieformalne",
                       @"Wszystkie znaki",
-                      @"Urządzenia bezpieczeństwa ruchu drogowego (U)", nil];
+                      @"Urz. bezpieczeństwa ruchu drogowego (U)", nil];
+    
+    self.menuArrayiPad = [[NSArray alloc] initWithObjects:@"Znaki ostrzegawcze (A)",
+                          @"Znaki zakazu (B)",
+                          @"Znaki nakazu (C)",
+                          @"Znaki informacyjne (D)",
+                          @"Znaki kierunku i miejscowości (E)",
+                          @"Znaki uzupełniające (F)",
+                          @"Tabliczki (T)",
+                          @"Dodatkowe znaki przed przejazdami kolejowymi (G)",
+                          @"Dodatkowe znaki dla kierujących tramwajami (AT, BT)",
+                          @"Dodatkowe znaki szlaków rowerowych (R)",
+                          @"Dodatkowe znaki dla kierujących pojazdami wojskowymi (W)",
+                          @"Znaki poziome (P)",
+                          @"Sygnały świetlne dla kierujących i pieszych (S)",
+                          @"Sygnały świetlne dla kierujących pojazdami wykonującymi odpłatny przewóz na regularnych liniach (SB, ST)",
+                          @"Znaki nieformalne",
+                          @"Wszystkie znaki",
+                          @"Urządzenia bezpieczeństwa ruchu drogowego (U)", nil];
     
     
     self.menuArray2 = [[NSArray alloc] initWithObjects:@"assets/a/a01.png",
-                      @"assets/b/b01.png",
-                      @"assets/c/c01.png",
-                      @"assets/d/d01.png",
-                      @"assets/e/e01.png",
-                      @"assets/f/f01.png",
-                      @"assets/t/t23i.png",
-                      @"assets/g/g03.png",
-                      @"assets/at_bt/bt4.png",
-                      @"assets/r/r1.png",
-                      @"assets/w/w1.png",
-                      @"assets/p/p23.png",
-                      @"assets/s/s07.png",
-                      @"assets/sb_st/stt1.png",
-                      @"assets/inne/suwak.png",
-                      @"",
-                      @"assets/u/u03a.png", nil];
+                       @"assets/b/b01.png",
+                       @"assets/c/c01.png",
+                       @"assets/d/d01.png",
+                       @"assets/e/e01.png",
+                       @"assets/f/f01.png",
+                       @"assets/t/t23i.png",
+                       @"assets/g/g03.png",
+                       @"assets/at_bt/bt4.png",
+                       @"assets/r/r1.png",
+                       @"assets/w/w1.png",
+                       @"assets/p/p23.png",
+                       @"assets/s/s07.png",
+                       @"assets/sb_st/stt1.png",
+                       @"assets/inne/suwak.png",
+                       @"",
+                       @"assets/u/u03a.png", nil];
+
+    ZnakiZ2003 = [[NSUserDefaults standardUserDefaults] boolForKey:@"znakiz2003"];
+    Szczegoly = [[NSUserDefaults standardUserDefaults] boolForKey:@"szczegoly"];
     
-    AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    ZnakiZ2003 = appDelegate.controllerznaki.ZnakiZ2003;
-    Szczegoly = appDelegate.controllerznaki.Szczegoly;
+    AppDelegate *appDelegate =(AppDelegate *)[[UIApplication sharedApplication] delegate];
     nr = appDelegate.controllerznaki.nr;
     
     [self.znakiChangeTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:nr inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop ];
     [self.znakiChangeTableView deselectRowAtIndexPath:[NSIndexPath indexPathForRow:nr inSection:0] animated:NO];
-      
+    
     CGRect frame = CGRectMake(0, 0, 4000, 44);
     znakiChangeLabel = [[UILabel alloc] initWithFrame:frame];
     znakiChangeLabel.backgroundColor = [UIColor clearColor];
     znakiChangeLabel.font = [UIFont boldSystemFontOfSize:14.0];
     znakiChangeLabel.numberOfLines = 2;
     znakiChangeLabel.textAlignment = NSTextAlignmentCenter;
-    if ([[[UIDevice currentDevice] systemVersion]floatValue]>=7.0) {
-        znakiChangeLabel.textColor = [UIColor blackColor];
-    } else {
-        znakiChangeLabel.textColor = [UIColor whiteColor];
-    }
+    znakiChangeLabel.textColor = [UIColor blackColor];
     znakiChangeLabel.text = @"Zakładka \"Znaki\"";
     
-    
     self.znakiChangeNavigationBar.topItem.titleView = znakiChangeLabel;
-    
 }
 
 -(void) viewWillAppear:(BOOL)animated{
- 
+    
 }
 
 #pragma mark - Table view data source
@@ -182,12 +170,12 @@
     
     if (indexPath.section==0) {
         NSString *cellValue;
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
             cellValue = [self.menuArrayiPad objectAtIndex:indexPath.row];
         } else {
             cellValue = [self.menuArray objectAtIndex:indexPath.row];
         }
-      
+        
         cell.textLabel.text = cellValue;
         cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         cell.textLabel.numberOfLines=0;
@@ -199,13 +187,13 @@
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
         
-        UIImage *image = [UIImage imageNamed:[self.menuArray2 objectAtIndex:indexPath.row]];        
+        UIImage *image = [UIImage imageNamed:[self.menuArray2 objectAtIndex:indexPath.row]];
         UIGraphicsBeginImageContext(CGSizeMake(30,30));
         [image drawInRect:CGRectMake(0, 0, 30, 30)];
         UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         cell.imageView.image = result;
-                
+        
     } else if (indexPath.section==1) {
         cell.imageView.image = nil;
         UISwitch *switchV = [[UISwitch alloc] initWithFrame:CGRectZero];
@@ -214,24 +202,24 @@
         
         cell.accessoryView = switchV;
         [switchV setOn:NO animated:NO];
-
+        
         if (indexPath.row ==0) {
             NSString *cellValue = @"Warianty znaków z Rozp. z 2003";
             cell.textLabel.text = cellValue;
-            if (ZnakiZ2003) {
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"znakiz2003"]) {
                 [switchV setOn:YES animated:NO];
             }
-            [switchV addTarget:self action:@selector(switchChanged1:) forControlEvents:UIControlEventValueChanged];
-
+            [switchV addTarget:self action:@selector(switchChangedZnaki2003:) forControlEvents:UIControlEventValueChanged];
+            
         } else {
             NSString *cellValue = @"Opisy znaków";
             cell.textLabel.text = cellValue;
-            if (Szczegoly) {
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:@"szczegoly"]) {
                 [switchV setOn:YES animated:NO];
             }
-            [switchV addTarget:self action:@selector(switchChanged2:) forControlEvents:UIControlEventValueChanged];
+            [switchV addTarget:self action:@selector(switchChangedSzczegoly:) forControlEvents:UIControlEventValueChanged];
         }
-              
+        
         cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         cell.textLabel.numberOfLines=0;
     }
@@ -254,47 +242,38 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section==0) {        
+    if (indexPath.section==0) {
         NSIndexPath *oldpath = [NSIndexPath indexPathForRow:nr inSection:0];
         [[self.znakiChangeTableView cellForRowAtIndexPath:oldpath] setAccessoryType:UITableViewCellAccessoryNone];
         
-        nr=indexPath.row; 
+        nr=indexPath.row;
         [[self.znakiChangeTableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
     } else {
         UITableViewCell *cell = [self.znakiChangeTableView cellForRowAtIndexPath:indexPath];
         UISwitch *switchV= (UISwitch *)cell.accessoryView;
         
         if ([switchV isOn]) {
-            [switchV setOn:NO animated:YES];  
+            [switchV setOn:NO animated:YES];
         } else {
             [switchV setOn:YES animated:YES];
         }
-        
-        if (indexPath.row == 0) {
-            ZnakiZ2003 = [switchV isOn];
-        } else {
-            Szczegoly = [switchV isOn];
-        }
     }
     [self.znakiChangeTableView deselectRowAtIndexPath:indexPath animated:YES];
-  
-}
-
-- (void) switchChanged1:(id)sender {
-    UISwitch* switchV = sender;
-    ZnakiZ2003 = [switchV isOn];
     
 }
 
-- (void) switchChanged2:(id)sender {
-    UISwitch* switchV = sender;
-    Szczegoly = [switchV isOn];
+- (void) switchChangedZnaki2003:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"znakiz2003"];
+}
+
+- (void) switchChangedSzczegoly:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"szczegoly"];
 }
 
 //- (void)dealloc {
-	
-	//[listOfItems release];
-    //[super dealloc];
+
+//[listOfItems release];
+//[super dealloc];
 //}
 
 @end

@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Marcin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "InneViewController.h"
 #import "TaryfikatorViewController.h"
 #import "TrescViewController.h"
@@ -17,7 +16,7 @@
     TaryfikatorViewController *controllertaryfikator;
     TrescViewController *controllertresc;
     ZnakiViewController *controllerznaki;
-    NSMutableArray *historiaURLOpisyZnakow,*historiaTopOpisyZnakow,*level0OpisyZnakow;
+    NSMutableArray *historiaURLOpisyZnakow,*historiaTopOpisyZnakow, *level0OpisyZnakow;
     NSString *opisyznakowSearch;
     BOOL znakimanypages;
     NSMutableArray *mojTaryfikatorRozdzial;

@@ -7,27 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface ZnakiViewController : UIViewController {
-    IBOutlet UIWebView *znakiWebView;
+@interface ZnakiViewController : UIViewController<WKNavigationDelegate> {
+    IBOutlet WKWebView *znakiWebView;
     IBOutlet UISearchBar *znakiSearchBar;
     IBOutlet UINavigationBar *znakiNavigationBar;
     long nr;
     IBOutlet UILabel *znakiLabel;
     UIActivityIndicatorView *spinner;
-    BOOL ZnakiZ2003,Szczegoly;
     IBOutlet UIBarButtonItem *znakiChangeButton;
 }
-
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)znakiSearchBar ;
 - (void)searchBarSearchButtonClicked:(UISearchBar *)znakiSearchBar;
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)znakiSearchBar;
 - (void)display;
-- (BOOL)webView:(UIWebView*)znakiWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType;
--(void)webViewDidFinishLoad:(UIWebView *)znakiWebView;
+- (void)webView:(WKWebView *)znakiWebView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView *)znakiWebView didFinishNavigation:(WKNavigation *)navigation;
 
-@property(nonatomic,retain) IBOutlet UIWebView *znakiWebView;
+@property(nonatomic,retain) IBOutlet WKWebView *znakiWebView;
 @property(nonatomic,retain) IBOutlet UISearchBar *znakiSearchBar;
 @property(nonatomic,retain) IBOutlet UINavigationBar *znakiNavigationBar;
 @property(nonatomic,assign) long nr;

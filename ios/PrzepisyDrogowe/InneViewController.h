@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface InneViewController : UIViewController {
-    IBOutlet UIWebView *inneWebView;
+@interface InneViewController : UIViewController<WKNavigationDelegate> {
+    IBOutlet WKWebView *inneWebView;
     IBOutlet UINavigationBar *inneNavigationBar;
     IBOutlet UISearchBar *inneSearchBar;
     long nr,searchcurr,searchall;
@@ -24,12 +25,15 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)inneSearchBar;
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)inneSearchBar;
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)inneSearchBar;
-- (BOOL)webView:(UIWebView*)inneWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType;
-- (void)webViewDidFinishLoad:(UIWebView *)inneWebView;
+- (void)webView:(WKWebView *)inneWebView
+decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView *)inneWebView didFinishNavigation:(WKNavigation *)navigation;
 - (IBAction)inneLeftButtonMenuClicked:(id)sender;
 - (IBAction)inneRightButtonMenuClicked:(id)sender;
-    
-@property(nonatomic,retain) IBOutlet UIWebView *inneWebView;
+-(void)OrientationDidChange:(NSNotification*)notification;
+
+@property(nonatomic,retain) IBOutlet WKWebView *inneWebView;
 @property(nonatomic,retain) IBOutlet UINavigationBar *inneNavigationBar;
 @property(nonatomic,retain) IBOutlet UISearchBar *inneSearchBar;
 @property(nonatomic,retain) IBOutlet UILabel *inneLabel;

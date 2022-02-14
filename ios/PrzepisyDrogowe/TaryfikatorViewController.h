@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface TaryfikatorViewController : UIViewController {
-    IBOutlet UIWebView *taryfikatorWebView;
+@interface TaryfikatorViewController : UIViewController<WKNavigationDelegate> {
+    IBOutlet WKWebView *taryfikatorWebView;
     IBOutlet UINavigationBar *taryfikatorNavigationBar;
     IBOutlet UISearchBar *taryfikatorSearchBar;
     long nr_akt,nr_rozdzial,old_akt,searchcurr,searchall;
@@ -21,17 +22,19 @@
 }
 
 - (void)display;
-- (BOOL)webView:(UIWebView*)taryfikatorWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType;
+- (void)webView:(WKWebView *)taryfikatorWebView
+decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
+decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView *)taryfikatorWebView didFinishNavigation:(WKNavigation *)navigation;
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)taryfikatorSearchBar;
 - (void)searchBarSearchButtonClicked:(UISearchBar *)taryfikatorSearchBar;
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)taryfikatorSearchBar;
 - (NSString *)readOldTaryfikator:(NSString *)fname :(NSString *)toSearch;
-- (void)webViewDidFinishLoad:(UIWebView *)taryfikatorWebView;
 - (IBAction)taryfikatorLeftButtonMenuClicked:(id)sender;
 - (IBAction)taryfikatorRightButtonMenuClicked:(id)sender;
 
 
-@property(nonatomic,retain) IBOutlet UIWebView *taryfikatorWebView;
+@property(nonatomic,retain) IBOutlet WKWebView *taryfikatorWebView;
 @property(nonatomic,retain) IBOutlet UINavigationBar *taryfikatorNavigationBar;
 @property(nonatomic,retain) IBOutlet UISearchBar *taryfikatorSearchBar;
 @property(nonatomic,assign) long nr_akt;
