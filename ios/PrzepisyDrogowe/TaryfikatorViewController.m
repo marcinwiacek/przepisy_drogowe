@@ -113,7 +113,9 @@
         
     }
     
-    return [[[[[[[[[[[[mystr stringByReplacingOccurrencesOfString:@"c.p.g." withString:@"USTAWY z dnia 13 września 1996 r. o utrzymaniu czystości i porządku w gminach"]  stringByReplacingOccurrencesOfString:@"k.k." withString:@"USTAWY z dnia 6 czerwca 1997 Kodeks Karny"]stringByReplacingOccurrencesOfString:@"k.w." withString:@"USTAWY z dnia 20 maja 1971 r. Kodeks Wykroczeń"]stringByReplacingOccurrencesOfString:@"o.o.z.r." withString:@"ROZPORZĄDZENIA MINISTRA TRANSPORTU z dnia 31 lipca 2007 r. w sprawie okresowych ograniczeń oraz zakazu ruchu niektórych rodzajów pojazdów na drogach"]stringByReplacingOccurrencesOfString:@"p.r.d." withString:@"USTAWY z dnia 20 czerwca 1997 r. Prawo o ruchu drogowym (dostępna w zakładce \"Treść\")"] stringByReplacingOccurrencesOfString:@"u.d.p." withString:@"USTAWY z dnia 21 marca 1985 r. o drogach publicznych"]stringByReplacingOccurrencesOfString:@"z.s.d." withString:@"ROZPORZĄDZENIA MINISTRÓW INFRASTRUKTURY ORAZ SPRAW WEWNĘTRZNYCH I ADMINISTRACJI z dnia 31 lipca 2002 r. w sprawie znaków i sygnałów drogowych"] stringByReplacingOccurrencesOfString:@"u.t.d." withString:@"USTAWY z dnia 6 września 2001 r. o transporcie drogowym"]stringByReplacingOccurrencesOfString:@"h.p.s." withString:@"Rozporządzenia Parlamentu Europejskiego i Rady nr 561/2006 z dnia 15 marca 2006 r. w sprawie harmonizacji niektórych przepisów socjalnych odnoszących się do transportu drogowego oraz zmieniającego rozporządzenie Rady nr 3821/85 i 2135/98, jak również uchylającego rozporządzenie Rady nr 3820/85"] stringByReplacingOccurrencesOfString:@"aetr" withString:@"Umowy europejskiej dotyczącej pracy załóg pojazdów wykonujących międzynarodowe przewozy drogowe (AETR), sporządzonej w Genewie dnia 1 lipca 1970 r."] stringByReplacingOccurrencesOfString:@"r.u.j." withString:@"Rozporządzenia Rady nr 3821/1985 z dnia 20 grudnia 1985 r. w sprawie urządzeń rejestrujących stosowanych w transporcie drogowym"] stringByReplacingOccurrencesOfString:@"u.s.t.c" withString:@"USTAWY z dnia 29 lipca 2005 r. o systemie tachografów cyfrowych"];
+    return [[[[[[[[[[[[[mystr stringByReplacingOccurrencesOfString:@"c.p.g." withString:@"USTAWY z dnia 13 września 1996 r. o utrzymaniu czystości i porządku w gminach"]  stringByReplacingOccurrencesOfString:@"k.k." withString:@"USTAWY z dnia 6 czerwca 1997 Kodeks Karny"]stringByReplacingOccurrencesOfString:@"k.w." withString:@"USTAWY z dnia 20 maja 1971 r. Kodeks Wykroczeń"]stringByReplacingOccurrencesOfString:@"o.o.z.r." withString:@"ROZPORZĄDZENIA MINISTRA TRANSPORTU z dnia 31 lipca 2007 r. w sprawie okresowych ograniczeń oraz zakazu ruchu niektórych rodzajów pojazdów na drogach"]stringByReplacingOccurrencesOfString:@"p.r.d." withString:@"USTAWY z dnia 20 czerwca 1997 r. Prawo o ruchu drogowym (dostępna w zakładce \"Treść\")"]
+                  stringByReplacingOccurrencesOfString:@"u.k.p." withString:@"USTAWY z dnia 5 stycznia 2011 r. o kierujących pojazdami (dostępna w zakładce \"Treść\")"]
+                 stringByReplacingOccurrencesOfString:@"u.d.p." withString:@"USTAWY z dnia 21 marca 1985 r. o drogach publicznych"]stringByReplacingOccurrencesOfString:@"z.s.d." withString:@"ROZPORZĄDZENIA MINISTRÓW INFRASTRUKTURY ORAZ SPRAW WEWNĘTRZNYCH I ADMINISTRACJI z dnia 31 lipca 2002 r. w sprawie znaków i sygnałów drogowych"] stringByReplacingOccurrencesOfString:@"u.t.d." withString:@"USTAWY z dnia 6 września 2001 r. o transporcie drogowym"]stringByReplacingOccurrencesOfString:@"h.p.s." withString:@"Rozporządzenia Parlamentu Europejskiego i Rady nr 561/2006 z dnia 15 marca 2006 r. w sprawie harmonizacji niektórych przepisów socjalnych odnoszących się do transportu drogowego oraz zmieniającego rozporządzenie Rady nr 3821/85 i 2135/98, jak również uchylającego rozporządzenie Rady nr 3820/85"] stringByReplacingOccurrencesOfString:@"aetr" withString:@"Umowy europejskiej dotyczącej pracy załóg pojazdów wykonujących międzynarodowe przewozy drogowe (AETR), sporządzonej w Genewie dnia 1 lipca 1970 r."] stringByReplacingOccurrencesOfString:@"r.u.j." withString:@"Rozporządzenia Rady nr 3821/1985 z dnia 20 grudnia 1985 r. w sprawie urządzeń rejestrujących stosowanych w transporcie drogowym"] stringByReplacingOccurrencesOfString:@"u.s.t.c" withString:@"USTAWY z dnia 29 lipca 2005 r. o systemie tachografów cyfrowych"];
 }
 
 - (void)display {
@@ -153,7 +155,9 @@
                 mystr = [NSString stringWithFormat:@"%@%@",mystr,[appDelegate readNewTaryfikator2:t:FALSE]];
                 
                 self->searchall =appDelegate.mojTaryfikatorSearchNum;
-            } else if (self->nr_akt==4) {
+        
+            
+            } else if (self->nr_akt==5) {
                 
                 
                 NSString *mystr2 = [self readOldTaryfikator:@"20110524":t];
@@ -168,7 +172,7 @@
                              mystr2];
                 }
                 
-            } else if (self->nr_akt==3) {
+            } else if (self->nr_akt==4) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20110524":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 24.05.2011 do 10.04.2015</b></td></tr>%@",mystr,
@@ -181,10 +185,22 @@
                              mystr2];
                 }
                 
-            } else if (self->nr_akt==2) {
+            } else if (self->nr_akt==3) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20150411":t];
                 if ([mystr2 length]!=0) {
-                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 11.04.2015</b></td></tr>%@",mystr,
+                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 11.04.2015 do 09.08.2017</b></td></tr>%@",mystr,
+                             mystr2];
+                }
+                
+                mystr2 = [self readOldTaryfikator:@"20120609":t];
+                if ([mystr2 length]!=0) {
+                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
+                             mystr2];
+                }
+            } else if (self->nr_akt==2) {
+                NSString *mystr2 = [self readOldTaryfikator:@"20170810":t];
+                if ([mystr2 length]!=0) {
+                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 10.08.2017 do 31.12.2021</b></td></tr>%@",mystr,
                              mystr2];
                 }
                 
@@ -194,9 +210,9 @@
                              mystr2];
                 }
             } else if (self->nr_akt==1) {
-                NSString *mystr2 = [self readOldTaryfikator:@"20170810":t];
+                NSString *mystr2 = [self readOldTaryfikator:@"20220101":t];
                 if ([mystr2 length]!=0) {
-                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 10.08.2017</b></td></tr>%@",mystr,
+                    mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 1.1.2022</b></td></tr>%@",mystr,
                              mystr2];
                 }
                 
@@ -205,7 +221,6 @@
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
-                
             }
             
             
@@ -331,7 +346,7 @@ decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
     taryfikatorLabel.numberOfLines = 2;
     taryfikatorLabel.textAlignment = NSTextAlignmentCenter;
     taryfikatorLabel.textColor = [UIColor blackColor];
-    taryfikatorLabel.text = @"Mandaty i punkty razem (opracowanie własne)";
+    taryfikatorLabel.text = @"(do 31.12.2021) Mandaty i punkty razem (opracowanie własne)";
     
     self.taryfikatorNavigationBar.topItem.titleView = taryfikatorLabel;
     
