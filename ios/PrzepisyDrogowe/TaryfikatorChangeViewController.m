@@ -56,7 +56,7 @@
         [self prefersStatusBarHidden];
     }
     
-    self.menuArray = [[NSArray alloc] initWithObjects:@"Mandaty i punkty razem (opracowanie własne)",@"Mandaty i punkty osobno (od 11.04.2015, Rozporządzenia)",@"Mandaty i punkty osobno (09.06.2012-10.04.2015, Rozp.)",
+    self.menuArray = [[NSArray alloc] initWithObjects:@"Mandaty i punkty razem (opracowanie własne)",@"Mandaty i punkty osobno (od 10.08.2017, Rozporządzenia)",@"Mandaty i punkty osobno (11.04.2015-09.08.2017, Rozp.)",@"Mandaty i punkty osobno (09.06.2012-10.04.2015, Rozp.)",
         @"Mandaty i punkty osobno (24.05.2011-08.06.2012, Rozp.)",nil];
     
     AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -115,7 +115,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section==0) {
-        return 4;
+        return 5;
     }
     if (nr_akt==0) {
         AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];

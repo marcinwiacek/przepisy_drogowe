@@ -160,7 +160,7 @@
       "w":"lp. 67"
      },
      {"m":"20101231",
-      "t":"8 pkt",
+      "t":"8 pkt; B03",
       "w":"B03"
      }
     ]
@@ -176,7 +176,7 @@
       "w":"lp. 68"
      },
      {"m":"20101231",
-      "t":"8 pkt",
+      "t":"8 pkt; B04",
       "w":"B04"
      }
     ]
@@ -188,7 +188,7 @@
       "w":"lp. 69"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -204,7 +204,7 @@
       "w":"lp. 72"
      },
      {"m":"20101231",
-      "t":"8 pkt",
+      "t":"8 pkt; B05",
       "w":"B05"
      }
     ]
@@ -220,7 +220,7 @@
       "w":"lp. 74"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I08",
       "w":"I08"
      }
     ]
@@ -236,7 +236,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; B06",
       "w":"B06"
      }
     ]
@@ -252,7 +252,7 @@
       "w":"lp. 77"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I12",
       "w":"I12"
      }
     ]
@@ -268,7 +268,7 @@
       "w":"lp. 78"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I12",
       "w":"I12"
      }
     ]
@@ -284,7 +284,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I14",
       "w":"I14"
      }
     ]
@@ -304,7 +304,7 @@
       "w":"lp. 156"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I20",
       "w":"I20"
      }
     ]
@@ -320,7 +320,7 @@
       "w":"lp. 157"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I21",
       "w":"I21"
      }
     ]
@@ -336,7 +336,7 @@
       "w":"lp. 158"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I21",
       "w":"I21"
      }
     ]
@@ -352,7 +352,7 @@
       "w":"lp. 170"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I35",
       "w":"I35"
      }
     ]
@@ -364,7 +364,7 @@
       "w":"lp. 172"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -380,7 +380,7 @@
       "w":"lp. 173"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I37",
       "w":"I37"
      }
     ]
@@ -396,7 +396,7 @@
       "w":"lp. 160"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I24",
       "w":"I24"
      }
     ]
@@ -412,7 +412,7 @@
       "w":"lp. 161"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I25",
       "w":"I25"
      }
     ]
@@ -432,7 +432,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; H07",
       "w":"H07"
      }
     ]
@@ -448,7 +448,7 @@
       "w":"lp. 171"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I36",
       "w":"I36"
      }
     ]
@@ -464,7 +464,7 @@
       "w":"lp. 159"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I22",
       "w":"I22"
      }
     ]
@@ -480,7 +480,7 @@
       "w":"lp. 174"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I38",
       "w":"I38"
      }
     ]
@@ -492,7 +492,7 @@
       "w":"lp. 32"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -552,7 +552,7 @@
       "w":"brak"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I26",
       "w":"I26"
      }
     ]
@@ -564,7 +564,7 @@
       "w":"H19"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I26",
       "w":"I26"
      }
     ]
@@ -592,7 +592,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I33",
       "w":"I33"
      }
     ]
@@ -608,7 +608,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I33",
       "w":"I33"
      }
     ]
@@ -628,7 +628,7 @@
       "w":"lp. 155"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I18",
       "w":"I18"
      }
     ]
@@ -652,7 +652,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I19",
       "w":"I19"
      }
     ]
@@ -664,7 +664,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D09",
       "w":"D09"
      }
     ]
@@ -680,7 +680,7 @@
       "w":"lp. 18"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; H08",
       "w":"H08"
      }
     ]
@@ -692,7 +692,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; H08",
       "w":"H08"
      }
     ]
@@ -708,7 +708,7 @@
       "w":"lp. 29"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I05",
       "w":"I05"
      }
     ]
@@ -720,7 +720,7 @@
       "w":"lp. 19"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -736,7 +736,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I23",
       "w":"I23"
      }
     ]
@@ -748,7 +748,7 @@
       "w":"lp. 30"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -760,7 +760,7 @@
       "w":"lp. 31"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -776,7 +776,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; C03",
       "w":"C03"
      }
     ]
@@ -792,7 +792,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; C04",
       "w":"C04"
      }
     ]
@@ -820,7 +820,7 @@
       "w":"lp. 33"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D07",
       "w":"D07"
      }
     ]
@@ -832,7 +832,7 @@
       "w":"lp. 34"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -844,7 +844,7 @@
       "w":"lp. 35"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -872,7 +872,7 @@
       "w":"lp. 36"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; E06",
       "w":"E06"
      }
     ]
@@ -884,7 +884,7 @@
       "w":"lp. 37"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; E05",
       "w":"E05"
      }
     ]
@@ -896,7 +896,7 @@
       "w":"lp. 38"
      },
      {"m":"20101231",
-      "t":"4 pkt",
+      "t":"4 pkt; E04",
       "w":"E04"
      }
     ]
@@ -908,7 +908,7 @@
       "w":"lp. 39"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; E03",
       "w":"E03"
      }
     ]
@@ -920,7 +920,7 @@
       "w":"lp. 40"
      },
      {"m":"20101231",
-      "t":"8 pkt",
+      "t":"8 pkt; E02",
       "w":"E02"
      }
     ]
@@ -932,7 +932,7 @@
       "w":"lp. 41"
      },
      {"m":"20101231",
-      "t":"10 pkt",
+      "t":"10 pkt; E01",
       "w":"E01"
      }
     ]
@@ -944,7 +944,7 @@
       "w":"lp. 42"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -956,7 +956,7 @@
       "w":"lp. 43"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; E07",
       "w":"E07"
      }
     ]
@@ -968,7 +968,7 @@
       "w":"lp. 44"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -992,7 +992,7 @@
       "w":"lp. 46"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D10",
       "w":"D10"
      }
     ]
@@ -1004,7 +1004,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D10",
       "w":"D10"
      }
     ]
@@ -1016,7 +1016,7 @@
       "w":"lp. 47"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D10",
       "w":"D10"
      }
     ]
@@ -1044,7 +1044,7 @@
       "w":"lp. 49"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1056,7 +1056,7 @@
       "w":"lp. 50"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D05",
       "w":"D05"
      }
     ]
@@ -1072,7 +1072,7 @@
       "w":"lp. 51"
      },
      {"m":"20101231",
-      "t":"10 pkt",
+      "t":"10 pkt; B01",
       "w":"B01"
      }
     ]
@@ -1088,7 +1088,7 @@
       "w":"lp. 167"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I30",
       "w":"I30"
      }
     ]
@@ -1100,7 +1100,7 @@
       "w":"lp. 52"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1116,7 +1116,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; H03",
       "w":"H03"
      }
     ]
@@ -1132,7 +1132,7 @@
       "w":"lp. 53"
      },
      {"m":"20101231",
-      "t":"4 pkt",
+      "t":"4 pkt; D08",
       "w":"D08"
      }
     ]                         
@@ -1144,7 +1144,7 @@
       "w":"lp. 54"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; H02",
       "w":"H02"
      }
     ]
@@ -1164,7 +1164,7 @@
       "w":"lp. 55"
      },
      {"m":"20101231",
-      "t":"9 pkt",
+      "t":"9 pkt; B02",
       "w":"B02"
      }
     ]
@@ -1180,7 +1180,7 @@
       "w":"lp. 56"
      },
      {"m":"20101231",
-      "t":"8 pkt",
+      "t":"8 pkt; F03",
       "w":"F03"
      }
     ]
@@ -1192,7 +1192,7 @@
       "w":"lp. 57"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F01",
       "w":"F01"
      }
     ]
@@ -1204,7 +1204,7 @@
       "w":"lp. 58"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F01",
       "w":"F01"
      }
     ]
@@ -1216,7 +1216,7 @@
       "w":"lp. 59"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F04",
       "w":"F04"
      }
     ]
@@ -1228,7 +1228,7 @@
       "w":"lp. 60"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F05",
       "w":"F05"
      }
     ]
@@ -1240,7 +1240,7 @@
       "w":"lp. 61"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F06",
       "w":"F06"
      }
     ]
@@ -1252,7 +1252,7 @@
       "w":"lp. 62"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F07",
       "w":"F07"
      }
     ]
@@ -1264,7 +1264,7 @@
       "w":"lp. 62"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F08",
       "w":"F08"
      }
     ]
@@ -1276,7 +1276,7 @@
       "w":"lp. 63"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1288,7 +1288,7 @@
       "w":"lp. 63a"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; F02",
       "w":"F02"
      }
     ]
@@ -1304,7 +1304,7 @@
       "w":"lp. 64"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I06",
       "w":"I06"
      }
     ]
@@ -1316,7 +1316,7 @@
       "w":"lp. 65"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1332,7 +1332,7 @@
       "w":"lp. 66"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I07",
       "w":"I07"
      }
     ]
@@ -1348,7 +1348,7 @@
       "w":"lp. 123"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1360,7 +1360,7 @@
       "w":"lp. 125"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1372,7 +1372,7 @@
       "w":"lp. 126"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1384,7 +1384,7 @@
       "w":"lp. 127"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1396,7 +1396,7 @@
       "w":"lp. 128"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1408,7 +1408,7 @@
       "w":"lp. 129"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1420,7 +1420,7 @@
       "w":"lp. 130"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1432,7 +1432,7 @@
       "w":"lp. 131"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1444,7 +1444,7 @@
       "w":"lp. 132"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1456,7 +1456,7 @@
       "w":"lp. 133"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1468,7 +1468,7 @@
       "w":"lp. 134"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1480,7 +1480,7 @@
       "w":"lp. 135"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1492,7 +1492,7 @@
       "w":"lp. 136"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1504,7 +1504,7 @@
       "w":"lp. 137"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1516,7 +1516,7 @@
       "w":"lp. 138"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1528,7 +1528,7 @@
       "w":"lp. 139"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1540,7 +1540,7 @@
       "w":"lp. 140"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1552,7 +1552,7 @@
       "w":"lp. 141"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1564,7 +1564,7 @@
       "w":"lp. 142"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1576,7 +1576,7 @@
       "w":"lp. 143"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1588,7 +1588,7 @@
       "w":"lp. 144"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1600,7 +1600,7 @@
       "w":"lp. 145"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1612,7 +1612,7 @@
       "w":"lp. 146"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1628,7 +1628,7 @@
       "w":"lp. 145"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1648,7 +1648,7 @@
       "w":"lp. 79"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I13",
       "w":"I13"
      }
     ]
@@ -1660,7 +1660,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; D01",
       "w":"D01"
      }
     ]
@@ -1676,7 +1676,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; D02",
       "w":"D02"
      }
     ]
@@ -1688,7 +1688,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D06",
       "w":"D06"
      }
     ]
@@ -1700,7 +1700,7 @@
       "w":"lp. 20"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; D03",
       "w":"D03"
      }
     ]
@@ -1716,7 +1716,7 @@
       "w":"lp. 73"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1732,7 +1732,7 @@
       "w":"lp. 75"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I10",
       "w":"I10"
      }
     ]
@@ -1748,7 +1748,7 @@
       "w":"lp. 76"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I11",
       "w":"I11"
      }
     ]
@@ -1764,7 +1764,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I09",
       "w":"I09"
      }
     ]
@@ -1780,7 +1780,7 @@
       "w":"lp. 119"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; D10",
       "w":"D10"
      }
     ]
@@ -1796,7 +1796,7 @@
       "w":"lp. 120"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; H01",
       "w":"H01"
      }
     ]
@@ -1812,7 +1812,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I15",
       "w":"I15"
      }
     ]
@@ -1824,7 +1824,7 @@
       "w":"lp. 121"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1836,7 +1836,7 @@
       "w":"lp. 122"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1848,7 +1848,7 @@
       "w":"lp. 124"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H04",
       "w":"H04"
      }
     ]
@@ -1868,7 +1868,7 @@
       "w":"lp. 168"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I31",
       "w":"I31"
      }
     ]
@@ -1884,7 +1884,7 @@
       "w":"lp. 169"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I32",
       "w":"I32"
      }
     ]
@@ -1896,7 +1896,7 @@
       "w":"lp. 147"
      },
      {"m":"20101231",
-      "t":"4 pkt",
+      "t":"4 pkt; G01",
       "w":"G01"
      }
     ]
@@ -1908,7 +1908,7 @@
       "w":"lp. 148"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; G03",
       "w":"G03"
      }
     ]
@@ -1920,7 +1920,7 @@
       "w":"lp. 149"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -1932,7 +1932,7 @@
       "w":"lp. 150"
      },
      {"m":"20101231",
-      "t":"4 pkt",
+      "t":"4 pkt; G04",
       "w":"G04"
      }
     ]
@@ -1944,7 +1944,7 @@
       "w":"lp. 151"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; G08",
       "w":"G08"
      }
     ]
@@ -1960,7 +1960,7 @@
       "w":"lp. 152"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I16",
       "w":"I16"
      }
     ]
@@ -1972,7 +1972,7 @@
       "w":"lp. 153"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; G06",
       "w":"G06"
      }
     ]
@@ -1984,7 +1984,7 @@
       "w":"lp. 84"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; G07",
       "w":"G07"
      }
     ]
@@ -2000,7 +2000,7 @@
       "w":"lp. 154"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I17",
       "w":"I17"
      }
     ]
@@ -2016,7 +2016,7 @@
       "w":"lp. 80"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; G02",
       "w":"G02"
      }
     ]
@@ -2028,7 +2028,7 @@
       "w":"lp. 81"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2044,7 +2044,7 @@
       "w":"lp. 82"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2056,7 +2056,7 @@
       "w":"lp. 83"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2072,7 +2072,7 @@
       "w":"lp. 85"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2084,7 +2084,7 @@
       "w":"lp. 86"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2156,7 +2156,7 @@
       "w":"lp. 92"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2168,7 +2168,7 @@
       "w":"lp. 93"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2180,7 +2180,7 @@
       "w":"lp. 94"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2192,7 +2192,7 @@
       "w":"lp. 95"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2208,7 +2208,7 @@
       "w":"lp. 70"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; D04",
       "w":"D04"
      }
     ]
@@ -2220,7 +2220,7 @@
       "w":"lp. 70a"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; D04",
       "w":"D04"
      }
     ]
@@ -2232,7 +2232,7 @@
       "w":"lp. 71"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; D04",
       "w":"D04"
      }
     ]
@@ -2456,7 +2456,7 @@
       "w":"lp. 175"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I44",
       "w":"I44"
      }
     ]
@@ -2472,7 +2472,7 @@
       "w":"lp. 176"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I44",
       "w":"I44"
      }
     ]
@@ -2488,7 +2488,7 @@
       "w":"lp. 177"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I47",
       "w":"I47"
      }
     ]
@@ -2504,7 +2504,7 @@
       "w":"lp. 178"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I48",
       "w":"I48"
      }
     ]
@@ -2520,7 +2520,7 @@
       "w":"lp. 179"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I49",
       "w":"I49"
      }
     ]
@@ -2536,7 +2536,7 @@
       "w":"lp. 180"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I50",
       "w":"I50"
      }
     ]
@@ -2552,7 +2552,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I41",
       "w":"I41"
      }
     ]
@@ -2568,7 +2568,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I42",
       "w":"I42"
      }
     ]
@@ -2584,7 +2584,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I43",
       "w":"I43"
      }
     ]
@@ -2600,7 +2600,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I45",
       "w":"I45"
      }
     ]
@@ -2616,7 +2616,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I46",
       "w":"I46"
      }
     ]
@@ -2632,7 +2632,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I39",
       "w":"I39"
      }
     ]
@@ -2648,7 +2648,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I40",
       "w":"I40"
      }
     ]
@@ -2672,7 +2672,7 @@
       "w":"lp. 163"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I27",
       "w":"I27"
      }
     ]
@@ -2688,7 +2688,7 @@
       "w":"lp. 163"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I27",
       "w":"I27"
      }
     ]
@@ -2708,7 +2708,7 @@
       "w":"lp. 164"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I27",
       "w":"I27"
      }
     ]
@@ -2724,7 +2724,7 @@
       "w":"lp. 165"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I28",
       "w":"I28"
      }
     ]
@@ -2740,13 +2740,17 @@
       "w":"lp. 166"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I29",
       "w":"I29"
      }
     ]
    },
-   {"o":"Przewożenie dziecka w pojeździe poza fotelikiem ochronnym lub innym urządzeniem do przewożenia dzieci",
+   {"o":"Przewożenie w pojeździe kategorii M<sub>1</sub>, N<sub>1</sub>, N<sub>2</sub> i N<sub>3</sub>, o których mowa w załączniku nr 2 do ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, wyposażonym w pasy bezpieczeństwa lub urządzenia przytrzymujące dla dzieci, dziecka mającego mniej niż 150 cm wzrostu poza fotelikiem bezpieczeństwa dla dziecka lub innym urządzeniem przytrzymującym dla dzieci, zgodnym z masą i wzrostem dziecka, oraz właściwymi warunkami technicznymi określonymi w przepisach Unii Europejskiej lub w regulaminach EKG ONZ dotyczących urządzeń przytrzymujących dla dzieci w pojeździe, z wyjątkiem przewożenia:<br>1) na tylnym siedzeniu takiego pojazdu dziecka mającego co najmniej 135 cm wzrostu, przytrzymywanego za pomocą pasów bezpieczeństwa w przypadkach, kiedy ze względu na masę i wzrost dziecka nie jest możliwe zapewnienie fotelika bezpieczeństwa dla dziecka lub innego urządzenia przytrzymującego dla dzieci zgodnego z wymaganymi warunkami;<br>2) w pojeździe kategorii M<sub>1</sub> i N<sub>1</sub> na tylnym siedzeniu pojazdu trzeciego dziecka w wieku co najmniej 3 lat, przytrzymywanego za pomocą pasów bezpieczeństwa, w przypadku gdy dwoje dzieci jest przewożonych w fotelikach bezpieczeństwa dla dziecka lub innych urządzeniach przytrzymujących dla dzieci, zainstalowanych na tylnych siedzeniach pojazdu i nie ma możliwości zainstalowania trzeciego fotelika bezpieczeństwa dla dziecka lub innego urządzenia przytrzymującego dla dzieci",
     "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 22"
+     },
      {"m":"20120609",
       "t":"150 PLN; 6 pkt; J01",
       "w":"J01"
@@ -2756,13 +2760,17 @@
       "w":"lp. 22"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; H10",
       "w":"H10"
      }
     ]
    },
-   {"o":"Przewożenie dziecka w pojeździe w foteliku ochronnym, siedzącego tyłem do kierunku jazdy na przednim siedzeniu pojazdu wyposażonego w poduszkę powietrzną dla pasażera",
+   {"o":"Przewożenie w foteliku bezpieczeństwa dla dziecka lub innym urządzeniu przytrzymującym dla dzieci dziecka siedzącego tyłem do kierunku jazdy na przednim siedzeniu pojazdu samochodowego wyposażonego w poduszkę powietrzną dla pasażera, która jest aktywna podczas przewożenia dziecka",
     "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23"
+     },
      {"m":"20120609",
       "t":"150 PLN; 6 pkt; J01",
       "w":"J01"
@@ -2772,8 +2780,44 @@
       "w":"lp. 23"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; H10",
       "w":"H10"
+     }
+    ]
+   },
+   {"o":"Przewożenie dziecka w wieku poniżej 3 lat w pojeździe kategorii M<sub>1</sub>, N<sub>1</sub>, N<sub>2</sub> i N<sub>3</sub>, o których mowa w załączniku nr 2 do ustawy z dnia 20 czerwca 1997 r. – Prawo o ruchu drogowym, niewyposażonym w pasy bezpieczeństwa i fotelik bezpieczeństwa dla dziecka lub w pasy bezpieczeństwa i inne urządzenie przytrzymujące dla dzieci",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23a"
+     },
+     {"m":"20120609",
+      "t":"6 pkt; J01",
+      "w":"J01"
+     }
+    ]
+   },
+   {"o":"Przewożenie na przednim siedzeniu pojazdu samochodowego, poza fotelikiem bezpieczeństwa dla dziecka lub innym urządzeniem przytrzymującym dla dzieci, dziecka mającego mniej niż 150 cm wzrostu",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23b"
+     },
+     {"m":"20120609",
+      "t":"6 pkt; J01",
+      "w":"J01"
+     }
+    ]
+   },
+   {"o":"Przewożenie dziecka w foteliku bezpieczeństwa dla dziecka lub innym urządzeniu przytrzymującym dla dzieci zainstalowanym niezgodnie z zaleceniami producenta urządzenia, wskazującymi, w jaki sposób urządzenie może być bezpiecznie stosowane",
+    "h":[
+     {"m":"20170810",
+      "t":"150 PLN; 6 pkt; J01",
+      "w":"lp. 23c"
+     },
+     {"m":"20120609",
+      "t":"6 pkt; J01",
+      "w":"J01"
      }
     ]
    },
@@ -2812,7 +2856,7 @@
       "w":"lp. 27"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -2836,7 +2880,7 @@
       "w":"brak"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I54",
       "w":"I54"
      }
     ]
@@ -2844,7 +2888,7 @@
    {"o":"Naruszenie warunków przewozu osób w przyczepie, z wyłączeniem naruszenia określonego kodem E01–E05, C07–C16, C17 i C18 (E01 - E05 to przekroczenie dopuszczalnej prędkości, C07 to niezastosowanie się do znaków: <table><tr><td><a href=b/b21><img src=b/b21.png align=left width=50>B-21 \"zakaz skręcania w lewo\"</a></td></tr><tr><td><a href=b/b22><img src=b/b22.png align=left width=50>B-22 \"zakaz skręcania w prawo\"</a></td></tr></table>C08 to niezastosowanie się do znaków C-1 do C-12: <table><tr><td><a href=c/c01><img src=c/c01.png align=left width=50>C-1 \"nakaz jazdy w prawo przed znakiem\"</a></td></tr><tr><td><a href=c/c02><img src=c/c02.png align=left width=50>C-2 \"nakaz jazdy w prawo za znakiem\"</a></td></tr><tr><td><a href=c/c03><img src=c/c03.png align=left width=50>C-3 \"nakaz jazdy w lewo przed znakiem\"</a></td></tr><tr><td><a href=c/c04><img src=c/c04.png align=left width=50>C-4 \"nakaz jazdy w lewo za znakiem\"</a></td></tr><tr><td><a href=c/c05><img src=c/c05.png align=left width=50>C-5 \"nakaz jazdy prosto\"</a></td></tr><tr><td><a href=c/c06><img src=c/c06.png align=left width=50>C-6 \"nakaz jazdy prosto lub w prawo\"</a></td></tr><tr><td><a href=c/c07><img src=c/c07.png align=left width=50>C-7 \"nakaz jazdy prosto lub w lewo\"</a></td></tr><tr><td><a href=c/c08><img src=c/c08.png align=left width=50>C-8 \"nakaz jazdy w prawo lub w lewo\"</a></td></tr><tr><td><a href=c/c09><img src=c/c09.png align=left width=50>C-9 \"nakaz jazdy z prawej strony znaku\"</a></td></tr><tr><td><a href=c/c10><img src=c/c10.png align=left width=50>C-10 \"nakaz jazdy z lewej strony znaku\"</a></td></tr><tr><td><a href=c/c11><img src=c/c11.png align=left width=50>C-11 \"nakaz jazdy z prawej lub z lewej strony znaku\"</a></td></tr><tr><td><a href=c/c12><img src=c/c12.png align=left width=50>C-12 \"ruch okrężny\"</a></td></tr></table>C09 to niezastosowanie się do znaków F-10, F-11, F-15 do F-19, kierunki na pasach ruchu określające dozwolony kierunek jazdy z poszczególnych pasów ruchu lub sposób ich wykorzystania: <table><tr><td><a href=f/f10><img src=f/f10.png align=left width=50>F-10 \"Kierunki na pasach ruchu\"</a></td></tr><tr><td><a href=f/f11><img src=f/f11.png align=left width=50>F-11 \"Kierunki na pasie ruchu\"</a></td></tr><tr><td><a href=f/f15><img src=f/f15.png align=left width=50>F-15 \"niesymetryczny podział jezdni dla przeciwnych kierunków ruchu\"</a></td></tr><tr><td><a href=f/f16><img src=f/f16.png align=left width=50>F-16 \"Koniec pasa ruchu na jezdni dwukierunkowej\"</a></td></tr><tr><td><a href=f/f17><img src=f/f17.png align=left width=50>F-17 \"koniec pasa ruchu na jezdni jednokierunkowej\"</a></td></tr><tr><td><a href=f/f18><img src=f/f18.png align=left width=50>F-18 \"przeciwny kierunek dla określonych pojazdów\"</a></td></tr><tr><td><a href=f/f19><img src=f/f19.png align=left width=50>F-19 \"pas ruchu dla określonych pojazdów\"</a></td></tr></table>C10 to niezastosowanie się do znaków P-8a do P-8c: <table><tr><td><a href=p/p08a><img src=p/p08a.png align=left height=100>P-8a \"strzałka kierunkowa na wprost\"</a></td></tr><tr><td><a href=p/p08b><img src=p/p08b.png align=left height=100>P-8b \"strzałka kierunkowa do skręcania\"</a></td></tr><tr><td><a href=p/p08c><img src=p/p08c.png align=left height=100>P-8c \"strzałka kierunkowa do zawracania\"</a></td></tr></table>C11 to niezastosowanie się do znaku: <table><tr><td><a href=p/p04><img src=p/p04.png align=left height=100>P-4 \"Linia podwójna ciągła\"</a></td></tr></table>C12 to niezastosowanie się do znaku <table><tr><td><a href=b/b31><img src=b/b31.png align=left width=50>B-31 \"Pierwszeństwo dla nadjeżdżających z przeciwka\"</a></td></tr></table>C13 to niezastosowanie się do znaków B-3 do B-7: <table><tr><td><a href=b/b03><img src=b/b03.png align=left width=50>B-3 \"Zakaz wjazdu pojazdów silnikowych, z wyjątkiem motocykli jednośladowych\"</a></td></tr><tr><td><a href=b/b03a><img src=b/b03a.png align=left width=50>B-3a \"Zakaz wjazdu autobusów\"</a></td></tr><tr><td><a href=b/b04><img src=b/b04.png align=left width=50>B-4 \"zakaz wjazdu motocykli\"</a></td></tr><tr><td><a href=b/b05><img src=b/b05.png align=left width=50>B-5 \"zakaz wjazdu samochodów ciężarowych\"</a></td></tr><tr><td><a href=b/b06><img src=b/b06.png align=left width=50>B-6 \"zakaz wjazdu ciągników rolniczych\"</a></td></tr><tr><td><a href=b/b07><img src=b/b07.png align=left width=50>B-7 \"zakaz wjazdu pojazdów silnikowych z przyczepą\"</a></td></tr></table>C14 to niezastosowanie się do znaków B-13 do B-19: <table><tr><td><a href=b/b13><img src=b/b13.png align=left width=50>B-13 \"zakaz wjazdu pojazdów z towarami wybuchowymi lub łatwo zapalnymi\"</a></td></tr><tr><td><a href=b/b13a><img src=b/b13a.png align=left width=50>B-13a \"Zakaz wjazdu pojazdów z towarami niebezpiecznymi\"</a></td></tr><tr><td><a href=b/b14><img src=b/b14.png align=left width=50>B-14 \"zakaz wjazdu pojazdów z towarami, które mogą skazić wodę\"</a></td></tr><tr><td><a href=b/b15><img src=b/b15.png align=left width=50>B-15 \"zakaz wjazdu pojazdów o szerokości ponad ......m\"</a></td></tr><tr><td><a href=b/b16><img src=b/b16.png align=left width=50>B-16 \"zakaz wjazdu pojazdów o wysokości ponad ......m\"</a></td></tr><tr><td><a href=b/b17><img src=b/b17.png align=left width=50>B-17 \"zakaz wjazdu pojazdów o długości ponad ......m\"</a></td></tr><tr><td><a href=b/b18><img src=b/b18.png align=left width=50>B-18 \"zakaz wjazdu pojazdów o rzeczywistej masie całkowitej ponad ......t\"</a></td></tr><tr><td><a href=b/b19><img src=b/b19.png align=left width=50>B-19 \"zakaz wjazdu pojazdów o nacisku osi większym niż .....t\"</a></td></tr></table>C15 to niestosowanie się do pozostałych, nie wyszczególnionych w niniejszym katalogu znaków i sygnałów drogowych,<br>C16 to niezatrzymanie pojazdu w związku ze znakiem <table><tr><td><a href=b/b20><img src=b/b20.png align=left height=50>B-20 \"Stop\"</a></td></tr></table>C17 to niestosowanie się do znaków: <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table> z umieszczoną pod znakiem tabliczką <table><tr><td><a href=t/t29><img src=t/t29.png align=left width=50>T-29 \"Tabliczka informująca o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej\"</a></td></tr></table>C18 to niestosowanie się do znaków: <table><tr><td><a href=p/p18><img src=p/p18.png align=left width=50>P-18 \"Stanowisko postojowe\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla pojazdu osoby niepełnosprawnej\"</a></td></tr></table> albo <table><tr><td><a href=p/p20><img src=p/p20.png align=left width=50>P-20 \"Koperta\"</a> i </td></tr><tr><td><a href=p/p24><img src=p/p24.png align=left width=50>P-24 \"Miejsce dla postoju osoby niepełnosprawnej\"</a></td></tr></table> umieszczonego samodzielnie bez znaku pionowego <table><tr><td><a href=d/d18><img src=d/d18.png align=left width=50>D-18 \"Parking\"</a></td></tr><tr><td><a href=d/d18a><img src=d/d18a.png align=left width=50>D-18a \"Parking — miejsce zastrzeżone\"</a></td></tr><tr><td><a href=d/d18b><img src=d/d18b.png align=left width=50>D-18b \"Parking zadaszony\"</a></td></tr></table>",
     "h":[
      {"m":"20120609",
-      "t":"2 pkt",
+      "t":"2 pkt; J19",
       "w":"J19"
      }
     ]
@@ -2856,7 +2900,7 @@
       "w":"lp. 183"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I53",
       "w":"I53"
      }
     ]
@@ -2908,7 +2952,7 @@
       "w":"lp. 181"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I51",
       "w":"I51"
      }
     ]
@@ -2960,7 +3004,7 @@
       "w":"lp. 181"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I52",
       "w":"I52"
      }
     ]
@@ -2996,7 +3040,7 @@
       "w":"brak"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; H11",
       "w":"H11"
      }
     ]
@@ -3016,7 +3060,7 @@
       "w":"lp. 25"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; H12",
       "w":"H12"
      }
     ]
@@ -3028,7 +3072,7 @@
       "w":"lp. 21"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; H09",
       "w":"H09"
      }
     ]
@@ -3044,7 +3088,7 @@
       "w":"lp. 28"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I04",
       "w":"I04"
      }
     ]
@@ -3060,15 +3104,19 @@
       "w":"lp. 185"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I55",
       "w":"I55"
      }
     ]
    },
    {"o":"Kierowanie pojazdem mechanicznym w stanie po spożyciu alkoholu lub środka podobnie działającego do alkoholu",
     "h":[
+     {"m":"20120609",
+      "t":"10 pkt; A03",
+      "w":"A03"
+     },
      {"m":"20101231",
-      "t":"10 pkt",
+      "t":"10 pkt; A03",
       "w":"A03"
      }
     ]
@@ -3076,11 +3124,11 @@
    {"o":"Kierowanie pojazdem mechanicznym w stanie nietrzeźwości lub będąc pod wpływem środka odurzającego",
     "h":[
      {"m":"20120609",
-      "t":"10 pkt",
+      "t":"10 pkt; A05",
       "w":"A05"
      },
      {"m":"20101231",
-      "t":"10 pkt",
+      "t":"10 pkt; A05",
       "w":"A05"
      }
     ]
@@ -3200,7 +3248,7 @@
       "w":"lp. 189"
      },
      {"m":"20101231",
-      "t":"0 pkt",
+      "t":"0 pkt; I03",
       "w":"I03"
      }
     ]
@@ -3212,7 +3260,7 @@
       "w":"k.w."
      },
      {"m":"20120609",
-      "t":"1 pkt",
+      "t":"1 pkt; H05",
       "w":"H05"
      }
     ]
@@ -3236,7 +3284,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C06",
       "w":"C06"
      }
     ]
@@ -3248,7 +3296,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C05",
       "w":"C05"
      }
     ]
@@ -3264,7 +3312,7 @@
       "w":"lp. 201"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; C13",
       "w":"C13"
      }
     ]
@@ -3284,7 +3332,7 @@
       "w":"lp. 201"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; C13",
       "w":"C13"
      }
     ]
@@ -3304,7 +3352,7 @@
       "w":"lp. 204a"
      },
      {"m":"20101231",
-      "t":"3 pkt",
+      "t":"3 pkt; C13",
       "w":"C13"
      }
     ]
@@ -3320,7 +3368,7 @@
       "w":"lp. 205"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3340,7 +3388,7 @@
       "w":"lp. 205"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3356,7 +3404,7 @@
       "w":"lp. 202"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; C14",
       "w":"C14"
      }
     ]
@@ -3372,7 +3420,7 @@
       "w":"lp. 204"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; C14",
       "w":"C14"
      }
     ]
@@ -3392,7 +3440,7 @@
       "w":"lp. 204a"
      },
      {"m":"20101231",
-      "t":"2 pkt",
+      "t":"2 pkt; C14",
       "w":"C14"
      }
     ]
@@ -3408,7 +3456,7 @@
       "w":"lp. 226"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3424,7 +3472,7 @@
       "w":"lp. 226"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C07",
       "w":"C07"
      }
     ]
@@ -3436,7 +3484,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; F09",
       "w":"F09"
      }
     ]
@@ -3452,7 +3500,7 @@
       "w":"lp. 206"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3468,7 +3516,7 @@
       "w":"lp. 207"
      },
      {"m":"20101231",
-      "t":"4 pkt",
+      "t":"4 pkt; C12",
       "w":"C12"
      }
     ]
@@ -3484,7 +3532,7 @@
       "w":"lp. 208"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3500,7 +3548,7 @@
       "w":"lp. 209"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3520,7 +3568,7 @@
       "w":"lp. 209"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3536,7 +3584,7 @@
       "w":"lp. 210"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3552,7 +3600,7 @@
       "w":"lp. 211"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3572,7 +3620,7 @@
       "w":"lp. 211"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3588,7 +3636,7 @@
       "w":"lp. 212"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3608,7 +3656,7 @@
       "w":"lp. 212"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3624,7 +3672,7 @@
       "w":"lp. 213"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C08",
       "w":"C08"
      }
     ]
@@ -3640,7 +3688,7 @@
       "w":"lp. 203"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C08",
       "w":"C08"
      }
     ]
@@ -3656,7 +3704,7 @@
       "w":"lp. 214"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3672,7 +3720,7 @@
       "w":"lp. 215"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3688,7 +3736,7 @@
       "w":"lp. 216"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3704,7 +3752,7 @@
       "w":"lp. 224"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3720,7 +3768,7 @@
       "w":"lp. 228"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3736,7 +3784,7 @@
       "w":"lp. 229"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3752,7 +3800,7 @@
       "w":"lp. 230"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3768,7 +3816,7 @@
       "w":"lp. 231"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3788,7 +3836,7 @@
       "w":"lp. 231"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3804,7 +3852,7 @@
       "w":"lp. 233"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3820,7 +3868,7 @@
       "w":"lp. 234"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C09",
       "w":"C09"
      }
     ]
@@ -3836,7 +3884,7 @@
       "w":"lp. 234"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3852,7 +3900,7 @@
       "w":"lp. 234"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C09",
       "w":"C09"
      }
     ]
@@ -3868,7 +3916,7 @@
       "w":"lp. 219"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3884,7 +3932,7 @@
       "w":"lp. 220"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3900,7 +3948,7 @@
       "w":"lp. 221"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C11",
       "w":"C11"
      }
     ]
@@ -3916,7 +3964,7 @@
       "w":"lp. 222"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3932,7 +3980,7 @@
       "w":"lp. 234"
      },
      {"m":"20101231",
-      "t":"5 pkt",
+      "t":"5 pkt; C10",
       "w":"C10"
      }
     ]
@@ -3948,7 +3996,7 @@
       "w":"lp. 223"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3964,7 +4012,7 @@
       "w":"lp. 236"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -3980,7 +4028,7 @@
       "w":"lp. 231"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4000,7 +4048,7 @@
       "w":"lp. 231"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4016,7 +4064,7 @@
       "w":"lp. 237"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4032,7 +4080,7 @@
       "w":"lp. 225"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4048,7 +4096,7 @@
       "w":"lp. 228"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4064,7 +4112,7 @@
       "w":"lp. 217"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4080,7 +4128,7 @@
       "w":"lp. 218"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4096,7 +4144,7 @@
       "w":"lp. 235"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4128,7 +4176,7 @@
       "w":"lp. 227"
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4144,7 +4192,7 @@
       "w":"lp. 240"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; C02",
       "w":"C02"
      }
     ]
@@ -4160,7 +4208,7 @@
       "w":"k.w."
      },
      {"m":"20101231",
-      "t":"1 pkt",
+      "t":"1 pkt; C15",
       "w":"C15"
      }
     ]
@@ -4176,7 +4224,7 @@
       "w":"lp. 190"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -4188,7 +4236,7 @@
       "w":"lp. 195"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -4200,7 +4248,7 @@
       "w":"lp. 196"
      },
      {"m":"20101231",
-      "t":"Bez wartości punktowej",
+      "t":"Bez wartości punktowej; Z01",
       "w":"Z01"
      }
     ]
@@ -4248,7 +4296,7 @@
       "w":"lp. 241"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; A02",
       "w":"A02"
      }
     ]
@@ -4264,7 +4312,7 @@
       "w":"lp. 241"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; A06",
       "w":"A06"
      }
     ]
@@ -4280,7 +4328,7 @@
       "w":"lp. 242"
      },
      {"m":"20101231",
-      "t":"10 pkt",
+      "t":"10 pkt; A02",
       "w":"A02"
      }
     ]
@@ -4296,7 +4344,7 @@
       "w":"lp. 242"
      },
      {"m":"20101231",
-      "t":"6 pkt",
+      "t":"6 pkt; A06",
       "w":"A06"
      }
     ]
