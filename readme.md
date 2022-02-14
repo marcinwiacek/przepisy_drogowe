@@ -12,16 +12,16 @@
 
     * Google Play: https://play.google.com/store/apps/details?id=com.mwiacek.przepisy.drogowe&hl=pl&gl=US
 
-3. Android Kotlin - 1.48
-
-4. iOS - 1.56
+3. iOS - 1.56
 
     * AppStore: https://apps.apple.com/us/app/przepisy-drogowe/id583045779?ls=1
 
-5. Ustawy - skrypty do tworzenia plików HTML z ustawami z PDF
+4. Android Kotlin - 1.48
+
+5. www - 1.38
 
 6. Firefox OS - 1.22b2
 
 7. Tizen - 1.06 i 1.22b2
 
-8. www - 1.38
+8. Ustawy - skrypty do tworzenia plików HTML z ustawami z PDF
