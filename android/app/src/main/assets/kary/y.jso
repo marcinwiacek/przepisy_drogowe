@@ -1893,7 +1893,7 @@
    {"o":"Naruszenie przez kierującego obowiązku upewnienia się przed wyprzedzaniem, czy ma odpowiednią widoczność i dostateczne miejsce do wyprzedzania bez utrudnienia komukolwiek ruchu",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 5 pkt; F01",
+      "t":"500-5000 PLN przy kierowaniu pojazdem mechanicznym; 20-500 PLN przy innych; 5 pkt; F01",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -1909,7 +1909,7 @@
    {"o":"Naruszenie przez kierującego obowiązku upewnienia się przed wyprzedzaniem, czy kierujący jadący za nim nie rozpoczął manewru wyprzedzania",
     "h":[
      {"m":"20220101",
-      "t":"20-500 PLN; 5 pkt; F01",
+      "t":"500-5000 PLN przy kierowaniu pojazdem mechanicznym; 20-500 PLN przy innych; 5 pkt; F01",
       "w":"k.w."
      },
      {"m":"20110524",
@@ -1989,19 +1989,7 @@
    {"o":"Naruszenie przez kierującego pojazdem mechanicznym zakazu wyprzedzania pojazdu przy przejeżdżaniu przez tory tramwajowe lub bezpośrednio przed nimi, z wyjątkiem skrzyżowania lub przejazdu tramwajowego, na którym ruch jest kierowany",
     "h":[
      {"m":"20220101",
-      "t":"500 PLN",
-      "w":"lp. 99"
-     },
-     {"m":"20110524",
-      "t":"300 PLN",
-      "w":"lp. 100"
-     }
-    ]
-   },
-   {"o":"Naruszenie przez kierującego pojazdem mechanicznym zakazu wyprzedzania pojazdu na przejeździe dla rowerzystów i bezpośrednio przed nim, z wyjątkiem przejazdu, na którym ruch jest kierowany",
-    "h":[
-     {"m":"20220101",
-      "t":"1000 / 2000 PLN; 5 pkt; F08",
+      "t":"500 PLN; 5 pkt; F08",
       "w":"lp. 100"
      },
      {"m":"20110524",
@@ -2011,6 +1999,14 @@
      {"m":"20101231",
       "t":"5 pkt; F08",
       "w":"F08"
+     }
+    ]
+   },
+   {"o":"Naruszenie przez kierującego pojazdem mechanicznym zakazu wyprzedzania pojazdu na przejeździe dla rowerzystów i bezpośrednio przed nim, z wyjątkiem przejazdu, na którym ruch jest kierowany",
+    "h":[
+     {"m":"20220101",
+      "t":"1000 / 2000 PLN",
+      "w":"lp. 98"
      }
     ]
    },
@@ -6543,6 +6539,14 @@
      {"m":"20101231",
       "t":"10 pkt; A04",
       "w":"A04"
+     }
+    ]
+   },
+   {"o":"Prowadzenie pojazdu poza drogą publiczną, strefą zamieszkania lub strefą ruchu bez należytej ostrożności (z zagrożeniem bezpieczeństwa innej osoby)",
+    "h":[
+     {"m":"20220101",
+      "t":"20-5000 PLN",
+      "w":"k.w."
      }
     ]
    },
