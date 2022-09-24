@@ -51,7 +51,7 @@ public class TaryfikatorActivity extends OneTabActivity {
     @Override
     public void onSelected(int i, int position) {
         if (spinner.getCount() > 5 &&
-                spinner.getSelectedItemPosition() < spinner.getCount() - 5) {
+                spinner.getSelectedItemPosition() < spinner.getCount() - 6) {
             String scroll = "window.scrollTo(0, " +
                     (position == -1 ? " document.getElementById('sekcja" + spinner.getSelectedItemPosition() + "').offsetTop" : position) +
                     ");";
@@ -69,7 +69,17 @@ public class TaryfikatorActivity extends OneTabActivity {
     protected void GetDisplayBytes() {
         String title = "";
         StringBuilder DisplayLines = new StringBuilder();
-        if (spinner.getSelectedItemPosition() == spinner.getCount() - 5 &&
+        if (spinner.getSelectedItemPosition() == spinner.getCount() - 6 &&
+                spinner.getCount() != 1) {
+            DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 01.01.2022</b></td></tr>");
+            ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
+                    "kary/20220101.jso", textView.getText().toString(), getAssets(),
+                    al2, true);
+            DisplayLines.append("<tr><td bgcolor=grey><b>Punkty od 17.09.2022</b></td></tr>");
+            ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
+                    "kary/20220917.jso", textView.getText().toString(), getAssets(),
+                    al2, true);
+        } else if (spinner.getSelectedItemPosition() == spinner.getCount() - 5 &&
                 spinner.getCount() != 1) {
             DisplayLines.append("<tr><td bgcolor=grey><b>Mandaty od 01.01.2022</b></td></tr>");
             ((PrzepisyDrogoweActivity) getParent()).p.ReadTaryfikator2(DisplayLines,
@@ -131,7 +141,8 @@ public class TaryfikatorActivity extends OneTabActivity {
             for (int x = al2.size() - 1; x >= 0; x--) {
                 adapter1.add(al2.get(x));
             }
-            adapter1.add("Mandaty i pkt osobno (od 1.1.2022) - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (od 17.09.2022) - Rozporządzenia");
+            adapter1.add("Mandaty i pkt osobno (01.01.2022-16.09.2022) - Rozporządzenia");
             adapter1.add("Mandaty i pkt osobno (10.08.2017-31.12.2021) - Rozporządzenia");
             adapter1.add("Mandaty i pkt osobno (11.04.2015-09.08.2017) - Rozporządzenia");
             adapter1.add("Mandaty i pkt osobno (09.06.2012-10.04.2015) - Rozporządzenia");
@@ -143,7 +154,8 @@ public class TaryfikatorActivity extends OneTabActivity {
                     "<title>" + title + "</title></head><body><table>");
         DisplayLines.append("</table></body></html>");
 
-        if ((spinner.getSelectedItemPosition() == spinner.getCount() - 5 ||
+        if ((spinner.getSelectedItemPosition() == spinner.getCount() - 6 ||
+                spinner.getSelectedItemPosition() == spinner.getCount() - 5 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 4 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 3 ||
                 spinner.getSelectedItemPosition() == spinner.getCount() - 2 ||
