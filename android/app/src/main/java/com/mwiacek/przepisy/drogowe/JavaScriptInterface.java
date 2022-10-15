@@ -283,7 +283,7 @@ public class JavaScriptInterface {
             webView.getSettings().setSupportZoom(true);
             webView.getSettings().setBuiltInZoomControls(PreferenceManager.getDefaultSharedPreferences(mContext).getBoolean("Wielkosc", true));
             webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-            webView.getSettings().setAppCacheEnabled(false);
+         //   webView.getSettings().setAppCacheEnabled(false);
             webView.setWebViewClient(
                     new WebViewClient() {
                         @Override

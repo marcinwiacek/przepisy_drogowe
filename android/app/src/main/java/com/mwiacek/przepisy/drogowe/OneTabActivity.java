@@ -262,7 +262,7 @@ public abstract class OneTabActivity extends Activity {
         webView.sv = scroller;
 
         //   webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-        webView.getSettings().setAppCacheEnabled(false);
+     //   webView.getSettings().setAppCacheEnabled(false);
         webView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
         webView.getSettings().setSupportZoom(true);
         webView.getSettings().setBuiltInZoomControls(sp.getBoolean("Wielkosc", true));
