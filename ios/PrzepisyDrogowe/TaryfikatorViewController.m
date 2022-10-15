@@ -157,7 +157,7 @@
                 self->searchall =appDelegate.mojTaryfikatorSearchNum;
         
             
-            } else if (self->nr_akt==5) {
+            } else if (self->nr_akt==6) {
                 
                 
                 NSString *mystr2 = [self readOldTaryfikator:@"20110524":t];
@@ -172,7 +172,7 @@
                              mystr2];
                 }
                 
-            } else if (self->nr_akt==4) {
+            } else if (self->nr_akt==5) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20110524":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 24.05.2011 do 10.04.2015</b></td></tr>%@",mystr,
@@ -185,7 +185,7 @@
                              mystr2];
                 }
                 
-            } else if (self->nr_akt==3) {
+            } else if (self->nr_akt==4) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20150411":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 11.04.2015 do 09.08.2017</b></td></tr>%@",mystr,
@@ -197,7 +197,7 @@
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
-            } else if (self->nr_akt==2) {
+            } else if (self->nr_akt==3) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20170810":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 10.08.2017 do 31.12.2021</b></td></tr>%@",mystr,
@@ -209,7 +209,7 @@
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
-            } else if (self->nr_akt==1) {
+            } else if (self->nr_akt==2) {
                 NSString *mystr2 = [self readOldTaryfikator:@"20220101":t];
                 if ([mystr2 length]!=0) {
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 1.1.2022</b></td></tr>%@",mystr,
@@ -221,7 +221,19 @@
                     mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 09.06.2012</b></td></tr>%@",mystr,
                              mystr2];
                 }
+            } else if (self->nr_akt==1) {
+            NSString *mystr2 = [self readOldTaryfikator:@"20220101":t];
+            if ([mystr2 length]!=0) {
+                mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Mandaty od 1.1.2022</b></td></tr>%@",mystr,
+                         mystr2];
             }
+            
+            mystr2 = [self readOldTaryfikator:@"20220917":t];
+            if ([mystr2 length]!=0) {
+                mystr = [NSString stringWithFormat:@"%@<tr><td bgcolor = grey><b>Punkty od 17.09.2022</b></td></tr>%@",mystr,
+                         mystr2];
+            }
+        }
             
             
             mystr = [NSString stringWithFormat:@"%@</table></body></html>",mystr];

@@ -58,7 +58,9 @@
     
     self.menuArray = [[NSArray alloc]
                       initWithObjects:@"Mandaty i punkty razem (opracowanie własne)",
-                      @"Mandaty i punkty osobno (od 1.1.2022, Rozp.)",
+                      @"Mandaty i punkty osobno (od 17.09.2022, Rozp.)",
+                      
+                      @"Mandaty i punkty osobno (01.01.2022-16.09.2022, Rozp.)",
                       @"Mandaty i punkty osobno (10.08.2017-31.12.2021, Rozp.)",
                 
                       @"Mandaty i punkty osobno (11.04.2015-09.08.2017, Rozp.)" ,                     @"Mandaty i punkty osobno (09.06.2012-10.04.2015, Rozp.)",
@@ -120,7 +122,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section==0) {
-        return 6;
+        return 7;
     }
     if (nr_akt==0) {
         AppDelegate *appDelegate= (AppDelegate *)[[UIApplication sharedApplication] delegate];
