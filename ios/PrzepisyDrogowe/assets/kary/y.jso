@@ -1901,8 +1901,8 @@
    {"o":"Zawracanie w tunelach, na mostach i wiaduktach oraz na drogach jednokierunkowych",
     "h":[
      {"m":"20220917",
-      "t":"200 PLN",
-      "w":"brak"
+      "t":"200 PLN; 5 pkt; D03",
+      "w":"D03"
      },
      {"m":"20220101",
       "t":"200 PLN; 5 pkt; D10",
@@ -5807,7 +5807,7 @@
      }
     ]
    },
-   {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem mechanicznym w stanie po spożyciu alkoholu lub środka podobnie działającego do alkoholu",
+   {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem mechanicznym w stanie po użyciu alkoholu lub środka podobnie działającego do alkoholu",
     "h":[
      {"m":"20220917",
       "t":"Wniosek do Sądu (2500-30000 PLN+zakaz prowadzenia pojazdów); 15 pkt; A03",
@@ -5834,7 +5834,7 @@
    {"o":"Kierowanie na drodze publicznej, w strefie zamieszkania lub w strefie ruchu pojazdem mechanicznym w stanie nietrzeźwości lub będąc pod wpływem środka odurzającego",
     "h":[
      {"m":"20220917",
-      "t":"2500-5000 PLN; 15 pkt; A05",
+      "t":"Wniosek do Sądu (2500-5000 PLN lub inne); 15 pkt; A05",
       "w":"A05"
      },
      {"m":"20220101",
@@ -7946,7 +7946,7 @@
    {"o":"Nieustąpienie pierwszeństwa innemu pojazdowi lub osobie poruszającej się przy użyciu urządzenia wspomagającego ruch",
     "h":[
      {"m":"20220917",
-      "t":"Liczba punktów przypisana naruszeniom oznaczonym odpowiednio kodem A02 \"Naruszenie powodujące zagrożenie bezpieczeństwa w ruchu drogowym, którego następstwem było naruszenie czynności narządu ciała lub rozstrój zdrowia\", A06 \"Naruszenie powodujące zagrożenie bezpieczeństwa w ruchu drogowym, w którym nie doszło do naruszenia czynności narządu ciała oraz rozstroju zdrowia\" albo A08 \"Naruszenie powodujące tamowanie lub utrudnienie ruchu na drodze publicznej, w strefie zamieszkania lub strefie ruchu\"",
+      "t":"Liczba punktów przypisana naruszeniom oznaczonym odpowiednio kodem A02 \"Naruszenie powodujące zagrożenie bezpieczeństwa w ruchu drogowym, którego następstwem było naruszenie czynności narządu ciała lub rozstrój zdrowia\", A06 \"Naruszenie powodujące zagrożenie bezpieczeństwa w ruchu drogowym, w którym nie doszło do naruszenia czynności narządu ciała oraz rozstroju zdrowia\" albo A08 \"Naruszenie powodujące tamowanie lub utrudnienie ruchu na drodze publicznej, w strefie zamieszkania lub strefie ruchu\"; D01",
       "w":"D01"
      }
     ]
