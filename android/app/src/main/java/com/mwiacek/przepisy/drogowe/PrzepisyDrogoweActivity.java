@@ -345,7 +345,7 @@ public class PrzepisyDrogoweActivity extends TabActivity {
                 ad.setButton(DialogInterface.BUTTON_POSITIVE, "OK (00:07)", (dialog, which) -> dialog.dismiss());
 
                 ad.setButton(DialogInterface.BUTTON_NEGATIVE, "Info o wydaniu", (dialog, which) -> {
-                    String url = "https://www.salon24.pl/u/techracja/1253358,przepisy-drogowe-1-58";
+                    String url = "https://www.salon24.pl/u/techracja/1257656,co-wolno-wojewodzie-to-nie-tobie-smrodzie";
                     if (sp.getBoolean("Share_Link", false)) {
                         Intent intent1 = new Intent(Intent.ACTION_SEND);
                         intent1.putExtra(Intent.EXTRA_TEXT, url);
@@ -618,7 +618,7 @@ public class PrzepisyDrogoweActivity extends TabActivity {
 
         webview.setHorizontalScrollBarEnabled(false);
         webview.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-        webview.getSettings().setAppCacheEnabled(false);
+      //  webview.getSettings().setAppCacheEnabled(false);
 
         webview.loadUrl("file:///android_asset/about.htm");
 
