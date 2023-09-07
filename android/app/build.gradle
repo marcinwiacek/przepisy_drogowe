@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion '33.0.0'
-
     defaultConfig {
         applicationId "com.mwiacek.przepisy.drogowe"
         minSdkVersion 9
         targetSdkVersion 33
+        compileSdkVersion = 34
+        buildToolsVersion = '33.0.1'
     }
 
     buildTypes {
@@ -17,13 +16,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.mwiacek.przepisy.drogowe'
 }
 
 dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.4'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.15.2'
 }

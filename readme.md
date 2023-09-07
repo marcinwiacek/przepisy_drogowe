@@ -12,7 +12,7 @@
 
     * Release Notes dla wersji 1.48: https://mwiacek.com/www/?q=node/490 lub https://www.salon24.pl/u/techracja/1175547,przepisy-drogowe-1-48
 
-2. Android - 1.60
+2. Android - 1.61
 
     * Google Play: https://play.google.com/store/apps/details?id=com.mwiacek.przepisy.drogowe&hl=pl&gl=US
 

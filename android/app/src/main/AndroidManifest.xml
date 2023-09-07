@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:installLocation="auto"
-    android:versionCode="60"
-    android:versionName="1.60">
+    android:versionCode="61"
+    android:versionName="1.61">
 
     <application
         android:icon="@drawable/icon"
